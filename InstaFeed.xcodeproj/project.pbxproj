@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07954FFA259BA2E7001CFAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */; };
+		07954FFC259BA2E7001CFAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */; };
+		07954FFE259BA2E7001CFAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FFD259BA2E7001CFAB9 /* ViewController.swift */; };
+		07955001259BA2E7001CFAB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07954FFF259BA2E7001CFAB9 /* Main.storyboard */; };
+		07955003259BA2EC001CFAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955002259BA2EC001CFAB9 /* Assets.xcassets */; };
+		07955006259BA2EC001CFAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07955004259BA2EC001CFAB9 /* LaunchScreen.storyboard */; };
+		0795500B259BA2EC001CFAB9 /* InstaFeed WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0795500A259BA2EC001CFAB9 /* InstaFeed WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07955011259BA2EC001CFAB9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0795500F259BA2EC001CFAB9 /* Interface.storyboard */; };
+		07955013259BA2EE001CFAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955012259BA2EE001CFAB9 /* Assets.xcassets */; };
+		0795501A259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07955019259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0795501F259BA2EE001CFAB9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795501E259BA2EE001CFAB9 /* InterfaceController.swift */; };
+		07955021259BA2EE001CFAB9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07955020259BA2EE001CFAB9 /* ExtensionDelegate.swift */; };
+		07955023259BA2EE001CFAB9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07955022259BA2EE001CFAB9 /* ComplicationController.swift */; };
+		07955025259BA2F1001CFAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955024259BA2F1001CFAB9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0795500C259BA2EC001CFAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07954FEE259BA2E7001CFAB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07955009259BA2EC001CFAB9;
+			remoteInfo = "InstaFeed WatchKit App";
+		};
+		0795501B259BA2EE001CFAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07954FEE259BA2E7001CFAB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07955018259BA2EE001CFAB9;
+			remoteInfo = "InstaFeed WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0795502C259BA2F1001CFAB9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0795501A259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07955030259BA2F1001CFAB9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0795500B259BA2EC001CFAB9 /* InstaFeed WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07954FF6259BA2E7001CFAB9 /* InstaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		07954FFD259BA2E7001CFAB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07955000259BA2E7001CFAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07955002259BA2EC001CFAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07955005259BA2EC001CFAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07955007259BA2EC001CFAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0795500A259BA2EC001CFAB9 /* InstaFeed WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaFeed WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07955010259BA2EC001CFAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		07955012259BA2EE001CFAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07955014259BA2EE001CFAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07955019259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InstaFeed WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0795501E259BA2EE001CFAB9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		07955020259BA2EE001CFAB9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		07955022259BA2EE001CFAB9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		07955024259BA2F1001CFAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07955026259BA2F1001CFAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07954FF3259BA2E7001CFAB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07955016259BA2EE001CFAB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07954FED259BA2E7001CFAB9 = {
+			isa = PBXGroup;
+			children = (
+				07954FF8259BA2E7001CFAB9 /* InstaFeed */,
+				0795500E259BA2EC001CFAB9 /* InstaFeed WatchKit App */,
+				0795501D259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */,
+				07954FF7259BA2E7001CFAB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07954FF7259BA2E7001CFAB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07954FF6259BA2E7001CFAB9 /* InstaFeed.app */,
+				0795500A259BA2EC001CFAB9 /* InstaFeed WatchKit App.app */,
+				07955019259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07954FF8259BA2E7001CFAB9 /* InstaFeed */ = {
+			isa = PBXGroup;
+			children = (
+				07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */,
+				07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */,
+				07954FFD259BA2E7001CFAB9 /* ViewController.swift */,
+				07954FFF259BA2E7001CFAB9 /* Main.storyboard */,
+				07955002259BA2EC001CFAB9 /* Assets.xcassets */,
+				07955004259BA2EC001CFAB9 /* LaunchScreen.storyboard */,
+				07955007259BA2EC001CFAB9 /* Info.plist */,
+			);
+			path = InstaFeed;
+			sourceTree = "<group>";
+		};
+		0795500E259BA2EC001CFAB9 /* InstaFeed WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0795500F259BA2EC001CFAB9 /* Interface.storyboard */,
+				07955012259BA2EE001CFAB9 /* Assets.xcassets */,
+				07955014259BA2EE001CFAB9 /* Info.plist */,
+			);
+			path = "InstaFeed WatchKit App";
+			sourceTree = "<group>";
+		};
+		0795501D259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0795501E259BA2EE001CFAB9 /* InterfaceController.swift */,
+				07955020259BA2EE001CFAB9 /* ExtensionDelegate.swift */,
+				07955022259BA2EE001CFAB9 /* ComplicationController.swift */,
+				07955024259BA2F1001CFAB9 /* Assets.xcassets */,
+				07955026259BA2F1001CFAB9 /* Info.plist */,
+			);
+			path = "InstaFeed WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07954FF5259BA2E7001CFAB9 /* InstaFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07955031259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed" */;
+			buildPhases = (
+				07954FF2259BA2E7001CFAB9 /* Sources */,
+				07954FF3259BA2E7001CFAB9 /* Frameworks */,
+				07954FF4259BA2E7001CFAB9 /* Resources */,
+				07955030259BA2F1001CFAB9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0795500D259BA2EC001CFAB9 /* PBXTargetDependency */,
+			);
+			name = InstaFeed;
+			productName = InstaFeed;
+			productReference = 07954FF6259BA2E7001CFAB9 /* InstaFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07955009259BA2EC001CFAB9 /* InstaFeed WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0795502D259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed WatchKit App" */;
+			buildPhases = (
+				07955008259BA2EC001CFAB9 /* Resources */,
+				0795502C259BA2F1001CFAB9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0795501C259BA2EE001CFAB9 /* PBXTargetDependency */,
+			);
+			name = "InstaFeed WatchKit App";
+			productName = "InstaFeed WatchKit App";
+			productReference = 0795500A259BA2EC001CFAB9 /* InstaFeed WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		07955018259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07955029259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed WatchKit Extension" */;
+			buildPhases = (
+				07955015259BA2EE001CFAB9 /* Sources */,
+				07955016259BA2EE001CFAB9 /* Frameworks */,
+				07955017259BA2EE001CFAB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InstaFeed WatchKit Extension";
+			productName = "InstaFeed WatchKit Extension";
+			productReference = 07955019259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07954FEE259BA2E7001CFAB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					07954FF5259BA2E7001CFAB9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					07955009259BA2EC001CFAB9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					07955018259BA2EE001CFAB9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 07954FF1259BA2E7001CFAB9 /* Build configuration list for PBXProject "InstaFeed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07954FED259BA2E7001CFAB9;
+			productRefGroup = 07954FF7259BA2E7001CFAB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07954FF5259BA2E7001CFAB9 /* InstaFeed */,
+				07955009259BA2EC001CFAB9 /* InstaFeed WatchKit App */,
+				07955018259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07954FF4259BA2E7001CFAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07955006259BA2EC001CFAB9 /* LaunchScreen.storyboard in Resources */,
+				07955003259BA2EC001CFAB9 /* Assets.xcassets in Resources */,
+				07955001259BA2E7001CFAB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07955008259BA2EC001CFAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07955013259BA2EE001CFAB9 /* Assets.xcassets in Resources */,
+				07955011259BA2EC001CFAB9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07955017259BA2EE001CFAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07955025259BA2F1001CFAB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07954FF2259BA2E7001CFAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07954FFE259BA2E7001CFAB9 /* ViewController.swift in Sources */,
+				07954FFA259BA2E7001CFAB9 /* AppDelegate.swift in Sources */,
+				07954FFC259BA2E7001CFAB9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07955015259BA2EE001CFAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07955021259BA2EE001CFAB9 /* ExtensionDelegate.swift in Sources */,
+				0795501F259BA2EE001CFAB9 /* InterfaceController.swift in Sources */,
+				07955023259BA2EE001CFAB9 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0795500D259BA2EC001CFAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07955009259BA2EC001CFAB9 /* InstaFeed WatchKit App */;
+			targetProxy = 0795500C259BA2EC001CFAB9 /* PBXContainerItemProxy */;
+		};
+		0795501C259BA2EE001CFAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07955018259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */;
+			targetProxy = 0795501B259BA2EE001CFAB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07954FFF259BA2E7001CFAB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07955000259BA2E7001CFAB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07955004259BA2EC001CFAB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07955005259BA2EC001CFAB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0795500F259BA2EC001CFAB9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07955010259BA2EC001CFAB9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07955027259BA2F1001CFAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07955028259BA2F1001CFAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0795502A259BA2F1001CFAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				INFOPLIST_FILE = "InstaFeed WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		0795502B259BA2F1001CFAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				INFOPLIST_FILE = "InstaFeed WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		0795502E259BA2F1001CFAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				IBSC_MODULE = InstaFeed_WatchKit_Extension;
+				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		0795502F259BA2F1001CFAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				IBSC_MODULE = InstaFeed_WatchKit_Extension;
+				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		07955032259BA2F1001CFAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				INFOPLIST_FILE = InstaFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07955033259BA2F1001CFAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				INFOPLIST_FILE = InstaFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07954FF1259BA2E7001CFAB9 /* Build configuration list for PBXProject "InstaFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07955027259BA2F1001CFAB9 /* Debug */,
+				07955028259BA2F1001CFAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07955029259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0795502A259BA2F1001CFAB9 /* Debug */,
+				0795502B259BA2F1001CFAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0795502D259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0795502E259BA2F1001CFAB9 /* Debug */,
+				0795502F259BA2F1001CFAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07955031259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07955032259BA2F1001CFAB9 /* Debug */,
+				07955033259BA2F1001CFAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07954FEE259BA2E7001CFAB9 /* Project object */;
+}
