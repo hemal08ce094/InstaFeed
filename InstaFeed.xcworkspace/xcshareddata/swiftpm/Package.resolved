@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ComposableRequest",
+        "repositoryURL": "https://github.com/sbertix/ComposableRequest",
+        "state": {
+          "branch": null,
+          "revision": "94d352389a9f9e5c82f882747c81b72873702c02",
+          "version": "4.3.2"
+        }
+      },
+      {
+        "package": "SwCrypt",
+        "repositoryURL": "https://github.com/sbertix/SwCrypt",
+        "state": {
+          "branch": null,
+          "revision": "e850285c2dadd4343be9465adc67cd717a64792f",
+          "version": "5.1.4"
+        }
+      },
+      {
+        "package": "Swiftagram",
+        "repositoryURL": "https://github.com/sbertix/Swiftagram.git",
+        "state": {
+          "branch": null,
+          "revision": "c5963da451af7abcb72313382f80fabd61026347",
+          "version": "4.2.6"
+        }
+      },
+      {
+        "package": "Swiftchain",
+        "repositoryURL": "https://github.com/sbertix/Swiftchain.git",
+        "state": {
+          "branch": null,
+          "revision": "dff136ab54df5768c1b8a234bc7c6fd212b280f7",
+          "version": "1.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

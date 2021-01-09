@@ -7,17 +7,30 @@
 		<key>InstaFeed WatchKit App (Complication).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>7</integer>
 		</dict>
 		<key>InstaFeed WatchKit App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>6</integer>
 		</dict>
 		<key>InstaFeed.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>07954FF5259BA2E7001CFAB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07955009259BA2EC001CFAB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

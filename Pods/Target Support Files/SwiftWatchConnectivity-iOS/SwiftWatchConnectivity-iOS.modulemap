@@ -1,0 +1,6 @@
+framework module SwiftWatchConnectivity {
+  umbrella header "SwiftWatchConnectivity-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

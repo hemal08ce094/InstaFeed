@@ -1,0 +1,1815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0338A220E90B7C4ACC6250F088CD0C9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194FFB15B28E94EC273D8248564E9AD5 /* Foundation.framework */; };
+		054C060F70564AB13F98B045CCEE005C /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F09EB755D575578C070917C8FB119 /* DiskStorage.swift */; };
+		0D269C74F9FB0062F73D59A1369707A1 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E1D3CCEE58815716FD058402AF27E2 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EBBCD622A48416855F3C6E0CA5BF47C /* Pods-InstaFeed WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322A1771850D6FCFA45D5149E9416C3 /* Pods-InstaFeed WatchKit App-dummy.m */; };
+		0FA1AD13812BE8FA54827BB94BC8EF19 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165E61879DCA254BC245C777089F8BD3 /* Runtime.swift */; };
+		1094FC6628BBF3072DDF075DFFFC6655 /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E178DEBB306FBAE0AFEB2D0A22EAAFA /* FormatIndicatedCacheSerializer.swift */; };
+		123A56C1A0441AA2CEF271DEC7A47A01 /* Kingfisher-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CA17CAF3FA96D22E512E586D4E1849 /* Kingfisher-iOS-dummy.m */; };
+		14001E21D9CAF3A27E86EC5E1C7B2E4A /* WKInterfaceImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5302793E868888D5D68A62794B5515 /* WKInterfaceImage+Kingfisher.swift */; };
+		148CA7E10FB4EED48E9E1C54306C6772 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7AAF7331A1CF05EBF637EDCBE43F0 /* ImagePrefetcher.swift */; };
+		158D3D02F45AB7D68217754467B8CB4A /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248133E7CACC41DB3C59E8096D9E8DA2 /* AuthenticationChallengeResponsable.swift */; };
+		15EF34EEF1734E57D9C6D004C7245BC2 /* SwiftWatchConnectivity-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C27B42D67D6027D47749FCA35AC31E19 /* SwiftWatchConnectivity-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17B7B7A673FD53D7DFFEC2C506A90336 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310924551288853BC51675AB052462B9 /* CacheSerializer.swift */; };
+		17E0379C72023459A48E51A6C8C3CEF7 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD65D552EE09DCDAA401DF87C11C5A8E /* ImageFormat.swift */; };
+		18F76125E71B4FD9721BDAFB50F474C1 /* SwiftWatchConnectivity-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 344B25BDB138915F933206CEA50A2E7E /* SwiftWatchConnectivity-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19B4D2010739CEA24D28FC9577912EA7 /* NSButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C0D2307D1F1252A7A0D0B8172810F7 /* NSButton+Kingfisher.swift */; };
+		1A5E10870F7B70EA405355211F40DADE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0772D70FAD8939265EF3386F534B3B29 /* Accelerate.framework */; };
+		1EF9C1B604583EA237286E63B2549E5A /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD768EE9872C69EFFB3C150582450FB0 /* ImageDataProvider.swift */; };
+		20310983D0CF93E04B78D759ABC0F1D9 /* Kingfisher-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF1D06AC4D9E4B193AEFAC17A11A547 /* Kingfisher-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		255A5EE6AB4FE7728D0BDF4B376CAE43 /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E57616E7C10EC35D9473BB553930835 /* SizeExtensions.swift */; };
+		2816DDCAD6EFF4E368D19D9C12D61785 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1A06780B487A53B7FCD4FDEA8198E /* KingfisherOptionsInfo.swift */; };
+		289231B1B8659E1CC36E854F152FBA0B /* Pods-InstaFeed WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA23EEED5C54E9AD38890EB41603FA5 /* Pods-InstaFeed WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29D6885A864C83310EB2C1F06FA6D72B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD2AD31E893A1A392DD872E3CF6775 /* Storage.swift */; };
+		2D44216AE2A38CAC8AB6AE9DE396F641 /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02138E936BBFC7109834658AF3098DF /* ImageDrawing.swift */; };
+		2DC50AFFACACF16EF0A9D261BB4C0123 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A6C40D4615F63DDA8BA99EED975D5 /* RequestModifier.swift */; };
+		2E176615CD8DE6D9AAEA8935BF4429C4 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BF986CDE095015B3CD84C1EDA55 /* KingfisherManager.swift */; };
+		30792FD3B6A0E972646031B8B6E215E7 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1A06780B487A53B7FCD4FDEA8198E /* KingfisherOptionsInfo.swift */; };
+		31257A08AAF2ADAF48E62D8BD7A9A45D /* ImageDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F46868620AF450D05F667F4886116D /* ImageDataProcessor.swift */; };
+		36FF79453876F9C6C5D4DF50B8E52D72 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73B1624638E771ABCE14E00CF2C336 /* Deprecated.swift */; };
+		37CC2FD017F8F3E6138957CC57285837 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C53594228480FDF04D1EE3833EF43 /* RedirectHandler.swift */; };
+		3896A15FD58153A89543D221C2C72AB0 /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82F96005014EEA2CEE0F1DEFD8E4B65 /* KingfisherError.swift */; };
+		39C203B5AE1D6DC170289F5AC33A493B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61231851801DB36BBF185901AF3C20B5 /* Image.swift */; };
+		3A7E3976767B44B53B110C75341A6DE6 /* Pods-InstaFeed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C90CE3A42FBF870167F676A73CB06918 /* Pods-InstaFeed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E09647E7C9BE0477EAB103860FD49CB /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B457C8AE00ABE4AE74AD9B5E1FEE69 /* UIButton+Kingfisher.swift */; };
+		3FEC9355606B9C4C485FD3238293E0F0 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BFCB65BEA7D16326BBDA013A8D0A4 /* SessionDataTask.swift */; };
+		4020FFA989B9B5DBE5E2C6F589D57FF5 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F09EB755D575578C070917C8FB119 /* DiskStorage.swift */; };
+		44B0EE08C8C8D9B34924478065B35716 /* GIFAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F932D995418346DD7DB668EB2D80C /* GIFAnimatedImage.swift */; };
+		45529D2A93E9B7C83009A8B015EB4D0D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A83680C5BDE8C531E0973663EBF733 /* CFNetwork.framework */; };
+		46E8A0D0F9549862382BF09ABC1C63F9 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E54642F358FAA26BA5B3C27C8BFD2 /* ImageModifier.swift */; };
+		471239201C1CDFB73056126CE912E09E /* RetryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4399743F82C44E38085FF62CDC346CC /* RetryStrategy.swift */; };
+		475F97AB68B81F9C3EC0F517852D724F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6393826AFC27C61BF53587027BDDA5 /* ImageDownloader.swift */; };
+		4D2EC82F975B6F51B355A59A6A18916D /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1054A28337FAF2CAFA6D2F7435423CB9 /* ExtensionHelpers.swift */; };
+		513A1583BC9EF28B7921342DD2054D25 /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25644D355E81AFC207104CF04F3C99CA /* CallbackQueue.swift */; };
+		52658D88DEC782CA9A9DD731B6D0BBB7 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFEBED081F04776F92FF99DD943F79A /* Placeholder.swift */; };
+		5363C8D1D82766C1A05A785A74011469 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A6C40D4615F63DDA8BA99EED975D5 /* RequestModifier.swift */; };
+		580007571C73217718FF2E22F08B5C7D /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683D1ABF782ED95C3BB56AE955C2FDB5 /* ImageCache.swift */; };
+		5BAA5F0BA8DA9DC114186BCD5DD04BBF /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BFCB65BEA7D16326BBDA013A8D0A4 /* SessionDataTask.swift */; };
+		5C2C47E8DFD4A475D69CEE40659D4885 /* NSButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C0D2307D1F1252A7A0D0B8172810F7 /* NSButton+Kingfisher.swift */; };
+		5F5167E4C46B37B50A5AAD0D029E7FC0 /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327E739927F77E351ECECFD6DC7B304 /* ImageDownloaderDelegate.swift */; };
+		642A3CF30D9892F95A303CF4696DBE04 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD65D552EE09DCDAA401DF87C11C5A8E /* ImageFormat.swift */; };
+		654002A7194359ED2AAB664287B26CD1 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE582675256B0596441A0E5336B9B71A /* ImageView+Kingfisher.swift */; };
+		65A4F4064AA32F01532E310AAF3AF3AA /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25644D355E81AFC207104CF04F3C99CA /* CallbackQueue.swift */; };
+		65A63A4CC609B5D0B318232D63BEBC7B /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E54642F358FAA26BA5B3C27C8BFD2 /* ImageModifier.swift */; };
+		65FF2242958468AF61D3ADB1C64DAC34 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A79626A818BE2ED4D5E55F7E144CC /* ImageTransition.swift */; };
+		67A569ECD0DE6848D207CB231F15319F /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248133E7CACC41DB3C59E8096D9E8DA2 /* AuthenticationChallengeResponsable.swift */; };
+		6893CE84670E68DDBD49BE45B6206164 /* RetryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4399743F82C44E38085FF62CDC346CC /* RetryStrategy.swift */; };
+		6AE474C8BF3F634E840E6133D3D6060A /* ImageDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F46868620AF450D05F667F4886116D /* ImageDataProcessor.swift */; };
+		6CBA9D37D4769FB0952B4BE8CA821CD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EC41175E82995A48723CD91B9B747 /* Foundation.framework */; };
+		6D261D22929BE8D2FE0F6ED1FE06E4DF /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7AAF7331A1CF05EBF637EDCBE43F0 /* ImagePrefetcher.swift */; };
+		6F449F35D829067694B9BAF82E5169F9 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A79626A818BE2ED4D5E55F7E144CC /* ImageTransition.swift */; };
+		6FD35E4D83ED97229CF1FAD2968E2491 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7B9717361BEA82B042CEB3A5D3425 /* Box.swift */; };
+		71EEED7ACB894FD5E3A2459B20893068 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7B9717361BEA82B042CEB3A5D3425 /* Box.swift */; };
+		72C609A195330FED6F99A81CECEDCA26 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61231851801DB36BBF185901AF3C20B5 /* Image.swift */; };
+		73CF6645738B1EE13CC71CCFB7216517 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C06ED2157DBFE15E30617EB45B9A0 /* ImageProcessor.swift */; };
+		770F16B977FAE98C1928CE88A9298F23 /* SwiftWatchConnectivity-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024202ED4B7D3D0027A7A9E47DE769E /* SwiftWatchConnectivity-watchOS-dummy.m */; };
+		77966084780FF297075B970D96617747 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE582675256B0596441A0E5336B9B71A /* ImageView+Kingfisher.swift */; };
+		79144A60B00FC449412FED65843A9F75 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683D1ABF782ED95C3BB56AE955C2FDB5 /* ImageCache.swift */; };
+		7B3E5068EEF837F969BDB2E7812F8072 /* ImageProgressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A251CEDC448BAAD08835DB3B5F2D6D4 /* ImageProgressive.swift */; };
+		7FDA5ADDE537CD68C50B5E7C63EE74DF /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C0DB7A41C5584B5C00E7064BA160FD /* Delegate.swift */; };
+		813A553C54D59AEB759A102F3116D1FA /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327E739927F77E351ECECFD6DC7B304 /* ImageDownloaderDelegate.swift */; };
+		84266629327E347FAF1110D7696BF7BB /* Kingfisher-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF37FB3B20ABD3BED18952DBFBF1C05 /* Kingfisher-watchOS-dummy.m */; };
+		843E6E6679F93504C133CEB527188993 /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02138E936BBFC7109834658AF3098DF /* ImageDrawing.swift */; };
+		84B52B808339A320318F921ACD0805F1 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BF986CDE095015B3CD84C1EDA55 /* KingfisherManager.swift */; };
+		85890CD0FEE097C6091DB2E9F3156C93 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6393826AFC27C61BF53587027BDDA5 /* ImageDownloader.swift */; };
+		85FE566B3808441C65B445D5CC8C1A29 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6F6D90A9FC1196DAA131DC424C01C4 /* AnimatedImageView.swift */; };
+		8872B5B4594082CF20DCC93676F8DEE0 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73B1624638E771ABCE14E00CF2C336 /* Deprecated.swift */; };
+		8C91FFE05364142CB6CDBC25D92F3DDE /* SwiftWatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215942A31A1B6863984E425550C68505 /* SwiftWatchConnectivity.swift */; };
+		8D80B53DC963E3E784A39BDB037A76C9 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70053FD9A6CB88EA367599D26A7DE5AD /* SessionDelegate.swift */; };
+		8E9C8D28990171603148EF05AD274E8F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227106636D395865E39E3311E712FDE /* Filter.swift */; };
+		8F0A7ABC611B10992DA208566E780BCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194FFB15B28E94EC273D8248564E9AD5 /* Foundation.framework */; };
+		903EDC48783B4B87E0A9340E2D94E04D /* Pods-InstaFeed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EF82ABE92B1AF2EDB30CE23EB42DD /* Pods-InstaFeed-dummy.m */; };
+		916863FD3A32FCEA3AC8693C2101C7C0 /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82F96005014EEA2CEE0F1DEFD8E4B65 /* KingfisherError.swift */; };
+		97C84A05EFE310188A752955D56FF109 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C06ED2157DBFE15E30617EB45B9A0 /* ImageProcessor.swift */; };
+		9C9B53F4C570B31CD0BDDFBFABD267FA /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFFC47176A837DE18361756F4F5E388 /* Kingfisher.swift */; };
+		A27D0689C793B539B39A6DA22D9D2E3A /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E57616E7C10EC35D9473BB553930835 /* SizeExtensions.swift */; };
+		A6F356E0D33736EFBF5477100649DBC1 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F4CF0CCFD53141483CE20CD39D0BCE /* String+MD5.swift */; };
+		A96027E8A0CE6D8EE33F8C91AF4F4DD0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD2AD31E893A1A392DD872E3CF6775 /* Storage.swift */; };
+		AFDDF91F2B2D2087758FBE749DF3F9C5 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165E61879DCA254BC245C777089F8BD3 /* Runtime.swift */; };
+		B0C72235E0F337457BC7B7E839AB0C8D /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D33F13CC459FD774E59EB69C76A7AF /* Indicator.swift */; };
+		B2B5C3B5F5C5CB25057259DB6A98BE0E /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFFC47176A837DE18361756F4F5E388 /* Kingfisher.swift */; };
+		B396168D40CE36C439C1AE8E7C6CB7F0 /* SwiftWatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215942A31A1B6863984E425550C68505 /* SwiftWatchConnectivity.swift */; };
+		B692384B22A0FA62D720CD21188CD90D /* ImageProgressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A251CEDC448BAAD08835DB3B5F2D6D4 /* ImageProgressive.swift */; };
+		B786DC5EBC528E48BC7E29738A032362 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F4CF0CCFD53141483CE20CD39D0BCE /* String+MD5.swift */; };
+		B7DE7C077484859BC5DAECAED198114F /* Pods-InstaFeed WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9526851C2FCF5B535A8626339DE5234D /* Pods-InstaFeed WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB194EC6E9761E428FE41BB3BA68FB85 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C53594228480FDF04D1EE3833EF43 /* RedirectHandler.swift */; };
+		BC1A5DC5DD08CEBC2C0C4095DDF16C48 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960FC50AF3B7855D847B62DBC4FEE8A /* Source.swift */; };
+		BC8BE7C7CEECB7FE2E0791B78A4A8C18 /* Kingfisher-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F44E1CAEA2939A3880DA8A1C8AFA7B1F /* Kingfisher-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17DF40D311F12E452DB68E5E9C078F3 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFEBED081F04776F92FF99DD943F79A /* Placeholder.swift */; };
+		C1E2DB6234EF1688EF2CA8A9CF6242DC /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE895F0A6D0190857A260860A30DA3 /* Resource.swift */; };
+		C6DF9FF10A9B1198908CF6B64A05D365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194FFB15B28E94EC273D8248564E9AD5 /* Foundation.framework */; };
+		CA59D296D7A8A11B1641C4E28EFD5BC5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4BA783717C84C7CCF4A586322C1A3 /* Result.swift */; };
+		CACBF55D732304AFE5CEFBE906480F96 /* WKInterfaceImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5302793E868888D5D68A62794B5515 /* WKInterfaceImage+Kingfisher.swift */; };
+		CCCFA9308E057E681B0FA18674743961 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4BA783717C84C7CCF4A586322C1A3 /* Result.swift */; };
+		CCF197D8679F75FEFCCA4AAFFE69A91A /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B457C8AE00ABE4AE74AD9B5E1FEE69 /* UIButton+Kingfisher.swift */; };
+		CED7DDA23E581A4D7D2B599B4591B564 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE895F0A6D0190857A260860A30DA3 /* Resource.swift */; };
+		CF31C5EA495382B1254FD111E3AFBDA9 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310924551288853BC51675AB052462B9 /* CacheSerializer.swift */; };
+		D00FA9E08214BFC5049DEAD8674EA4AC /* SwiftWatchConnectivity-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEDC1C9B9E4F465CA6EC7C05AEA7348 /* SwiftWatchConnectivity-iOS-dummy.m */; };
+		D2245EF661655281B331E2D31615422B /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D33F13CC459FD774E59EB69C76A7AF /* Indicator.swift */; };
+		D3931A4398334B2E177C7C5B3D47AAAF /* Pods-InstaFeed WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A355B6F52B41515CE23A4D60DF7EBF36 /* Pods-InstaFeed WatchKit Extension-dummy.m */; };
+		D5D236972FA4431E24ABD244D02F12D0 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E1D3CCEE58815716FD058402AF27E2 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CDF7C8462FA9C0E48AEA4B46FE16A7 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1054A28337FAF2CAFA6D2F7435423CB9 /* ExtensionHelpers.swift */; };
+		D727D9DE17C2D0027579DE8C71C31E66 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6F6D90A9FC1196DAA131DC424C01C4 /* AnimatedImageView.swift */; };
+		D76FBFDBC0FAEA319C88035EB9C27A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EC41175E82995A48723CD91B9B747 /* Foundation.framework */; };
+		DCAF2234BA4AA11832FBF501C5D59D98 /* GIFAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F932D995418346DD7DB668EB2D80C /* GIFAnimatedImage.swift */; };
+		DCC2841080D179F3D2BF6D2888177B5F /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7622995992682622B92EA3511347F6A /* MemoryStorage.swift */; };
+		E0E93A51C88769413D35989D625F404D /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C0DB7A41C5584B5C00E7064BA160FD /* Delegate.swift */; };
+		E3CBC902A0FC16D0F875749701FF0EB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EC41175E82995A48723CD91B9B747 /* Foundation.framework */; };
+		E63E01C12CBC2413BAD4AD8CD19498FC /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD768EE9872C69EFFB3C150582450FB0 /* ImageDataProvider.swift */; };
+		E90F7871D37892A15EE3624DAFB88586 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67283D46F98995D43441C3233ADD2C4D /* CFNetwork.framework */; };
+		EB96CFEB23EABB5261EB9057A2763BB0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40CE9D3AB5501C994385CF4D5D4434A /* Accelerate.framework */; };
+		EFB10DBE1813EBCE3652B744AD97D4FF /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E178DEBB306FBAE0AFEB2D0A22EAAFA /* FormatIndicatedCacheSerializer.swift */; };
+		EFBF192A4C661272226C8B6491430C0D /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70053FD9A6CB88EA367599D26A7DE5AD /* SessionDelegate.swift */; };
+		F94FFD173654E0E6C9115137AD94CC68 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7622995992682622B92EA3511347F6A /* MemoryStorage.swift */; };
+		FAF91F16528883DD4EF540D10A13E91C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EC41175E82995A48723CD91B9B747 /* Foundation.framework */; };
+		FE57457D4B1E2026D23E6BD420848D7F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227106636D395865E39E3311E712FDE /* Filter.swift */; };
+		FEAB356D4B87731EDD451F1070B918E8 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960FC50AF3B7855D847B62DBC4FEE8A /* Source.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B0EDDCEF6BABA22FE7BCA15733153AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F8F3CF5CEDBC08180CCC6610607B243;
+			remoteInfo = "SwiftWatchConnectivity-watchOS";
+		};
+		50B318A4D44C76BD4FB702C2F3235C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A48AF12879242BEAEAE10B9EFED530C;
+			remoteInfo = "Kingfisher-watchOS";
+		};
+		9463D58A1A0AD3B6535E04B43CA9F16E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1B913F839FA29038F55A766762C9C78;
+			remoteInfo = "SwiftWatchConnectivity-iOS";
+		};
+		A1D01C9092C1B538425BF807165CCAC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A48AF12879242BEAEAE10B9EFED530C;
+			remoteInfo = "Kingfisher-watchOS";
+		};
+		A4905424141C3BFD1D1F9509FC907093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F8F3CF5CEDBC08180CCC6610607B243;
+			remoteInfo = "SwiftWatchConnectivity-watchOS";
+		};
+		ECA2C1D22149B1124A3576DC116D7C0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685A5AC5E317EE1D980ECCFE9E6EB08A;
+			remoteInfo = "Kingfisher-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D33F13CC459FD774E59EB69C76A7AF /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Views/Indicator.swift; sourceTree = "<group>"; };
+		03B64FEB3420BA9023D9F7145E753DB6 /* Pods-InstaFeed WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaFeed WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		0772D70FAD8939265EF3386F534B3B29 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		0AF3A27CEBD6A548C6F0477BA63941ED /* Pods-InstaFeed WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstaFeed WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C37C0511F5A16369B30672CB6BA6D00 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = "Kingfisher-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C9F8BF986CDE095015B3CD84C1EDA55 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/General/KingfisherManager.swift; sourceTree = "<group>"; };
+		0D9144141BB28A32F425AF66087CCEBA /* SwiftWatchConnectivity-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftWatchConnectivity-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		1054A28337FAF2CAFA6D2F7435423CB9 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionHelpers.swift; path = Sources/Utility/ExtensionHelpers.swift; sourceTree = "<group>"; };
+		11DDA7384FEB865725A7D722867C2289 /* SwiftWatchConnectivity-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "SwiftWatchConnectivity-watchOS-Info.plist"; path = "../SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-Info.plist"; sourceTree = "<group>"; };
+		1227106636D395865E39E3311E712FDE /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Image/Filter.swift; sourceTree = "<group>"; };
+		1327E739927F77E351ECECFD6DC7B304 /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderDelegate.swift; path = Sources/Networking/ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
+		165E61879DCA254BC245C777089F8BD3 /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Utility/Runtime.swift; sourceTree = "<group>"; };
+		167EF82ABE92B1AF2EDB30CE23EB42DD /* Pods-InstaFeed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstaFeed-dummy.m"; sourceTree = "<group>"; };
+		194FFB15B28E94EC273D8248564E9AD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1B6B8E41A6FEC9327B0FA778BA87546C /* Pods-InstaFeed-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaFeed-Info.plist"; sourceTree = "<group>"; };
+		1C678A32D29B31633B051EFF6D37EC9D /* Kingfisher-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Kingfisher-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		215942A31A1B6863984E425550C68505 /* SwiftWatchConnectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftWatchConnectivity.swift; path = SwiftWatchConnectivity/Classes/SwiftWatchConnectivity.swift; sourceTree = "<group>"; };
+		21FD2AD31E893A1A392DD872E3CF6775 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Cache/Storage.swift; sourceTree = "<group>"; };
+		248133E7CACC41DB3C59E8096D9E8DA2 /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationChallengeResponsable.swift; path = Sources/Networking/AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
+		25644D355E81AFC207104CF04F3C99CA /* CallbackQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackQueue.swift; path = Sources/Utility/CallbackQueue.swift; sourceTree = "<group>"; };
+		2A251CEDC448BAAD08835DB3B5F2D6D4 /* ImageProgressive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProgressive.swift; path = Sources/Image/ImageProgressive.swift; sourceTree = "<group>"; };
+		2EF37FB3B20ABD3BED18952DBFBF1C05 /* Kingfisher-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Kingfisher-watchOS-dummy.m"; path = "../Kingfisher-watchOS/Kingfisher-watchOS-dummy.m"; sourceTree = "<group>"; };
+		310924551288853BC51675AB052462B9 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/Cache/CacheSerializer.swift; sourceTree = "<group>"; };
+		31887613D6BC3A3323F891897284043C /* Pods-InstaFeed WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaFeed WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		344B25BDB138915F933206CEA50A2E7E /* SwiftWatchConnectivity-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftWatchConnectivity-watchOS-umbrella.h"; path = "../SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		36E3A69AD61B3A8AF413965537758A06 /* Kingfisher-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Kingfisher-watchOS.debug.xcconfig"; path = "../Kingfisher-watchOS/Kingfisher-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3A73B1624638E771ABCE14E00CF2C336 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/General/Deprecated.swift; sourceTree = "<group>"; };
+		3E178DEBB306FBAE0AFEB2D0A22EAAFA /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/Cache/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
+		3E57616E7C10EC35D9473BB553930835 /* SizeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SizeExtensions.swift; path = Sources/Utility/SizeExtensions.swift; sourceTree = "<group>"; };
+		3FFE895F0A6D0190857A260860A30DA3 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/General/ImageSource/Resource.swift; sourceTree = "<group>"; };
+		42B277F39540132D0A5BEAA26446E470 /* Kingfisher-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Kingfisher-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		45C7AAF7331A1CF05EBF637EDCBE43F0 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/Networking/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		4C2E20CAC492F888745934DB7302290C /* Pods_InstaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InstaFeed.framework; path = "Pods-InstaFeed.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5960FC50AF3B7855D847B62DBC4FEE8A /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Sources/General/ImageSource/Source.swift; sourceTree = "<group>"; };
+		6024202ED4B7D3D0027A7A9E47DE769E /* SwiftWatchConnectivity-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SwiftWatchConnectivity-watchOS-dummy.m"; path = "../SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-dummy.m"; sourceTree = "<group>"; };
+		61231851801DB36BBF185901AF3C20B5 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image/Image.swift; sourceTree = "<group>"; };
+		6322A1771850D6FCFA45D5149E9416C3 /* Pods-InstaFeed WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstaFeed WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		6455273C7315A09A5291339661216816 /* SwiftWatchConnectivity-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWatchConnectivity-iOS-prefix.pch"; sourceTree = "<group>"; };
+		647EA75A71E921CBB350271F225F7B47 /* Kingfisher-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Kingfisher-watchOS.modulemap"; path = "../Kingfisher-watchOS/Kingfisher-watchOS.modulemap"; sourceTree = "<group>"; };
+		6607C7FA8DB4A84962BA97F8193BBADC /* Pods-InstaFeed-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstaFeed-frameworks.sh"; sourceTree = "<group>"; };
+		67283D46F98995D43441C3233ADD2C4D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		67F4CF0CCFD53141483CE20CD39D0BCE /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/Utility/String+MD5.swift"; sourceTree = "<group>"; };
+		683D1ABF782ED95C3BB56AE955C2FDB5 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/Cache/ImageCache.swift; sourceTree = "<group>"; };
+		6F3FE19BEDB45F983F226F45C8D577B2 /* SwiftWatchConnectivity-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "SwiftWatchConnectivity-watchOS.modulemap"; path = "../SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS.modulemap"; sourceTree = "<group>"; };
+		70053FD9A6CB88EA367599D26A7DE5AD /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Sources/Networking/SessionDelegate.swift; sourceTree = "<group>"; };
+		75142EE64ABBBA5FB595C9E15E92DAF0 /* SwiftWatchConnectivity-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftWatchConnectivity-watchOS-prefix.pch"; path = "../SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		75ED54B7C97D83A723ADD9AE9B39F93E /* Pods-InstaFeed WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaFeed WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		794F48403B48EAB552BF5328602790AE /* SwiftWatchConnectivity-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "SwiftWatchConnectivity-iOS.modulemap"; sourceTree = "<group>"; };
+		81BA3A8F088E972CDDCE1AD60048E80F /* Pods-InstaFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		836C53594228480FDF04D1EE3833EF43 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Sources/Networking/RedirectHandler.swift; sourceTree = "<group>"; };
+		843A6C40D4615F63DDA8BA99EED975D5 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/Networking/RequestModifier.swift; sourceTree = "<group>"; };
+		84FBCF21E61C1863C167E08FBBDE7EF5 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = "Kingfisher-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		868EB7E5B9811E6095606DE4DF72877A /* Pods-InstaFeed WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaFeed WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		879C65E46D3EBF56558DD0504BAE2DF1 /* Kingfisher-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Kingfisher-iOS.modulemap"; sourceTree = "<group>"; };
+		87E18823E989274800C669C789F04A48 /* SwiftWatchConnectivity-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftWatchConnectivity-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		89A83680C5BDE8C531E0973663EBF733 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8A5BFCB65BEA7D16326BBDA013A8D0A4 /* SessionDataTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDataTask.swift; path = Sources/Networking/SessionDataTask.swift; sourceTree = "<group>"; };
+		8B181ED367DB93EC406365FD67F1848C /* SwiftWatchConnectivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftWatchConnectivity.framework; path = "SwiftWatchConnectivity-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D01B57E6F829E54FBDAACA28448BB0D /* Pods-InstaFeed WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaFeed WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		91E1D3CCEE58815716FD058402AF27E2 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		9526851C2FCF5B535A8626339DE5234D /* Pods-InstaFeed WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstaFeed WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		9925C8F046362F590603EA9B8FAB0E6A /* Pods-InstaFeed WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InstaFeed WatchKit App.modulemap"; sourceTree = "<group>"; };
+		9A5F49037E4F90F85E8FBC3DB0EB90A8 /* SwiftWatchConnectivity-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftWatchConnectivity-iOS-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E2BF4AE9B74D8820FA5E948A72DC19F /* Pods-InstaFeed WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaFeed WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F1921116C53B0C653E999DAFB6527D8 /* Pods-InstaFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaFeed.release.xcconfig"; sourceTree = "<group>"; };
+		A02B15DC5100335E261A356B5460EEFF /* SwiftWatchConnectivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftWatchConnectivity.framework; path = "SwiftWatchConnectivity-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A355B6F52B41515CE23A4D60DF7EBF36 /* Pods-InstaFeed WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstaFeed WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		A3C07BC07C460810DD421C3AC692CC6A /* Pods-InstaFeed-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstaFeed-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4399743F82C44E38085FF62CDC346CC /* RetryStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryStrategy.swift; path = Sources/Networking/RetryStrategy.swift; sourceTree = "<group>"; };
+		A4DD9A55473932BE75B605BD5917A925 /* Pods-InstaFeed WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstaFeed WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A96BFBA1F63AEF40A8300F85323E3A4C /* Pods-InstaFeed WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaFeed WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		AF491B08C6765D99674EF2CB53ED6C54 /* Pods-InstaFeed WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaFeed WatchKit App-Info.plist"; sourceTree = "<group>"; };
+		AFA02AB35D6BD92616580B55C69886FC /* Kingfisher-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Kingfisher-watchOS.release.xcconfig"; path = "../Kingfisher-watchOS/Kingfisher-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		B0D7B9717361BEA82B042CEB3A5D3425 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
+		B1C0DB7A41C5584B5C00E7064BA160FD /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = Sources/Utility/Delegate.swift; sourceTree = "<group>"; };
+		B4C0D2307D1F1252A7A0D0B8172810F7 /* NSButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSButton+Kingfisher.swift"; path = "Sources/Extensions/NSButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		B7622995992682622B92EA3511347F6A /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Sources/Cache/MemoryStorage.swift; sourceTree = "<group>"; };
+		B8B457C8AE00ABE4AE74AD9B5E1FEE69 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/Extensions/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		BA6821DC3660F007BAB2ED73B4AE9CB3 /* Kingfisher-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Kingfisher-watchOS-prefix.pch"; path = "../Kingfisher-watchOS/Kingfisher-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		BB2E222A3517AB70856DF921C05887C5 /* Pods_InstaFeed_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InstaFeed_WatchKit_Extension.framework; path = "Pods-InstaFeed WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF1D06AC4D9E4B193AEFAC17A11A547 /* Kingfisher-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-iOS-umbrella.h"; sourceTree = "<group>"; };
+		BC6F6D90A9FC1196DAA131DC424C01C4 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
+		BC7F932D995418346DD7DB668EB2D80C /* GIFAnimatedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFAnimatedImage.swift; path = Sources/Image/GIFAnimatedImage.swift; sourceTree = "<group>"; };
+		BE582675256B0596441A0E5336B9B71A /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/Extensions/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		BEEDC1C9B9E4F465CA6EC7C05AEA7348 /* SwiftWatchConnectivity-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWatchConnectivity-iOS-dummy.m"; sourceTree = "<group>"; };
+		BF82367C1508CCBB58D88ACA2BAC99D2 /* SwiftWatchConnectivity-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SwiftWatchConnectivity-watchOS.release.xcconfig"; path = "../SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		C27B42D67D6027D47749FCA35AC31E19 /* SwiftWatchConnectivity-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWatchConnectivity-iOS-umbrella.h"; sourceTree = "<group>"; };
+		C40CE9D3AB5501C994385CF4D5D4434A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		C4F46868620AF450D05F667F4886116D /* ImageDataProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProcessor.swift; path = Sources/Networking/ImageDataProcessor.swift; sourceTree = "<group>"; };
+		C90CE3A42FBF870167F676A73CB06918 /* Pods-InstaFeed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstaFeed-umbrella.h"; sourceTree = "<group>"; };
+		C9E6AB09D98540631E923E3764CAD3D1 /* Kingfisher-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kingfisher-iOS-Info.plist"; sourceTree = "<group>"; };
+		CA4F09EB755D575578C070917C8FB119 /* DiskStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskStorage.swift; path = Sources/Cache/DiskStorage.swift; sourceTree = "<group>"; };
+		CCFFC47176A837DE18361756F4F5E388 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/General/Kingfisher.swift; sourceTree = "<group>"; };
+		CD768EE9872C69EFFB3C150582450FB0 /* ImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProvider.swift; path = Sources/General/ImageSource/ImageDataProvider.swift; sourceTree = "<group>"; };
+		D216F143D9F35FF05D5D646F1800C3C8 /* Pods-InstaFeed WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstaFeed WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		D32B2682215FE45B344C1AA81CBC3493 /* Pods_InstaFeed_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InstaFeed_WatchKit_App.framework; path = "Pods-InstaFeed WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CEF8C021DC6AFAE6EF2EA5EEFC355D /* Kingfisher-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-iOS-prefix.pch"; sourceTree = "<group>"; };
+		DCDA398D2512FDB52B9A816077D1F48A /* Pods-InstaFeed.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InstaFeed.modulemap"; sourceTree = "<group>"; };
+		DD65D552EE09DCDAA401DF87C11C5A8E /* ImageFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFormat.swift; path = Sources/Image/ImageFormat.swift; sourceTree = "<group>"; };
+		DF6393826AFC27C61BF53587027BDDA5 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/Networking/ImageDownloader.swift; sourceTree = "<group>"; };
+		DFFEBED081F04776F92FF99DD943F79A /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Image/Placeholder.swift; sourceTree = "<group>"; };
+		E0DAE6AFE7FF17A93668EA43D88017BA /* Kingfisher-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Kingfisher-watchOS-Info.plist"; path = "../Kingfisher-watchOS/Kingfisher-watchOS-Info.plist"; sourceTree = "<group>"; };
+		E28A79626A818BE2ED4D5E55F7E144CC /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/Image/ImageTransition.swift; sourceTree = "<group>"; };
+		E6C84709F7492F8F9D87086B126F9935 /* SwiftWatchConnectivity-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SwiftWatchConnectivity-watchOS.debug.xcconfig"; path = "../SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F02138E936BBFC7109834658AF3098DF /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
+		F1AEC4F404C0970366979812E6F90B74 /* Pods-InstaFeed WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InstaFeed WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		F2934F6926590F1B74C930F5F86F410E /* Pods-InstaFeed-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaFeed-acknowledgements.plist"; sourceTree = "<group>"; };
+		F44E1CAEA2939A3880DA8A1C8AFA7B1F /* Kingfisher-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Kingfisher-watchOS-umbrella.h"; path = "../Kingfisher-watchOS/Kingfisher-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		F5188B0F2C3C74E3084B7492517D4ECE /* Pods-InstaFeed WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstaFeed WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		F62E54642F358FAA26BA5B3C27C8BFD2 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/Networking/ImageModifier.swift; sourceTree = "<group>"; };
+		F82F96005014EEA2CEE0F1DEFD8E4B65 /* KingfisherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherError.swift; path = Sources/General/KingfisherError.swift; sourceTree = "<group>"; };
+		F85C06ED2157DBFE15E30617EB45B9A0 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/Image/ImageProcessor.swift; sourceTree = "<group>"; };
+		F9CA17CAF3FA96D22E512E586D4E1849 /* Kingfisher-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-iOS-dummy.m"; sourceTree = "<group>"; };
+		FC6EC41175E82995A48723CD91B9B747 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FEE4BA783717C84C7CCF4A586322C1A3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Utility/Result.swift; sourceTree = "<group>"; };
+		FF5302793E868888D5D68A62794B5515 /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKInterfaceImage+Kingfisher.swift"; path = "Sources/Extensions/WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
+		FFA23EEED5C54E9AD38890EB41603FA5 /* Pods-InstaFeed WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstaFeed WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		FFB1A06780B487A53B7FCD4FDEA8198E /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/General/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184B02EA516B1DFB693CABCE40E04A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5E10870F7B70EA405355211F40DADE /* Accelerate.framework in Frameworks */,
+				45529D2A93E9B7C83009A8B015EB4D0D /* CFNetwork.framework in Frameworks */,
+				0338A220E90B7C4ACC6250F088CD0C9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2187490996FA636566B21598055B5C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DF9FF10A9B1198908CF6B64A05D365 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5919B65A3F287B0B5CA22CDBF5398E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3CBC902A0FC16D0F875749701FF0EB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4F0F3659F3F3502525A67124C2583B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CBA9D37D4769FB0952B4BE8CA821CD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD38D1DF28D54AF84F357E1B38BECD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0A7ABC611B10992DA208566E780BCF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB64B5D5604CE21647883F10D1A3F4EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76FBFDBC0FAEA319C88035EB9C27A5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6426FFE4993BFB27247D6F986718989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB96CFEB23EABB5261EB9057A2763BB0 /* Accelerate.framework in Frameworks */,
+				E90F7871D37892A15EE3624DAFB88586 /* CFNetwork.framework in Frameworks */,
+				FAF91F16528883DD4EF540D10A13E91C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011D5564629853BC2BF04C65C50BA127 /* Pods-InstaFeed */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA398D2512FDB52B9A816077D1F48A /* Pods-InstaFeed.modulemap */,
+				A3C07BC07C460810DD421C3AC692CC6A /* Pods-InstaFeed-acknowledgements.markdown */,
+				F2934F6926590F1B74C930F5F86F410E /* Pods-InstaFeed-acknowledgements.plist */,
+				167EF82ABE92B1AF2EDB30CE23EB42DD /* Pods-InstaFeed-dummy.m */,
+				6607C7FA8DB4A84962BA97F8193BBADC /* Pods-InstaFeed-frameworks.sh */,
+				1B6B8E41A6FEC9327B0FA778BA87546C /* Pods-InstaFeed-Info.plist */,
+				C90CE3A42FBF870167F676A73CB06918 /* Pods-InstaFeed-umbrella.h */,
+				81BA3A8F088E972CDDCE1AD60048E80F /* Pods-InstaFeed.debug.xcconfig */,
+				9F1921116C53B0C653E999DAFB6527D8 /* Pods-InstaFeed.release.xcconfig */,
+			);
+			name = "Pods-InstaFeed";
+			path = "Target Support Files/Pods-InstaFeed";
+			sourceTree = "<group>";
+		};
+		2A846B4DD7A5748A42AF4F836B61D8EA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0772D70FAD8939265EF3386F534B3B29 /* Accelerate.framework */,
+				89A83680C5BDE8C531E0973663EBF733 /* CFNetwork.framework */,
+				194FFB15B28E94EC273D8248564E9AD5 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		329862C5735712EF4B75D611F4BDCF60 /* Pods-InstaFeed WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F1AEC4F404C0970366979812E6F90B74 /* Pods-InstaFeed WatchKit Extension.modulemap */,
+				0AF3A27CEBD6A548C6F0477BA63941ED /* Pods-InstaFeed WatchKit Extension-acknowledgements.markdown */,
+				75ED54B7C97D83A723ADD9AE9B39F93E /* Pods-InstaFeed WatchKit Extension-acknowledgements.plist */,
+				A355B6F52B41515CE23A4D60DF7EBF36 /* Pods-InstaFeed WatchKit Extension-dummy.m */,
+				D216F143D9F35FF05D5D646F1800C3C8 /* Pods-InstaFeed WatchKit Extension-frameworks.sh */,
+				03B64FEB3420BA9023D9F7145E753DB6 /* Pods-InstaFeed WatchKit Extension-Info.plist */,
+				FFA23EEED5C54E9AD38890EB41603FA5 /* Pods-InstaFeed WatchKit Extension-umbrella.h */,
+				A96BFBA1F63AEF40A8300F85323E3A4C /* Pods-InstaFeed WatchKit Extension.debug.xcconfig */,
+				868EB7E5B9811E6095606DE4DF72877A /* Pods-InstaFeed WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-InstaFeed WatchKit Extension";
+			path = "Target Support Files/Pods-InstaFeed WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4B3329B066FAC48D4BB3935218C352D8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				879C65E46D3EBF56558DD0504BAE2DF1 /* Kingfisher-iOS.modulemap */,
+				F9CA17CAF3FA96D22E512E586D4E1849 /* Kingfisher-iOS-dummy.m */,
+				C9E6AB09D98540631E923E3764CAD3D1 /* Kingfisher-iOS-Info.plist */,
+				D5CEF8C021DC6AFAE6EF2EA5EEFC355D /* Kingfisher-iOS-prefix.pch */,
+				BBF1D06AC4D9E4B193AEFAC17A11A547 /* Kingfisher-iOS-umbrella.h */,
+				42B277F39540132D0A5BEAA26446E470 /* Kingfisher-iOS.debug.xcconfig */,
+				1C678A32D29B31633B051EFF6D37EC9D /* Kingfisher-iOS.release.xcconfig */,
+				647EA75A71E921CBB350271F225F7B47 /* Kingfisher-watchOS.modulemap */,
+				2EF37FB3B20ABD3BED18952DBFBF1C05 /* Kingfisher-watchOS-dummy.m */,
+				E0DAE6AFE7FF17A93668EA43D88017BA /* Kingfisher-watchOS-Info.plist */,
+				BA6821DC3660F007BAB2ED73B4AE9CB3 /* Kingfisher-watchOS-prefix.pch */,
+				F44E1CAEA2939A3880DA8A1C8AFA7B1F /* Kingfisher-watchOS-umbrella.h */,
+				36E3A69AD61B3A8AF413965537758A06 /* Kingfisher-watchOS.debug.xcconfig */,
+				AFA02AB35D6BD92616580B55C69886FC /* Kingfisher-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher-iOS";
+			sourceTree = "<group>";
+		};
+		5C9794560A27AA0054FF5617879481AF /* SwiftWatchConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				215942A31A1B6863984E425550C68505 /* SwiftWatchConnectivity.swift */,
+				885A5CDFBD3891C4282BB4338486E3CD /* Support Files */,
+			);
+			name = SwiftWatchConnectivity;
+			path = SwiftWatchConnectivity;
+			sourceTree = "<group>";
+		};
+		6AC95E049AAA4ADDF7FFDF5ED193B904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A846B4DD7A5748A42AF4F836B61D8EA /* iOS */,
+				A16F548F39A9799AA5F7E455B2811B1E /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74B78F2D2884EC2BA928E345370418E9 /* Pods-InstaFeed WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9925C8F046362F590603EA9B8FAB0E6A /* Pods-InstaFeed WatchKit App.modulemap */,
+				A4DD9A55473932BE75B605BD5917A925 /* Pods-InstaFeed WatchKit App-acknowledgements.markdown */,
+				9E2BF4AE9B74D8820FA5E948A72DC19F /* Pods-InstaFeed WatchKit App-acknowledgements.plist */,
+				6322A1771850D6FCFA45D5149E9416C3 /* Pods-InstaFeed WatchKit App-dummy.m */,
+				F5188B0F2C3C74E3084B7492517D4ECE /* Pods-InstaFeed WatchKit App-frameworks.sh */,
+				AF491B08C6765D99674EF2CB53ED6C54 /* Pods-InstaFeed WatchKit App-Info.plist */,
+				9526851C2FCF5B535A8626339DE5234D /* Pods-InstaFeed WatchKit App-umbrella.h */,
+				8D01B57E6F829E54FBDAACA28448BB0D /* Pods-InstaFeed WatchKit App.debug.xcconfig */,
+				31887613D6BC3A3323F891897284043C /* Pods-InstaFeed WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-InstaFeed WatchKit App";
+			path = "Target Support Files/Pods-InstaFeed WatchKit App";
+			sourceTree = "<group>";
+		};
+		885A5CDFBD3891C4282BB4338486E3CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				794F48403B48EAB552BF5328602790AE /* SwiftWatchConnectivity-iOS.modulemap */,
+				BEEDC1C9B9E4F465CA6EC7C05AEA7348 /* SwiftWatchConnectivity-iOS-dummy.m */,
+				9A5F49037E4F90F85E8FBC3DB0EB90A8 /* SwiftWatchConnectivity-iOS-Info.plist */,
+				6455273C7315A09A5291339661216816 /* SwiftWatchConnectivity-iOS-prefix.pch */,
+				C27B42D67D6027D47749FCA35AC31E19 /* SwiftWatchConnectivity-iOS-umbrella.h */,
+				87E18823E989274800C669C789F04A48 /* SwiftWatchConnectivity-iOS.debug.xcconfig */,
+				0D9144141BB28A32F425AF66087CCEBA /* SwiftWatchConnectivity-iOS.release.xcconfig */,
+				6F3FE19BEDB45F983F226F45C8D577B2 /* SwiftWatchConnectivity-watchOS.modulemap */,
+				6024202ED4B7D3D0027A7A9E47DE769E /* SwiftWatchConnectivity-watchOS-dummy.m */,
+				11DDA7384FEB865725A7D722867C2289 /* SwiftWatchConnectivity-watchOS-Info.plist */,
+				75142EE64ABBBA5FB595C9E15E92DAF0 /* SwiftWatchConnectivity-watchOS-prefix.pch */,
+				344B25BDB138915F933206CEA50A2E7E /* SwiftWatchConnectivity-watchOS-umbrella.h */,
+				E6C84709F7492F8F9D87086B126F9935 /* SwiftWatchConnectivity-watchOS.debug.xcconfig */,
+				BF82367C1508CCBB58D88ACA2BAC99D2 /* SwiftWatchConnectivity-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftWatchConnectivity-iOS";
+			sourceTree = "<group>";
+		};
+		8D5D254570F81C92FB2BF11D7A3B4ACE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C45DA443B1280FB709BA104849D38975 /* Kingfisher */,
+				5C9794560A27AA0054FF5617879481AF /* SwiftWatchConnectivity */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A05D0600D9A71D4ED8F4B3925F84832F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				011D5564629853BC2BF04C65C50BA127 /* Pods-InstaFeed */,
+				74B78F2D2884EC2BA928E345370418E9 /* Pods-InstaFeed WatchKit App */,
+				329862C5735712EF4B75D611F4BDCF60 /* Pods-InstaFeed WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A16F548F39A9799AA5F7E455B2811B1E /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				C40CE9D3AB5501C994385CF4D5D4434A /* Accelerate.framework */,
+				67283D46F98995D43441C3233ADD2C4D /* CFNetwork.framework */,
+				FC6EC41175E82995A48723CD91B9B747 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		C1073BF4E639D19E53CF13AFD31B44E1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BC6F6D90A9FC1196DAA131DC424C01C4 /* AnimatedImageView.swift */,
+				248133E7CACC41DB3C59E8096D9E8DA2 /* AuthenticationChallengeResponsable.swift */,
+				B0D7B9717361BEA82B042CEB3A5D3425 /* Box.swift */,
+				310924551288853BC51675AB052462B9 /* CacheSerializer.swift */,
+				25644D355E81AFC207104CF04F3C99CA /* CallbackQueue.swift */,
+				B1C0DB7A41C5584B5C00E7064BA160FD /* Delegate.swift */,
+				3A73B1624638E771ABCE14E00CF2C336 /* Deprecated.swift */,
+				CA4F09EB755D575578C070917C8FB119 /* DiskStorage.swift */,
+				1054A28337FAF2CAFA6D2F7435423CB9 /* ExtensionHelpers.swift */,
+				1227106636D395865E39E3311E712FDE /* Filter.swift */,
+				3E178DEBB306FBAE0AFEB2D0A22EAAFA /* FormatIndicatedCacheSerializer.swift */,
+				BC7F932D995418346DD7DB668EB2D80C /* GIFAnimatedImage.swift */,
+				61231851801DB36BBF185901AF3C20B5 /* Image.swift */,
+				683D1ABF782ED95C3BB56AE955C2FDB5 /* ImageCache.swift */,
+				C4F46868620AF450D05F667F4886116D /* ImageDataProcessor.swift */,
+				CD768EE9872C69EFFB3C150582450FB0 /* ImageDataProvider.swift */,
+				DF6393826AFC27C61BF53587027BDDA5 /* ImageDownloader.swift */,
+				1327E739927F77E351ECECFD6DC7B304 /* ImageDownloaderDelegate.swift */,
+				F02138E936BBFC7109834658AF3098DF /* ImageDrawing.swift */,
+				DD65D552EE09DCDAA401DF87C11C5A8E /* ImageFormat.swift */,
+				F62E54642F358FAA26BA5B3C27C8BFD2 /* ImageModifier.swift */,
+				45C7AAF7331A1CF05EBF637EDCBE43F0 /* ImagePrefetcher.swift */,
+				F85C06ED2157DBFE15E30617EB45B9A0 /* ImageProcessor.swift */,
+				2A251CEDC448BAAD08835DB3B5F2D6D4 /* ImageProgressive.swift */,
+				E28A79626A818BE2ED4D5E55F7E144CC /* ImageTransition.swift */,
+				BE582675256B0596441A0E5336B9B71A /* ImageView+Kingfisher.swift */,
+				00D33F13CC459FD774E59EB69C76A7AF /* Indicator.swift */,
+				91E1D3CCEE58815716FD058402AF27E2 /* Kingfisher.h */,
+				CCFFC47176A837DE18361756F4F5E388 /* Kingfisher.swift */,
+				F82F96005014EEA2CEE0F1DEFD8E4B65 /* KingfisherError.swift */,
+				0C9F8BF986CDE095015B3CD84C1EDA55 /* KingfisherManager.swift */,
+				FFB1A06780B487A53B7FCD4FDEA8198E /* KingfisherOptionsInfo.swift */,
+				B7622995992682622B92EA3511347F6A /* MemoryStorage.swift */,
+				B4C0D2307D1F1252A7A0D0B8172810F7 /* NSButton+Kingfisher.swift */,
+				DFFEBED081F04776F92FF99DD943F79A /* Placeholder.swift */,
+				836C53594228480FDF04D1EE3833EF43 /* RedirectHandler.swift */,
+				843A6C40D4615F63DDA8BA99EED975D5 /* RequestModifier.swift */,
+				3FFE895F0A6D0190857A260860A30DA3 /* Resource.swift */,
+				FEE4BA783717C84C7CCF4A586322C1A3 /* Result.swift */,
+				A4399743F82C44E38085FF62CDC346CC /* RetryStrategy.swift */,
+				165E61879DCA254BC245C777089F8BD3 /* Runtime.swift */,
+				8A5BFCB65BEA7D16326BBDA013A8D0A4 /* SessionDataTask.swift */,
+				70053FD9A6CB88EA367599D26A7DE5AD /* SessionDelegate.swift */,
+				3E57616E7C10EC35D9473BB553930835 /* SizeExtensions.swift */,
+				5960FC50AF3B7855D847B62DBC4FEE8A /* Source.swift */,
+				21FD2AD31E893A1A392DD872E3CF6775 /* Storage.swift */,
+				67F4CF0CCFD53141483CE20CD39D0BCE /* String+MD5.swift */,
+				B8B457C8AE00ABE4AE74AD9B5E1FEE69 /* UIButton+Kingfisher.swift */,
+				FF5302793E868888D5D68A62794B5515 /* WKInterfaceImage+Kingfisher.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C3887FF626A1F5D086E750AF0FE48905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C37C0511F5A16369B30672CB6BA6D00 /* Kingfisher.framework */,
+				84FBCF21E61C1863C167E08FBBDE7EF5 /* Kingfisher.framework */,
+				4C2E20CAC492F888745934DB7302290C /* Pods_InstaFeed.framework */,
+				D32B2682215FE45B344C1AA81CBC3493 /* Pods_InstaFeed_WatchKit_App.framework */,
+				BB2E222A3517AB70856DF921C05887C5 /* Pods_InstaFeed_WatchKit_Extension.framework */,
+				8B181ED367DB93EC406365FD67F1848C /* SwiftWatchConnectivity.framework */,
+				A02B15DC5100335E261A356B5460EEFF /* SwiftWatchConnectivity.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C45DA443B1280FB709BA104849D38975 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				C1073BF4E639D19E53CF13AFD31B44E1 /* Core */,
+				4B3329B066FAC48D4BB3935218C352D8 /* Support Files */,
+			);
+			name = Kingfisher;
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6AC95E049AAA4ADDF7FFDF5ED193B904 /* Frameworks */,
+				8D5D254570F81C92FB2BF11D7A3B4ACE /* Pods */,
+				C3887FF626A1F5D086E750AF0FE48905 /* Products */,
+				A05D0600D9A71D4ED8F4B3925F84832F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		368D2A916AE45853E899B0E9FE89D60E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DE7C077484859BC5DAECAED198114F /* Pods-InstaFeed WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D9877DDA61B7A4EEABB689C6B53470 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8BE7C7CEECB7FE2E0791B78A4A8C18 /* Kingfisher-watchOS-umbrella.h in Headers */,
+				0D269C74F9FB0062F73D59A1369707A1 /* Kingfisher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415E80CA600F9B698757E1D4F0EC6E29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7E3976767B44B53B110C75341A6DE6 /* Pods-InstaFeed-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA647C34E62F8FC9A89BBB223B47C74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F76125E71B4FD9721BDAFB50F474C1 /* SwiftWatchConnectivity-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42A1C3B8B0E23CEC239665BC5D11877 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20310983D0CF93E04B78D759ABC0F1D9 /* Kingfisher-iOS-umbrella.h in Headers */,
+				D5D236972FA4431E24ABD244D02F12D0 /* Kingfisher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59D6F03975DA3B15F018FB23FA3CA58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				289231B1B8659E1CC36E854F152FBA0B /* Pods-InstaFeed WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D511A7A5BD44E1568F5A0D07A5912673 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EF34EEF1734E57D9C6D004C7245BC2 /* SwiftWatchConnectivity-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		012AD7403522A5AEFD46DD99C83A9D8C /* Pods-InstaFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E0E63D59994EAB082CDD5AA3A2BD78 /* Build configuration list for PBXNativeTarget "Pods-InstaFeed" */;
+			buildPhases = (
+				415E80CA600F9B698757E1D4F0EC6E29 /* Headers */,
+				F19711E456CDED9CA49D6F16F7353E8D /* Sources */,
+				2187490996FA636566B21598055B5C2D /* Frameworks */,
+				92749E27E092F0E8929A21A44241FFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20B6C186983F1B7708AE4843E19D82DC /* PBXTargetDependency */,
+				0FAF655634F935A8BBEA7867645A6F46 /* PBXTargetDependency */,
+			);
+			name = "Pods-InstaFeed";
+			productName = "Pods-InstaFeed";
+			productReference = 4C2E20CAC492F888745934DB7302290C /* Pods_InstaFeed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1A48AF12879242BEAEAE10B9EFED530C /* Kingfisher-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5498F0C43862CFA384E05EA5CBDC422 /* Build configuration list for PBXNativeTarget "Kingfisher-watchOS" */;
+			buildPhases = (
+				38D9877DDA61B7A4EEABB689C6B53470 /* Headers */,
+				C37EC6341592F17D1F74AE3C2BD0A5D5 /* Sources */,
+				F6426FFE4993BFB27247D6F986718989 /* Frameworks */,
+				F4A1EF24A8A32438275A2BCC65B4B490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kingfisher-watchOS";
+			productName = "Kingfisher-watchOS";
+			productReference = 84FBCF21E61C1863C167E08FBBDE7EF5 /* Kingfisher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1F8F3CF5CEDBC08180CCC6610607B243 /* SwiftWatchConnectivity-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE35CDBE201E181EA236888C2E7EFA72 /* Build configuration list for PBXNativeTarget "SwiftWatchConnectivity-watchOS" */;
+			buildPhases = (
+				4EA647C34E62F8FC9A89BBB223B47C74 /* Headers */,
+				AF572C327E2A40482501DBC4D3668113 /* Sources */,
+				4F5919B65A3F287B0B5CA22CDBF5398E /* Frameworks */,
+				67A2A5B782E121E452E853591EBF53D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftWatchConnectivity-watchOS";
+			productName = "SwiftWatchConnectivity-watchOS";
+			productReference = A02B15DC5100335E261A356B5460EEFF /* SwiftWatchConnectivity.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54A13255058DC790CAFF0EE70710AE8F /* Pods-InstaFeed WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E093AD4B64C2863B443BE4623A964469 /* Build configuration list for PBXNativeTarget "Pods-InstaFeed WatchKit Extension" */;
+			buildPhases = (
+				B59D6F03975DA3B15F018FB23FA3CA58 /* Headers */,
+				953CE8FF897B62B7C6826079784C4784 /* Sources */,
+				5E4F0F3659F3F3502525A67124C2583B /* Frameworks */,
+				C944194E713E9C91991368CC4E10EF46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92DD029766A4189AA7F346376A874566 /* PBXTargetDependency */,
+				4265633AC49D1CA9FE27CB5FE8405BE6 /* PBXTargetDependency */,
+			);
+			name = "Pods-InstaFeed WatchKit Extension";
+			productName = "Pods-InstaFeed WatchKit Extension";
+			productReference = BB2E222A3517AB70856DF921C05887C5 /* Pods_InstaFeed_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		685A5AC5E317EE1D980ECCFE9E6EB08A /* Kingfisher-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99307047807B3023172B5BA32F983AE /* Build configuration list for PBXNativeTarget "Kingfisher-iOS" */;
+			buildPhases = (
+				B42A1C3B8B0E23CEC239665BC5D11877 /* Headers */,
+				7CD410FB6DE84BE5EA81E0306B8DBE3A /* Sources */,
+				184B02EA516B1DFB693CABCE40E04A79 /* Frameworks */,
+				0F2FC848132510CA44D33D64B9074474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kingfisher-iOS";
+			productName = "Kingfisher-iOS";
+			productReference = 0C37C0511F5A16369B30672CB6BA6D00 /* Kingfisher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD5407BC69686A49F87248B447487A76 /* Pods-InstaFeed WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF594C6E204009B71B7519C033C4D8D6 /* Build configuration list for PBXNativeTarget "Pods-InstaFeed WatchKit App" */;
+			buildPhases = (
+				368D2A916AE45853E899B0E9FE89D60E /* Headers */,
+				561C78832CED8F9107D8CD0AFBF6D785 /* Sources */,
+				CB64B5D5604CE21647883F10D1A3F4EB /* Frameworks */,
+				BB74AE0D1F6529EC8CA3AA76C02BC900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E05655A025FED7DD1BD2C2E0A8CC59 /* PBXTargetDependency */,
+				AB0588D895F90C7C1C69975FC29A8915 /* PBXTargetDependency */,
+			);
+			name = "Pods-InstaFeed WatchKit App";
+			productName = "Pods-InstaFeed WatchKit App";
+			productReference = D32B2682215FE45B344C1AA81CBC3493 /* Pods_InstaFeed_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1B913F839FA29038F55A766762C9C78 /* SwiftWatchConnectivity-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10075DBBDA1997502CD340866572AF20 /* Build configuration list for PBXNativeTarget "SwiftWatchConnectivity-iOS" */;
+			buildPhases = (
+				D511A7A5BD44E1568F5A0D07A5912673 /* Headers */,
+				CEA363A1030AE726465C8F443C3456F5 /* Sources */,
+				7CD38D1DF28D54AF84F357E1B38BECD9 /* Frameworks */,
+				E1AE10B180FDDB25A033A85D8D9BB06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftWatchConnectivity-iOS";
+			productName = "SwiftWatchConnectivity-iOS";
+			productReference = 8B181ED367DB93EC406365FD67F1848C /* SwiftWatchConnectivity.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C3887FF626A1F5D086E750AF0FE48905 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				685A5AC5E317EE1D980ECCFE9E6EB08A /* Kingfisher-iOS */,
+				1A48AF12879242BEAEAE10B9EFED530C /* Kingfisher-watchOS */,
+				012AD7403522A5AEFD46DD99C83A9D8C /* Pods-InstaFeed */,
+				CD5407BC69686A49F87248B447487A76 /* Pods-InstaFeed WatchKit App */,
+				54A13255058DC790CAFF0EE70710AE8F /* Pods-InstaFeed WatchKit Extension */,
+				E1B913F839FA29038F55A766762C9C78 /* SwiftWatchConnectivity-iOS */,
+				1F8F3CF5CEDBC08180CCC6610607B243 /* SwiftWatchConnectivity-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F2FC848132510CA44D33D64B9074474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A2A5B782E121E452E853591EBF53D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92749E27E092F0E8929A21A44241FFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB74AE0D1F6529EC8CA3AA76C02BC900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C944194E713E9C91991368CC4E10EF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AE10B180FDDB25A033A85D8D9BB06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A1EF24A8A32438275A2BCC65B4B490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		561C78832CED8F9107D8CD0AFBF6D785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBBCD622A48416855F3C6E0CA5BF47C /* Pods-InstaFeed WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD410FB6DE84BE5EA81E0306B8DBE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FE566B3808441C65B445D5CC8C1A29 /* AnimatedImageView.swift in Sources */,
+				158D3D02F45AB7D68217754467B8CB4A /* AuthenticationChallengeResponsable.swift in Sources */,
+				71EEED7ACB894FD5E3A2459B20893068 /* Box.swift in Sources */,
+				17B7B7A673FD53D7DFFEC2C506A90336 /* CacheSerializer.swift in Sources */,
+				65A4F4064AA32F01532E310AAF3AF3AA /* CallbackQueue.swift in Sources */,
+				E0E93A51C88769413D35989D625F404D /* Delegate.swift in Sources */,
+				8872B5B4594082CF20DCC93676F8DEE0 /* Deprecated.swift in Sources */,
+				4020FFA989B9B5DBE5E2C6F589D57FF5 /* DiskStorage.swift in Sources */,
+				4D2EC82F975B6F51B355A59A6A18916D /* ExtensionHelpers.swift in Sources */,
+				8E9C8D28990171603148EF05AD274E8F /* Filter.swift in Sources */,
+				EFB10DBE1813EBCE3652B744AD97D4FF /* FormatIndicatedCacheSerializer.swift in Sources */,
+				DCAF2234BA4AA11832FBF501C5D59D98 /* GIFAnimatedImage.swift in Sources */,
+				72C609A195330FED6F99A81CECEDCA26 /* Image.swift in Sources */,
+				580007571C73217718FF2E22F08B5C7D /* ImageCache.swift in Sources */,
+				6AE474C8BF3F634E840E6133D3D6060A /* ImageDataProcessor.swift in Sources */,
+				1EF9C1B604583EA237286E63B2549E5A /* ImageDataProvider.swift in Sources */,
+				85890CD0FEE097C6091DB2E9F3156C93 /* ImageDownloader.swift in Sources */,
+				5F5167E4C46B37B50A5AAD0D029E7FC0 /* ImageDownloaderDelegate.swift in Sources */,
+				843E6E6679F93504C133CEB527188993 /* ImageDrawing.swift in Sources */,
+				642A3CF30D9892F95A303CF4696DBE04 /* ImageFormat.swift in Sources */,
+				65A63A4CC609B5D0B318232D63BEBC7B /* ImageModifier.swift in Sources */,
+				6D261D22929BE8D2FE0F6ED1FE06E4DF /* ImagePrefetcher.swift in Sources */,
+				73CF6645738B1EE13CC71CCFB7216517 /* ImageProcessor.swift in Sources */,
+				7B3E5068EEF837F969BDB2E7812F8072 /* ImageProgressive.swift in Sources */,
+				6F449F35D829067694B9BAF82E5169F9 /* ImageTransition.swift in Sources */,
+				77966084780FF297075B970D96617747 /* ImageView+Kingfisher.swift in Sources */,
+				D2245EF661655281B331E2D31615422B /* Indicator.swift in Sources */,
+				123A56C1A0441AA2CEF271DEC7A47A01 /* Kingfisher-iOS-dummy.m in Sources */,
+				B2B5C3B5F5C5CB25057259DB6A98BE0E /* Kingfisher.swift in Sources */,
+				916863FD3A32FCEA3AC8693C2101C7C0 /* KingfisherError.swift in Sources */,
+				84B52B808339A320318F921ACD0805F1 /* KingfisherManager.swift in Sources */,
+				2816DDCAD6EFF4E368D19D9C12D61785 /* KingfisherOptionsInfo.swift in Sources */,
+				DCC2841080D179F3D2BF6D2888177B5F /* MemoryStorage.swift in Sources */,
+				5C2C47E8DFD4A475D69CEE40659D4885 /* NSButton+Kingfisher.swift in Sources */,
+				C17DF40D311F12E452DB68E5E9C078F3 /* Placeholder.swift in Sources */,
+				37CC2FD017F8F3E6138957CC57285837 /* RedirectHandler.swift in Sources */,
+				2DC50AFFACACF16EF0A9D261BB4C0123 /* RequestModifier.swift in Sources */,
+				C1E2DB6234EF1688EF2CA8A9CF6242DC /* Resource.swift in Sources */,
+				CA59D296D7A8A11B1641C4E28EFD5BC5 /* Result.swift in Sources */,
+				471239201C1CDFB73056126CE912E09E /* RetryStrategy.swift in Sources */,
+				0FA1AD13812BE8FA54827BB94BC8EF19 /* Runtime.swift in Sources */,
+				5BAA5F0BA8DA9DC114186BCD5DD04BBF /* SessionDataTask.swift in Sources */,
+				8D80B53DC963E3E784A39BDB037A76C9 /* SessionDelegate.swift in Sources */,
+				A27D0689C793B539B39A6DA22D9D2E3A /* SizeExtensions.swift in Sources */,
+				FEAB356D4B87731EDD451F1070B918E8 /* Source.swift in Sources */,
+				29D6885A864C83310EB2C1F06FA6D72B /* Storage.swift in Sources */,
+				A6F356E0D33736EFBF5477100649DBC1 /* String+MD5.swift in Sources */,
+				3E09647E7C9BE0477EAB103860FD49CB /* UIButton+Kingfisher.swift in Sources */,
+				CACBF55D732304AFE5CEFBE906480F96 /* WKInterfaceImage+Kingfisher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953CE8FF897B62B7C6826079784C4784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3931A4398334B2E177C7C5B3D47AAAF /* Pods-InstaFeed WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF572C327E2A40482501DBC4D3668113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770F16B977FAE98C1928CE88A9298F23 /* SwiftWatchConnectivity-watchOS-dummy.m in Sources */,
+				B396168D40CE36C439C1AE8E7C6CB7F0 /* SwiftWatchConnectivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37EC6341592F17D1F74AE3C2BD0A5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D727D9DE17C2D0027579DE8C71C31E66 /* AnimatedImageView.swift in Sources */,
+				67A569ECD0DE6848D207CB231F15319F /* AuthenticationChallengeResponsable.swift in Sources */,
+				6FD35E4D83ED97229CF1FAD2968E2491 /* Box.swift in Sources */,
+				CF31C5EA495382B1254FD111E3AFBDA9 /* CacheSerializer.swift in Sources */,
+				513A1583BC9EF28B7921342DD2054D25 /* CallbackQueue.swift in Sources */,
+				7FDA5ADDE537CD68C50B5E7C63EE74DF /* Delegate.swift in Sources */,
+				36FF79453876F9C6C5D4DF50B8E52D72 /* Deprecated.swift in Sources */,
+				054C060F70564AB13F98B045CCEE005C /* DiskStorage.swift in Sources */,
+				D6CDF7C8462FA9C0E48AEA4B46FE16A7 /* ExtensionHelpers.swift in Sources */,
+				FE57457D4B1E2026D23E6BD420848D7F /* Filter.swift in Sources */,
+				1094FC6628BBF3072DDF075DFFFC6655 /* FormatIndicatedCacheSerializer.swift in Sources */,
+				44B0EE08C8C8D9B34924478065B35716 /* GIFAnimatedImage.swift in Sources */,
+				39C203B5AE1D6DC170289F5AC33A493B /* Image.swift in Sources */,
+				79144A60B00FC449412FED65843A9F75 /* ImageCache.swift in Sources */,
+				31257A08AAF2ADAF48E62D8BD7A9A45D /* ImageDataProcessor.swift in Sources */,
+				E63E01C12CBC2413BAD4AD8CD19498FC /* ImageDataProvider.swift in Sources */,
+				475F97AB68B81F9C3EC0F517852D724F /* ImageDownloader.swift in Sources */,
+				813A553C54D59AEB759A102F3116D1FA /* ImageDownloaderDelegate.swift in Sources */,
+				2D44216AE2A38CAC8AB6AE9DE396F641 /* ImageDrawing.swift in Sources */,
+				17E0379C72023459A48E51A6C8C3CEF7 /* ImageFormat.swift in Sources */,
+				46E8A0D0F9549862382BF09ABC1C63F9 /* ImageModifier.swift in Sources */,
+				148CA7E10FB4EED48E9E1C54306C6772 /* ImagePrefetcher.swift in Sources */,
+				97C84A05EFE310188A752955D56FF109 /* ImageProcessor.swift in Sources */,
+				B692384B22A0FA62D720CD21188CD90D /* ImageProgressive.swift in Sources */,
+				65FF2242958468AF61D3ADB1C64DAC34 /* ImageTransition.swift in Sources */,
+				654002A7194359ED2AAB664287B26CD1 /* ImageView+Kingfisher.swift in Sources */,
+				B0C72235E0F337457BC7B7E839AB0C8D /* Indicator.swift in Sources */,
+				84266629327E347FAF1110D7696BF7BB /* Kingfisher-watchOS-dummy.m in Sources */,
+				9C9B53F4C570B31CD0BDDFBFABD267FA /* Kingfisher.swift in Sources */,
+				3896A15FD58153A89543D221C2C72AB0 /* KingfisherError.swift in Sources */,
+				2E176615CD8DE6D9AAEA8935BF4429C4 /* KingfisherManager.swift in Sources */,
+				30792FD3B6A0E972646031B8B6E215E7 /* KingfisherOptionsInfo.swift in Sources */,
+				F94FFD173654E0E6C9115137AD94CC68 /* MemoryStorage.swift in Sources */,
+				19B4D2010739CEA24D28FC9577912EA7 /* NSButton+Kingfisher.swift in Sources */,
+				52658D88DEC782CA9A9DD731B6D0BBB7 /* Placeholder.swift in Sources */,
+				BB194EC6E9761E428FE41BB3BA68FB85 /* RedirectHandler.swift in Sources */,
+				5363C8D1D82766C1A05A785A74011469 /* RequestModifier.swift in Sources */,
+				CED7DDA23E581A4D7D2B599B4591B564 /* Resource.swift in Sources */,
+				CCCFA9308E057E681B0FA18674743961 /* Result.swift in Sources */,
+				6893CE84670E68DDBD49BE45B6206164 /* RetryStrategy.swift in Sources */,
+				AFDDF91F2B2D2087758FBE749DF3F9C5 /* Runtime.swift in Sources */,
+				3FEC9355606B9C4C485FD3238293E0F0 /* SessionDataTask.swift in Sources */,
+				EFBF192A4C661272226C8B6491430C0D /* SessionDelegate.swift in Sources */,
+				255A5EE6AB4FE7728D0BDF4B376CAE43 /* SizeExtensions.swift in Sources */,
+				BC1A5DC5DD08CEBC2C0C4095DDF16C48 /* Source.swift in Sources */,
+				A96027E8A0CE6D8EE33F8C91AF4F4DD0 /* Storage.swift in Sources */,
+				B786DC5EBC528E48BC7E29738A032362 /* String+MD5.swift in Sources */,
+				CCF197D8679F75FEFCCA4AAFFE69A91A /* UIButton+Kingfisher.swift in Sources */,
+				14001E21D9CAF3A27E86EC5E1C7B2E4A /* WKInterfaceImage+Kingfisher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA363A1030AE726465C8F443C3456F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00FA9E08214BFC5049DEAD8674EA4AC /* SwiftWatchConnectivity-iOS-dummy.m in Sources */,
+				8C91FFE05364142CB6CDBC25D92F3DDE /* SwiftWatchConnectivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19711E456CDED9CA49D6F16F7353E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903EDC48783B4B87E0A9340E2D94E04D /* Pods-InstaFeed-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FAF655634F935A8BBEA7867645A6F46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftWatchConnectivity-iOS";
+			target = E1B913F839FA29038F55A766762C9C78 /* SwiftWatchConnectivity-iOS */;
+			targetProxy = 9463D58A1A0AD3B6535E04B43CA9F16E /* PBXContainerItemProxy */;
+		};
+		20B6C186983F1B7708AE4843E19D82DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kingfisher-iOS";
+			target = 685A5AC5E317EE1D980ECCFE9E6EB08A /* Kingfisher-iOS */;
+			targetProxy = ECA2C1D22149B1124A3576DC116D7C0A /* PBXContainerItemProxy */;
+		};
+		20E05655A025FED7DD1BD2C2E0A8CC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kingfisher-watchOS";
+			target = 1A48AF12879242BEAEAE10B9EFED530C /* Kingfisher-watchOS */;
+			targetProxy = A1D01C9092C1B538425BF807165CCAC1 /* PBXContainerItemProxy */;
+		};
+		4265633AC49D1CA9FE27CB5FE8405BE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftWatchConnectivity-watchOS";
+			target = 1F8F3CF5CEDBC08180CCC6610607B243 /* SwiftWatchConnectivity-watchOS */;
+			targetProxy = 3B0EDDCEF6BABA22FE7BCA15733153AB /* PBXContainerItemProxy */;
+		};
+		92DD029766A4189AA7F346376A874566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kingfisher-watchOS";
+			target = 1A48AF12879242BEAEAE10B9EFED530C /* Kingfisher-watchOS */;
+			targetProxy = 50B318A4D44C76BD4FB702C2F3235C81 /* PBXContainerItemProxy */;
+		};
+		AB0588D895F90C7C1C69975FC29A8915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftWatchConnectivity-watchOS";
+			target = 1F8F3CF5CEDBC08180CCC6610607B243 /* SwiftWatchConnectivity-watchOS */;
+			targetProxy = A4905424141C3BFD1D1F9509FC907093 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28D12CBC555D9665471FBD6B891E8947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF82367C1508CCBB58D88ACA2BAC99D2 /* SwiftWatchConnectivity-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftWatchConnectivity;
+				PRODUCT_NAME = SwiftWatchConnectivity;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		477DCAB35E80E8AA7F538FB1FB34C4F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 868EB7E5B9811E6095606DE4DF72877A /* Pods-InstaFeed WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		76CD02E90A350801AB3D30E6A7048E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E3A69AD61B3A8AF413965537758A06 /* Kingfisher-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher-watchOS/Kingfisher-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher-watchOS/Kingfisher-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kingfisher-watchOS/Kingfisher-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		8DFFDAB09274D223DA7097A90C82AC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C678A32D29B31633B051EFF6D37EC9D /* Kingfisher-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher-iOS/Kingfisher-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher-iOS/Kingfisher-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kingfisher-iOS/Kingfisher-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E741AB02ECE3658087DB861656C1D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E18823E989274800C669C789F04A48 /* SwiftWatchConnectivity-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWatchConnectivity-iOS/SwiftWatchConnectivity-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWatchConnectivity-iOS/SwiftWatchConnectivity-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftWatchConnectivity-iOS/SwiftWatchConnectivity-iOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftWatchConnectivity;
+				PRODUCT_NAME = SwiftWatchConnectivity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9753ED6194EEFDA274117F3DB9838AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81BA3A8F088E972CDDCE1AD60048E80F /* Pods-InstaFeed.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A3003F0C2F1B6D49BD5D4083AAD23FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A96BFBA1F63AEF40A8300F85323E3A4C /* Pods-InstaFeed WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		9B2942ED8E975D40308750DB6549A074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C84709F7492F8F9D87086B126F9935 /* SwiftWatchConnectivity-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftWatchConnectivity-watchOS/SwiftWatchConnectivity-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftWatchConnectivity;
+				PRODUCT_NAME = SwiftWatchConnectivity;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		9E422E6F5F705A8C206A552F8C3F2F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		A3818E220988E96D08431276DBBA05E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D01B57E6F829E54FBDAACA28448BB0D /* Pods-InstaFeed WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		B248957686AFC2318C6959F02A3F0AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		B729689235F4E2C2F3C8A98793139FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B277F39540132D0A5BEAA26446E470 /* Kingfisher-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher-iOS/Kingfisher-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher-iOS/Kingfisher-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kingfisher-iOS/Kingfisher-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C507BD27BF97FA932D5085D3DABE3002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31887613D6BC3A3323F891897284043C /* Pods-InstaFeed WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		D6EE2A0975FDD9F680612B9C1C1C86A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F1921116C53B0C653E999DAFB6527D8 /* Pods-InstaFeed.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC0C9B7F67FB6E1E6691F27044320D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA02AB35D6BD92616580B55C69886FC /* Kingfisher-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher-watchOS/Kingfisher-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher-watchOS/Kingfisher-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kingfisher-watchOS/Kingfisher-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		FD57B9128E7F8882068EABBEAB775387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9144141BB28A32F425AF66087CCEBA /* SwiftWatchConnectivity-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWatchConnectivity-iOS/SwiftWatchConnectivity-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWatchConnectivity-iOS/SwiftWatchConnectivity-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftWatchConnectivity-iOS/SwiftWatchConnectivity-iOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftWatchConnectivity;
+				PRODUCT_NAME = SwiftWatchConnectivity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10075DBBDA1997502CD340866572AF20 /* Build configuration list for PBXNativeTarget "SwiftWatchConnectivity-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E741AB02ECE3658087DB861656C1D52 /* Debug */,
+				FD57B9128E7F8882068EABBEAB775387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B248957686AFC2318C6959F02A3F0AB5 /* Debug */,
+				9E422E6F5F705A8C206A552F8C3F2F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E093AD4B64C2863B443BE4623A964469 /* Build configuration list for PBXNativeTarget "Pods-InstaFeed WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3003F0C2F1B6D49BD5D4083AAD23FE /* Debug */,
+				477DCAB35E80E8AA7F538FB1FB34C4F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5498F0C43862CFA384E05EA5CBDC422 /* Build configuration list for PBXNativeTarget "Kingfisher-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CD02E90A350801AB3D30E6A7048E3D /* Debug */,
+				FC0C9B7F67FB6E1E6691F27044320D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99307047807B3023172B5BA32F983AE /* Build configuration list for PBXNativeTarget "Kingfisher-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B729689235F4E2C2F3C8A98793139FD4 /* Debug */,
+				8DFFDAB09274D223DA7097A90C82AC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E0E63D59994EAB082CDD5AA3A2BD78 /* Build configuration list for PBXNativeTarget "Pods-InstaFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9753ED6194EEFDA274117F3DB9838AED /* Debug */,
+				D6EE2A0975FDD9F680612B9C1C1C86A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE35CDBE201E181EA236888C2E7EFA72 /* Build configuration list for PBXNativeTarget "SwiftWatchConnectivity-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B2942ED8E975D40308750DB6549A074 /* Debug */,
+				28D12CBC555D9665471FBD6B891E8947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF594C6E204009B71B7519C033C4D8D6 /* Build configuration list for PBXNativeTarget "Pods-InstaFeed WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3818E220988E96D08431276DBBA05E7 /* Debug */,
+				C507BD27BF97FA932D5085D3DABE3002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

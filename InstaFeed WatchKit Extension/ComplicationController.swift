@@ -11,20 +11,20 @@ import ClockKit
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
     // MARK: - Complication Configuration
-
-    func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
-        let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "InstaFeed", supportedFamilies: CLKComplicationFamily.allCases)
-            // Multiple complication support can be added here with more descriptors
-        ]
-        
-        // Call the handler with the currently supported complication descriptors
-        handler(descriptors)
-    }
-    
-    func handleSharedComplicationDescriptors(_ complicationDescriptors: [CLKComplicationDescriptor]) {
-        // Do any necessary work to support these newly shared complication descriptors
-    }
+//
+//    func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
+//        let descriptors = [
+//            CLKComplicationDescriptor(identifier: "complication", displayName: "InstaFeed", supportedFamilies: CLKComplicationFamily.allCases)
+//            // Multiple complication support can be added here with more descriptors
+//        ]
+//
+//        // Call the handler with the currently supported complication descriptors
+//        handler(descriptors)
+//    }
+//
+//    func handleSharedComplicationDescriptors(_ complicationDescriptors: [CLKComplicationDescriptor]) {
+//        // Do any necessary work to support these newly shared complication descriptors
+//    }
 
     // MARK: - Timeline Configuration
     

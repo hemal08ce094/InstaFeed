@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0700A5E725A8C9B200EDB72B /* FollowerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700A5E625A8C9B200EDB72B /* FollowerController.swift */; };
+		07021BDF25A99024002DF62E /* MyFeedRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07021BDE25A99024002DF62E /* MyFeedRowController.swift */; };
+		07105719259C55C300EC2B6E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07105717259C55C300EC2B6E /* AuthenticationViewController.swift */; };
+		0710571A259C55C300EC2B6E /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07105718259C55C300EC2B6E /* AuthenticationViewController.xib */; };
+		0710571F259C5E1B00EC2B6E /* Swiftagram in Frameworks */ = {isa = PBXBuildFile; productRef = 0710571E259C5E1B00EC2B6E /* Swiftagram */; };
+		07105721259C5E1B00EC2B6E /* SwiftagramCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = 07105720259C5E1B00EC2B6E /* SwiftagramCrypto */; };
+		0743720E25A4EC97008B4727 /* CurrencyRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743720D25A4EC97008B4727 /* CurrencyRowController.swift */; };
 		07954FFA259BA2E7001CFAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */; };
 		07954FFC259BA2E7001CFAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */; };
 		07954FFE259BA2E7001CFAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FFD259BA2E7001CFAB9 /* ViewController.swift */; };
@@ -21,6 +28,11 @@
 		07955021259BA2EE001CFAB9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07955020259BA2EE001CFAB9 /* ExtensionDelegate.swift */; };
 		07955023259BA2EE001CFAB9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07955022259BA2EE001CFAB9 /* ComplicationController.swift */; };
 		07955025259BA2F1001CFAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955024259BA2F1001CFAB9 /* Assets.xcassets */; };
+		07955039259BA3F2001CFAB9 /* SwiftagramCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = 07955038259BA3F2001CFAB9 /* SwiftagramCrypto */; };
+		0795503B259BA3F2001CFAB9 /* Swiftagram in Frameworks */ = {isa = PBXBuildFile; productRef = 0795503A259BA3F2001CFAB9 /* Swiftagram */; };
+		19BDA801C4E8AEC381B6587E /* Pods_InstaFeed_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062F18C6F4BA3A9BE907A3B2 /* Pods_InstaFeed_WatchKit_App.framework */; };
+		76770F36F4B0AD25CB5C9814 /* Pods_InstaFeed_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */; };
+		7F405F7E2E36E0E42EF98081 /* Pods_InstaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33A7176F23C03397D4542D0 /* Pods_InstaFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +78,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		007A7DE97CA12F17C5410D74 /* Pods-InstaFeed WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		062F18C6F4BA3A9BE907A3B2 /* Pods_InstaFeed_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFeed_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0700A5E625A8C9B200EDB72B /* FollowerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerController.swift; sourceTree = "<group>"; };
+		07021BDE25A99024002DF62E /* MyFeedRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedRowController.swift; sourceTree = "<group>"; };
+		07105717259C55C300EC2B6E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		07105718259C55C300EC2B6E /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
+		0743720D25A4EC97008B4727 /* CurrencyRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRowController.swift; sourceTree = "<group>"; };
 		07954FF6259BA2E7001CFAB9 /* InstaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +103,15 @@
 		07955022259BA2EE001CFAB9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		07955024259BA2F1001CFAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07955026259BA2F1001CFAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0795503F259BAD6F001CFAB9 /* InstaFeed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstaFeed.entitlements; sourceTree = "<group>"; };
+		07955043259BAD8C001CFAB9 /* InstaFeed WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "InstaFeed WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFeed_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9551EB2DD9998CBE6930EE4F /* Pods-InstaFeed WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		9A8D2EFF0FD4903347FB5216 /* Pods-InstaFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.debug.xcconfig"; path = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		B33A7176F23C03397D4542D0 /* Pods_InstaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D652A1EA837D1A9D02270C35 /* Pods-InstaFeed WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		F3C954E113D657DF8650F091 /* Pods-InstaFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.release.xcconfig"; path = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed.release.xcconfig"; sourceTree = "<group>"; };
+		F6694483325D9E78AFF0E2AB /* Pods-InstaFeed WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07955039259BA3F2001CFAB9 /* SwiftagramCrypto in Frameworks */,
+				0795503B259BA3F2001CFAB9 /* Swiftagram in Frameworks */,
+				7F405F7E2E36E0E42EF98081 /* Pods_InstaFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +129,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0710571F259C5E1B00EC2B6E /* Swiftagram in Frameworks */,
+				07105721259C5E1B00EC2B6E /* SwiftagramCrypto in Frameworks */,
+				76770F36F4B0AD25CB5C9814 /* Pods_InstaFeed_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8E544CD8F56D21C3B652C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19BDA801C4E8AEC381B6587E /* Pods_InstaFeed_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07021BE325A9902C002DF62E /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				0743720D25A4EC97008B4727 /* CurrencyRowController.swift */,
+				07021BDE25A99024002DF62E /* MyFeedRowController.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
 		07954FED259BA2E7001CFAB9 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +162,8 @@
 				0795500E259BA2EC001CFAB9 /* InstaFeed WatchKit App */,
 				0795501D259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */,
 				07954FF7259BA2E7001CFAB9 /* Products */,
+				3E4AB8FE5407F7138406B39D /* Pods */,
+				77EE20FD76772E49ABD4EAFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,9 +180,12 @@
 		07954FF8259BA2E7001CFAB9 /* InstaFeed */ = {
 			isa = PBXGroup;
 			children = (
+				0795503F259BAD6F001CFAB9 /* InstaFeed.entitlements */,
 				07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */,
 				07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */,
 				07954FFD259BA2E7001CFAB9 /* ViewController.swift */,
+				07105717259C55C300EC2B6E /* AuthenticationViewController.swift */,
+				07105718259C55C300EC2B6E /* AuthenticationViewController.xib */,
 				07954FFF259BA2E7001CFAB9 /* Main.storyboard */,
 				07955002259BA2EC001CFAB9 /* Assets.xcassets */,
 				07955004259BA2EC001CFAB9 /* LaunchScreen.storyboard */,
@@ -151,13 +207,39 @@
 		0795501D259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				07955043259BAD8C001CFAB9 /* InstaFeed WatchKit Extension.entitlements */,
 				0795501E259BA2EE001CFAB9 /* InterfaceController.swift */,
+				07021BE325A9902C002DF62E /* Row */,
+				0700A5E625A8C9B200EDB72B /* FollowerController.swift */,
 				07955020259BA2EE001CFAB9 /* ExtensionDelegate.swift */,
 				07955022259BA2EE001CFAB9 /* ComplicationController.swift */,
 				07955024259BA2F1001CFAB9 /* Assets.xcassets */,
 				07955026259BA2F1001CFAB9 /* Info.plist */,
 			);
 			path = "InstaFeed WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3E4AB8FE5407F7138406B39D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A8D2EFF0FD4903347FB5216 /* Pods-InstaFeed.debug.xcconfig */,
+				F3C954E113D657DF8650F091 /* Pods-InstaFeed.release.xcconfig */,
+				9551EB2DD9998CBE6930EE4F /* Pods-InstaFeed WatchKit App.debug.xcconfig */,
+				D652A1EA837D1A9D02270C35 /* Pods-InstaFeed WatchKit App.release.xcconfig */,
+				F6694483325D9E78AFF0E2AB /* Pods-InstaFeed WatchKit Extension.debug.xcconfig */,
+				007A7DE97CA12F17C5410D74 /* Pods-InstaFeed WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77EE20FD76772E49ABD4EAFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B33A7176F23C03397D4542D0 /* Pods_InstaFeed.framework */,
+				062F18C6F4BA3A9BE907A3B2 /* Pods_InstaFeed_WatchKit_App.framework */,
+				4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07955031259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed" */;
 			buildPhases = (
+				D3C66E8038DAC3D45A660946 /* [CP] Check Pods Manifest.lock */,
 				07954FF2259BA2E7001CFAB9 /* Sources */,
 				07954FF3259BA2E7001CFAB9 /* Frameworks */,
 				07954FF4259BA2E7001CFAB9 /* Resources */,
 				07955030259BA2F1001CFAB9 /* Embed Watch Content */,
+				AA08EEE6C41CCF1758784403 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +262,10 @@
 				0795500D259BA2EC001CFAB9 /* PBXTargetDependency */,
 			);
 			name = InstaFeed;
+			packageProductDependencies = (
+				07955038259BA3F2001CFAB9 /* SwiftagramCrypto */,
+				0795503A259BA3F2001CFAB9 /* Swiftagram */,
+			);
 			productName = InstaFeed;
 			productReference = 07954FF6259BA2E7001CFAB9 /* InstaFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -186,8 +274,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0795502D259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed WatchKit App" */;
 			buildPhases = (
+				47B086A79DEE90AD9DC8DA9E /* [CP] Check Pods Manifest.lock */,
 				07955008259BA2EC001CFAB9 /* Resources */,
 				0795502C259BA2F1001CFAB9 /* Embed App Extensions */,
+				AC8E544CD8F56D21C3B652C4 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,15 +293,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07955029259BA2F1001CFAB9 /* Build configuration list for PBXNativeTarget "InstaFeed WatchKit Extension" */;
 			buildPhases = (
+				ED9584B2A9DE6BC6D512E959 /* [CP] Check Pods Manifest.lock */,
 				07955015259BA2EE001CFAB9 /* Sources */,
 				07955016259BA2EE001CFAB9 /* Frameworks */,
 				07955017259BA2EE001CFAB9 /* Resources */,
+				44BE34E7ABB359E001B43939 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "InstaFeed WatchKit Extension";
+			packageProductDependencies = (
+				0710571E259C5E1B00EC2B6E /* Swiftagram */,
+				07105720259C5E1B00EC2B6E /* SwiftagramCrypto */,
+			);
 			productName = "InstaFeed WatchKit Extension";
 			productReference = 07955019259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -245,6 +341,9 @@
 				Base,
 			);
 			mainGroup = 07954FED259BA2E7001CFAB9;
+			packageReferences = (
+				07955037259BA3F2001CFAB9 /* XCRemoteSwiftPackageReference "Swiftagram" */,
+			);
 			productRefGroup = 07954FF7259BA2E7001CFAB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0710571A259C55C300EC2B6E /* AuthenticationViewController.xib in Resources */,
 				07955006259BA2EC001CFAB9 /* LaunchScreen.storyboard in Resources */,
 				07955003259BA2EC001CFAB9 /* Assets.xcassets in Resources */,
 				07955001259BA2E7001CFAB9 /* Main.storyboard in Resources */,
@@ -286,11 +386,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44BE34E7ABB359E001B43939 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaFeed WatchKit Extension/Pods-InstaFeed WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47B086A79DEE90AD9DC8DA9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaFeed WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA08EEE6C41CCF1758784403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaFeed/Pods-InstaFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaFeed/Pods-InstaFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaFeed/Pods-InstaFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C66E8038DAC3D45A660946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED9584B2A9DE6BC6D512E959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaFeed WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07954FF2259BA2E7001CFAB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07105719259C55C300EC2B6E /* AuthenticationViewController.swift in Sources */,
 				07954FFE259BA2E7001CFAB9 /* ViewController.swift in Sources */,
 				07954FFA259BA2E7001CFAB9 /* AppDelegate.swift in Sources */,
 				07954FFC259BA2E7001CFAB9 /* SceneDelegate.swift in Sources */,
@@ -302,7 +506,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07955021259BA2EE001CFAB9 /* ExtensionDelegate.swift in Sources */,
+				0743720E25A4EC97008B4727 /* CurrencyRowController.swift in Sources */,
+				07021BDF25A99024002DF62E /* MyFeedRowController.swift in Sources */,
 				0795501F259BA2EE001CFAB9 /* InterfaceController.swift in Sources */,
+				0700A5E725A8C9B200EDB72B /* FollowerController.swift in Sources */,
 				07955023259BA2EE001CFAB9 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,8 +670,10 @@
 		};
 		0795502A259BA2F1001CFAB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6694483325D9E78AFF0E2AB /* Pods-InstaFeed WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "InstaFeed WatchKit Extension/InstaFeed WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				INFOPLIST_FILE = "InstaFeed WatchKit Extension/Info.plist";
@@ -479,14 +688,16 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
 		0795502B259BA2F1001CFAB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007A7DE97CA12F17C5410D74 /* Pods-InstaFeed WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "InstaFeed WatchKit Extension/InstaFeed WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				INFOPLIST_FILE = "InstaFeed WatchKit Extension/Info.plist";
@@ -502,12 +713,13 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
 		0795502E259BA2F1001CFAB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9551EB2DD9998CBE6930EE4F /* Pods-InstaFeed WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -522,12 +734,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
 		0795502F259BA2F1001CFAB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D652A1EA837D1A9D02270C35 /* Pods-InstaFeed WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -543,15 +756,17 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
 		07955032259BA2F1001CFAB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8D2EFF0FD4903347FB5216 /* Pods-InstaFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstaFeed/InstaFeed.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				INFOPLIST_FILE = InstaFeed/Info.plist;
@@ -570,9 +785,11 @@
 		};
 		07955033259BA2F1001CFAB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C954E113D657DF8650F091 /* Pods-InstaFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstaFeed/InstaFeed.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				INFOPLIST_FILE = InstaFeed/Info.plist;
@@ -630,6 +847,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07955037259BA3F2001CFAB9 /* XCRemoteSwiftPackageReference "Swiftagram" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sbertix/Swiftagram.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0710571E259C5E1B00EC2B6E /* Swiftagram */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07955037259BA3F2001CFAB9 /* XCRemoteSwiftPackageReference "Swiftagram" */;
+			productName = Swiftagram;
+		};
+		07105720259C5E1B00EC2B6E /* SwiftagramCrypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07955037259BA3F2001CFAB9 /* XCRemoteSwiftPackageReference "Swiftagram" */;
+			productName = SwiftagramCrypto;
+		};
+		07955038259BA3F2001CFAB9 /* SwiftagramCrypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07955037259BA3F2001CFAB9 /* XCRemoteSwiftPackageReference "Swiftagram" */;
+			productName = SwiftagramCrypto;
+		};
+		0795503A259BA3F2001CFAB9 /* Swiftagram */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07955037259BA3F2001CFAB9 /* XCRemoteSwiftPackageReference "Swiftagram" */;
+			productName = Swiftagram;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07954FEE259BA2E7001CFAB9 /* Project object */;
 }

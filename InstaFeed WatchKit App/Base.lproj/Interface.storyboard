@@ -1,15 +1,196 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17506" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InstaFeed_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="mTn-3Z-DK8">
+                            <items>
+                                <table alignment="left" id="9td-ig-my9">
+                                    <items>
+                                        <tableRow identifier="MyFeedRowController" id="mqk-u4-Aas" customClass="MyFeedRowController" customModule="InstaFeed_WatchKit_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="QZB-hu-CoL">
+                                                <items>
+                                                    <group alignment="left" layout="vertical" spacing="0.0" id="DZO-XT-fdo">
+                                                        <items>
+                                                            <group width="1" alignment="left" spacing="4" id="9rp-mQ-hUP">
+                                                                <items>
+                                                                    <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="arrow.up" catalog="system" id="AMh-pH-cSg"/>
+                                                                    <label alignment="right" verticalAlignment="center" text="1h" textAlignment="right" id="xD1-69-eie">
+                                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                    </label>
+                                                                    <group alignment="left" layout="vertical" id="KWJ-HV-20p">
+                                                                        <items>
+                                                                            <group alignment="left" id="iUx-be-ofN">
+                                                                                <items>
+                                                                                    <label alignment="left" verticalAlignment="center" text="name" numberOfLines="0" id="nod-wf-9B1">
+                                                                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                                                    </label>
+                                                                                </items>
+                                                                            </group>
+                                                                            <group alignment="left" id="ybb-sD-Gwe">
+                                                                                <items>
+                                                                                    <label alignment="left" verticalAlignment="center" text="location" numberOfLines="0" id="Jbs-3l-NhG">
+                                                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                                    </label>
+                                                                                </items>
+                                                                            </group>
+                                                                        </items>
+                                                                    </group>
+                                                                </items>
+                                                            </group>
+                                                            <group width="1" alignment="left" id="OiN-Zc-J8b">
+                                                                <items>
+                                                                    <imageView alignment="left" id="y8O-eA-5Gm"/>
+                                                                </items>
+                                                            </group>
+                                                            <group width="1" alignment="left" id="D4u-rJ-GGT">
+                                                                <items>
+                                                                    <button alignment="left" title="Button" id="ZXh-62-FMb"/>
+                                                                    <button alignment="right" title="Button" id="n0L-AJ-8iX"/>
+                                                                </items>
+                                                            </group>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="currencyImage" destination="AMh-pH-cSg" id="U8K-Jf-hDk"/>
+                                                <outlet property="detailLabel" destination="Jbs-3l-NhG" id="TLA-vc-4gJ"/>
+                                                <outlet property="titleLabel" destination="nod-wf-9B1" id="Ynq-6X-W7j"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="pdN-ng-ubA">
+                        <items>
+                            <menuItem title="My Feed" icon="shuffle" id="nq6-Ia-DdM">
+                                <connections>
+                                    <action selector="myFeedClicked" destination="AgC-eL-Hgc" id="biI-bp-aOa"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Profile" icon="more" id="6O8-a6-3JE">
+                                <connections>
+                                    <action selector="myProfileClicked" destination="AgC-eL-Hgc" id="fAL-NX-bzd"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Search" icon="trash" id="q2P-FX-i7H">
+                                <connections>
+                                    <action selector="searchClicked" destination="AgC-eL-Hgc" id="L9J-Rj-TOV"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Follower" icon="trash" id="ewY-Fl-Lj2">
+                                <connections>
+                                    <action selector="followerClicked" destination="AgC-eL-Hgc" id="vOV-j5-FyQ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="feedTableview" destination="9td-ig-my9" id="inD-qq-iiG"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="52" y="85"/>
+        </scene>
+        <!--Follower-->
+        <scene sceneID="Vc5-Pt-7oL">
+            <objects>
+                <controller identifier="FollowerController" title="Follower" id="D8f-ta-Nwc" customClass="FollowerController" customModule="InstaFeed_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="PiM-aZ-bzz">
+                            <items>
+                                <table alignment="left" id="oPb-h5-s5i">
+                                    <items>
+                                        <tableRow identifier="FollowRowController" id="IcU-13-7lK" customClass="FollowRowController" customModule="InstaFeed_WatchKit_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="hu9-Qp-6i9">
+                                                <items>
+                                                    <group alignment="left" layout="vertical" spacing="0.0" id="9VV-Dd-V9R">
+                                                        <items>
+                                                            <group alignment="left" spacing="4" id="Sym-bL-ema">
+                                                                <items>
+                                                                    <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="arrow.up" catalog="system" id="ZFw-fO-Dcv"/>
+                                                                    <group alignment="left" layout="vertical" id="KpD-1K-kPi">
+                                                                        <items>
+                                                                            <group alignment="left" id="t7Z-HQ-cse">
+                                                                                <items>
+                                                                                    <label alignment="left" verticalAlignment="center" text="Bit" numberOfLines="0" id="vzN-54-m8I">
+                                                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                                                    </label>
+                                                                                </items>
+                                                                            </group>
+                                                                            <group alignment="left" id="hwJ-Y2-BpV">
+                                                                                <items>
+                                                                                    <label alignment="left" verticalAlignment="center" text="Bit" numberOfLines="0" id="jka-wY-bXm">
+                                                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                                                    </label>
+                                                                                </items>
+                                                                            </group>
+                                                                        </items>
+                                                                    </group>
+                                                                </items>
+                                                            </group>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="currencyImage" destination="ZFw-fO-Dcv" id="xjM-i5-WL8"/>
+                                                <outlet property="detailLabel" destination="jka-wY-bXm" id="uPs-5u-q70"/>
+                                                <outlet property="titleLabel" destination="vzN-54-m8I" id="YU9-jh-GU8"/>
+                                            </connections>
+                                        </tableRow>
+                                        <tableRow identifier="Reload" id="upJ-7M-Uj5">
+                                            <group key="rootItem" width="1" alignment="left" spacing="6" id="17q-tW-C9m">
+                                                <items>
+                                                    <group height="1" alignment="left" layout="vertical" spacing="0.0" id="fco-Ye-1oT">
+                                                        <items>
+                                                            <group width="1" height="45" alignment="left" spacing="0.0" id="CrG-he-gFz">
+                                                                <items>
+                                                                    <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="coe-RT-D4q">
+                                                                        <items>
+                                                                            <group width="1" alignment="center" verticalAlignment="center" id="HAP-VG-MOt">
+                                                                                <items>
+                                                                                    <label alignment="center" verticalAlignment="center" text="Click to reload" textAlignment="justified" minimumScaleFactor="0.59999999999999998" id="3Kd-P9-bnE"/>
+                                                                                    <separator height="1" heightAdjustment="-4" alignment="right" verticalAlignment="center" id="GPe-XF-Eg0">
+                                                                                        <color key="color" red="0.32183412" green="1" blue="0.34561161839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    </separator>
+                                                                                </items>
+                                                                            </group>
+                                                                        </items>
+                                                                    </group>
+                                                                </items>
+                                                            </group>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="currencyTable" destination="oPb-h5-s5i" id="qWv-Xb-nYK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="288" y="85"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+    </resources>
 </document>

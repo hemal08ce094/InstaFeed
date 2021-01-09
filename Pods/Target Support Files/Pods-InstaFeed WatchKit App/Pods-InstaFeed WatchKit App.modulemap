@@ -1,0 +1,6 @@
+framework module Pods_InstaFeed_WatchKit_App {
+  umbrella header "Pods-InstaFeed WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}

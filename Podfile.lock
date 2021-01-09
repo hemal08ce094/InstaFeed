@@ -1,0 +1,22 @@
+PODS:
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+  - SwiftWatchConnectivity (0.1.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - SwiftWatchConnectivity
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - SwiftWatchConnectivity
+
+SPEC CHECKSUMS:
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  SwiftWatchConnectivity: 336eb865da6bcf104c82a1fd6406635bbf2c4bcb
+
+PODFILE CHECKSUM: 3aab948ba4e4f1e2683b77b9c6a262e34d135058
+
+COCOAPODS: 1.9.1
