@@ -19,7 +19,6 @@ class FollowRowController: NSObject {
     @IBOutlet var titleLabel: WKInterfaceLabel!
     @IBOutlet var detailLabel: WKInterfaceLabel!
     @IBOutlet var currencyImage: WKInterfaceImage!
-    @IBOutlet weak var prcntgLabel: WKInterfaceLabel!
 
     var model: User? {
         didSet {

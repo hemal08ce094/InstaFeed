@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 //            view.addSubview(webView)
 //        }
 //    }
+    @IBOutlet weak var syncButton: UIButton!
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if activationState == .activated {
@@ -48,6 +49,26 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         Client.default = .current ?? .iPhone11ProMax
+        
+        let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
+        
+        // Read/Get Data
+        if let data = userDefaults.data(forKey: "userId") {
+            do {
+                // Create JSON Decoder
+                let decoder = JSONDecoder()
+                let secret = try decoder.decode(Secret.self, from: data)
+                
+                syncButton.setTitle("Your data has been Synced with Watch Securely", for: .normal)
+            } catch {
+                print("Unable to Decode Note (\(error))")
+                
+                syncButton.setTitle(" Click here to Login and Sync with watch ", for: .normal)
+            }
+        } else {
+            syncButton.setTitle(" Click here to Login and Sync with watch ", for: .normal)
+        }
+            
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -77,7 +98,7 @@ class ViewController: UIViewController {
                 let decoder = JSONDecoder()
                 let secret = try decoder.decode(Secret.self, from: data)
                 SwiftWatchConnectivity.shared.sendMesssageData(data: data)
-               
+                syncButton.setTitle("Your data has been Synced with Watch Securely", for: .normal)
             } catch {
                 print("Unable to Decode Note (\(error))")
                 askForLoginToken()

@@ -57,9 +57,9 @@ extension FollowerController {
     
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-        if rowIndex == 0 {
-//            startProgressIndicator()
-//            getCryptoDataFromApi()
+        if let current = followers?[rowIndex-1] {
+            let dict = ["user": current]
+            pushController(withName: "MyProfileInterfaceController", context: dict)
         }
     }
 }

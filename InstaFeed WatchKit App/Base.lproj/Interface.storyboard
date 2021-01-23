@@ -10,9 +10,9 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InstaFeed_WatchKit_App" customModuleProvider="target">
+                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InstaFeed_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" id="mTn-3Z-DK8">
+                        <group alignment="left" animationDuration="1" layout="vertical" id="mTn-3Z-DK8">
                             <items>
                                 <table alignment="left" id="9td-ig-my9">
                                     <items>
@@ -23,22 +23,29 @@
                                                         <items>
                                                             <group width="1" alignment="left" spacing="4" id="9rp-mQ-hUP">
                                                                 <items>
-                                                                    <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="arrow.up" catalog="system" id="AMh-pH-cSg"/>
-                                                                    <label alignment="right" verticalAlignment="center" text="1h" textAlignment="right" id="xD1-69-eie">
+                                                                    <group alignment="left" verticalAlignment="center" animationDuration="1" layout="vertical" radius="10" id="MOk-uo-u4x">
+                                                                        <items>
+                                                                            <imageView width="20" height="20" alignment="left" verticalAlignment="center" id="AMh-pH-cSg">
+                                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </imageView>
+                                                                        </items>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </group>
+                                                                    <label alignment="right" verticalAlignment="center" textAlignment="right" numberOfLines="0" id="xD1-69-eie">
                                                                         <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                                                     </label>
                                                                     <group alignment="left" layout="vertical" id="KWJ-HV-20p">
                                                                         <items>
-                                                                            <group alignment="left" id="iUx-be-ofN">
+                                                                            <group alignment="left" verticalAlignment="center" id="iUx-be-ofN">
                                                                                 <items>
-                                                                                    <label alignment="left" verticalAlignment="center" text="name" numberOfLines="0" id="nod-wf-9B1">
-                                                                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                                                    <label alignment="left" verticalAlignment="center" textAlignment="left" numberOfLines="0" id="nod-wf-9B1">
+                                                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                                                                     </label>
                                                                                 </items>
                                                                             </group>
-                                                                            <group alignment="left" id="ybb-sD-Gwe">
+                                                                            <group alignment="left" verticalAlignment="center" id="ybb-sD-Gwe">
                                                                                 <items>
-                                                                                    <label alignment="left" verticalAlignment="center" text="location" numberOfLines="0" id="Jbs-3l-NhG">
+                                                                                    <label alignment="right" textAlignment="right" numberOfLines="0" id="Jbs-3l-NhG">
                                                                                         <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                                                                     </label>
                                                                                 </items>
@@ -47,15 +54,32 @@
                                                                     </group>
                                                                 </items>
                                                             </group>
-                                                            <group width="1" alignment="left" id="OiN-Zc-J8b">
+                                                            <group alignment="left" id="OiN-Zc-J8b">
                                                                 <items>
-                                                                    <imageView alignment="left" id="y8O-eA-5Gm"/>
+                                                                    <imageView alignment="center" id="y8O-eA-5Gm"/>
                                                                 </items>
                                                             </group>
                                                             <group width="1" alignment="left" id="D4u-rJ-GGT">
                                                                 <items>
-                                                                    <button alignment="left" title="Button" id="ZXh-62-FMb"/>
-                                                                    <button alignment="right" title="Button" id="n0L-AJ-8iX"/>
+                                                                    <label alignment="left" verticalAlignment="bottom" textAlignment="left" numberOfLines="0" id="b1V-Wq-rRL">
+                                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                                    </label>
+                                                                </items>
+                                                            </group>
+                                                            <group width="1" alignment="left" spacing="10" id="D6U-hx-Q6m">
+                                                                <items>
+                                                                    <button width="25" height="25" alignment="left" verticalAlignment="center" backgroundImage="Liked" id="k2W-Sl-AcO">
+                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="font" type="system" pointSize="8"/>
+                                                                        <connections>
+                                                                            <action selector="likeButtonClicked" destination="mqk-u4-Aas" id="Bri-Dj-8Ss"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="Comment" id="ZXK-8f-pdv"/>
+                                                                    <button width="25" height="25" alignment="right" verticalAlignment="center" backgroundImage="shareiCon" id="Mbw-Kx-tf6">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </button>
                                                                 </items>
                                                             </group>
                                                         </items>
@@ -63,9 +87,12 @@
                                                 </items>
                                             </group>
                                             <connections>
-                                                <outlet property="currencyImage" destination="AMh-pH-cSg" id="U8K-Jf-hDk"/>
-                                                <outlet property="detailLabel" destination="Jbs-3l-NhG" id="TLA-vc-4gJ"/>
+                                                <outlet property="feedCaptionLabel" destination="b1V-Wq-rRL" id="0eA-aH-Sqn"/>
+                                                <outlet property="feedImage" destination="y8O-eA-5Gm" id="x6k-ut-ArY"/>
+                                                <outlet property="feedLikeButton" destination="k2W-Sl-AcO" id="lJP-B3-js9"/>
+                                                <outlet property="feedPostTime" destination="Jbs-3l-NhG" id="VVt-fU-Up5"/>
                                                 <outlet property="titleLabel" destination="nod-wf-9B1" id="Ynq-6X-W7j"/>
+                                                <outlet property="userImage" destination="AMh-pH-cSg" id="U8K-Jf-hDk"/>
                                             </connections>
                                         </tableRow>
                                     </items>
@@ -90,12 +117,17 @@
                                     <action selector="searchClicked" destination="AgC-eL-Hgc" id="L9J-Rj-TOV"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Follower" icon="trash" id="ewY-Fl-Lj2">
+                            <menuItem title="Follower" icon="info" id="ewY-Fl-Lj2">
                                 <connections>
                                     <action selector="followerClicked" destination="AgC-eL-Hgc" id="vOV-j5-FyQ"/>
                                 </connections>
                             </menuItem>
                         </items>
+                        <variation key="default">
+                            <mask key="items">
+                                <exclude reference="q2P-FX-i7H"/>
+                            </mask>
+                        </variation>
                     </menu>
                     <connections>
                         <outlet property="feedTableview" destination="9td-ig-my9" id="inD-qq-iiG"/>
@@ -120,7 +152,11 @@
                                                         <items>
                                                             <group alignment="left" spacing="4" id="Sym-bL-ema">
                                                                 <items>
-                                                                    <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="arrow.up" catalog="system" id="ZFw-fO-Dcv"/>
+                                                                    <group width="1" alignment="left" verticalAlignment="center" radius="10" id="Avp-92-IGP">
+                                                                        <items>
+                                                                            <imageView width="20" height="20" alignment="left" verticalAlignment="center" id="ZFw-fO-Dcv"/>
+                                                                        </items>
+                                                                    </group>
                                                                     <group alignment="left" layout="vertical" id="KpD-1K-kPi">
                                                                         <items>
                                                                             <group alignment="left" id="t7Z-HQ-cse">
@@ -189,8 +225,88 @@
             </objects>
             <point key="canvasLocation" x="288" y="85"/>
         </scene>
+        <!--NoDataInterfaceController-->
+        <scene sceneID="9Mg-Yv-CFl">
+            <objects>
+                <controller identifier="NoDataInterfaceController" id="YUe-KR-CPr" customClass="NoDataInterfaceController" customModule="InstaFeed_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Login From iPhone to continue" textAlignment="center" numberOfLines="0" id="IIa-vp-AJI">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="618" y="-395"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Te2-vS-5C5">
+            <objects>
+                <controller identifier="MyProfileInterfaceController" title="Profile" id="LVn-CW-c6W" customClass="MyProfileInterfaceController" customModule="InstaFeed_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="10" id="FmL-Cy-rsY">
+                            <items>
+                                <group alignment="center" layout="vertical" id="wEv-B1-nVD">
+                                    <items>
+                                        <group alignment="center" verticalAlignment="center" radius="10" id="kwJ-ZK-aHG">
+                                            <items>
+                                                <imageView alignment="center" verticalAlignment="center" id="iHl-OS-ZC8"/>
+                                            </items>
+                                        </group>
+                                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="mj3-hg-4jO">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="italicSystem" weight="medium" pointSize="16"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="M9M-Pi-m86">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="italicSystem" weight="medium" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group alignment="left" id="HyL-gl-gMW">
+                                    <items>
+                                        <group width="1" alignment="left" layout="vertical" id="ppR-DK-qEX">
+                                            <items>
+                                                <label alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="ewk-ao-hfl">
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                </label>
+                                                <label alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="uch-Ut-nk1">
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                </label>
+                                                <label alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="7xd-yL-0l1">
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                </label>
+                                                <label alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="rZb-xe-Vfo">
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="followerCountLabel" destination="uch-Ut-nk1" id="bIB-8x-cCe"/>
+                        <outlet property="followingCountLabel" destination="7xd-yL-0l1" id="sxW-S0-lQF"/>
+                        <outlet property="nameLabel" destination="M9M-Pi-m86" id="TDA-gQ-cxu"/>
+                        <outlet property="postCountLabel" destination="ewk-ao-hfl" id="hos-2N-Dss"/>
+                        <outlet property="profileImage" destination="iHl-OS-ZC8" id="huG-q2-e2f"/>
+                        <outlet property="taggedLabel" destination="rZb-xe-Vfo" id="cJ7-Ex-uDz"/>
+                        <outlet property="userName" destination="mj3-hg-4jO" id="kyK-79-V6j"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="544" y="85"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="Comment" width="399" height="375"/>
+        <image name="Liked" width="18" height="16"/>
+        <image name="shareiCon" width="480" height="480"/>
     </resources>
 </document>

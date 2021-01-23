@@ -13,7 +13,9 @@
 		0710571A259C55C300EC2B6E /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07105718259C55C300EC2B6E /* AuthenticationViewController.xib */; };
 		0710571F259C5E1B00EC2B6E /* Swiftagram in Frameworks */ = {isa = PBXBuildFile; productRef = 0710571E259C5E1B00EC2B6E /* Swiftagram */; };
 		07105721259C5E1B00EC2B6E /* SwiftagramCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = 07105720259C5E1B00EC2B6E /* SwiftagramCrypto */; };
-		0743720E25A4EC97008B4727 /* CurrencyRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743720D25A4EC97008B4727 /* CurrencyRowController.swift */; };
+		0743720E25A4EC97008B4727 /* FollowRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743720D25A4EC97008B4727 /* FollowRowController.swift */; };
+		0759825825BB50AE0076639A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955012259BA2EE001CFAB9 /* Assets.xcassets */; };
+		0759826325BB50B00076639A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955012259BA2EE001CFAB9 /* Assets.xcassets */; };
 		07954FFA259BA2E7001CFAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */; };
 		07954FFC259BA2E7001CFAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */; };
 		07954FFE259BA2E7001CFAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FFD259BA2E7001CFAB9 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		07955025259BA2F1001CFAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955024259BA2F1001CFAB9 /* Assets.xcassets */; };
 		07955039259BA3F2001CFAB9 /* SwiftagramCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = 07955038259BA3F2001CFAB9 /* SwiftagramCrypto */; };
 		0795503B259BA3F2001CFAB9 /* Swiftagram in Frameworks */ = {isa = PBXBuildFile; productRef = 0795503A259BA3F2001CFAB9 /* Swiftagram */; };
+		07B4F50F25BB5BEE00ACE721 /* NoDataInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B4F50E25BB5BEE00ACE721 /* NoDataInterfaceController.swift */; };
+		07B4F51525BC052300ACE721 /* MyProfileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B4F51425BC052300ACE721 /* MyProfileInterfaceController.swift */; };
 		19BDA801C4E8AEC381B6587E /* Pods_InstaFeed_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062F18C6F4BA3A9BE907A3B2 /* Pods_InstaFeed_WatchKit_App.framework */; };
 		76770F36F4B0AD25CB5C9814 /* Pods_InstaFeed_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */; };
 		7F405F7E2E36E0E42EF98081 /* Pods_InstaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33A7176F23C03397D4542D0 /* Pods_InstaFeed.framework */; };
@@ -84,7 +88,7 @@
 		07021BDE25A99024002DF62E /* MyFeedRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedRowController.swift; sourceTree = "<group>"; };
 		07105717259C55C300EC2B6E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		07105718259C55C300EC2B6E /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
-		0743720D25A4EC97008B4727 /* CurrencyRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRowController.swift; sourceTree = "<group>"; };
+		0743720D25A4EC97008B4727 /* FollowRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowRowController.swift; sourceTree = "<group>"; };
 		07954FF6259BA2E7001CFAB9 /* InstaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		07955026259BA2F1001CFAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0795503F259BAD6F001CFAB9 /* InstaFeed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstaFeed.entitlements; sourceTree = "<group>"; };
 		07955043259BAD8C001CFAB9 /* InstaFeed WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "InstaFeed WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		07B4F50E25BB5BEE00ACE721 /* NoDataInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataInterfaceController.swift; sourceTree = "<group>"; };
+		07B4F51425BC052300ACE721 /* MyProfileInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileInterfaceController.swift; sourceTree = "<group>"; };
 		4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFeed_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9551EB2DD9998CBE6930EE4F /* Pods-InstaFeed WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		9A8D2EFF0FD4903347FB5216 /* Pods-InstaFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.debug.xcconfig"; path = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,7 +155,7 @@
 		07021BE325A9902C002DF62E /* Row */ = {
 			isa = PBXGroup;
 			children = (
-				0743720D25A4EC97008B4727 /* CurrencyRowController.swift */,
+				0743720D25A4EC97008B4727 /* FollowRowController.swift */,
 				07021BDE25A99024002DF62E /* MyFeedRowController.swift */,
 			);
 			path = Row;
@@ -207,16 +213,26 @@
 		0795501D259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				07955043259BAD8C001CFAB9 /* InstaFeed WatchKit Extension.entitlements */,
-				0795501E259BA2EE001CFAB9 /* InterfaceController.swift */,
+				07B4F51325BC04F900ACE721 /* ViewController */,
 				07021BE325A9902C002DF62E /* Row */,
-				0700A5E625A8C9B200EDB72B /* FollowerController.swift */,
+				07955043259BAD8C001CFAB9 /* InstaFeed WatchKit Extension.entitlements */,
 				07955020259BA2EE001CFAB9 /* ExtensionDelegate.swift */,
 				07955022259BA2EE001CFAB9 /* ComplicationController.swift */,
 				07955024259BA2F1001CFAB9 /* Assets.xcassets */,
 				07955026259BA2F1001CFAB9 /* Info.plist */,
 			);
 			path = "InstaFeed WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		07B4F51325BC04F900ACE721 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0795501E259BA2EE001CFAB9 /* InterfaceController.swift */,
+				0700A5E625A8C9B200EDB72B /* FollowerController.swift */,
+				07B4F50E25BB5BEE00ACE721 /* NoDataInterfaceController.swift */,
+				07B4F51425BC052300ACE721 /* MyProfileInterfaceController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		3E4AB8FE5407F7138406B39D /* Pods */ = {
@@ -364,6 +380,7 @@
 				07955006259BA2EC001CFAB9 /* LaunchScreen.storyboard in Resources */,
 				07955003259BA2EC001CFAB9 /* Assets.xcassets in Resources */,
 				07955001259BA2E7001CFAB9 /* Main.storyboard in Resources */,
+				0759826325BB50B00076639A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0759825825BB50AE0076639A /* Assets.xcassets in Resources */,
 				07955025259BA2F1001CFAB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,11 +524,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07955021259BA2EE001CFAB9 /* ExtensionDelegate.swift in Sources */,
-				0743720E25A4EC97008B4727 /* CurrencyRowController.swift in Sources */,
+				0743720E25A4EC97008B4727 /* FollowRowController.swift in Sources */,
 				07021BDF25A99024002DF62E /* MyFeedRowController.swift in Sources */,
 				0795501F259BA2EE001CFAB9 /* InterfaceController.swift in Sources */,
 				0700A5E725A8C9B200EDB72B /* FollowerController.swift in Sources */,
+				07B4F51525BC052300ACE721 /* MyProfileInterfaceController.swift in Sources */,
 				07955023259BA2EE001CFAB9 /* ComplicationController.swift in Sources */,
+				07B4F50F25BB5BEE00ACE721 /* NoDataInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
