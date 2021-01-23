@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,13 +14,13 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-mr-L9p">
-                                <rect key="frame" x="31" y="430" width="352" height="36"/>
+                                <rect key="frame" x="31" y="407.66666666666669" width="328" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.5357794817" blue="0.31477822719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
                                 <state key="normal" title=" Click here to Login and Sync with watch ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -28,7 +29,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageBG" translatesAutoresizingMaskIntoConstraints="NO" id="FWM-Ll-dST">
-                                <rect key="frame" x="82" y="144" width="250" height="130"/>
+                                <rect key="frame" x="70" y="144" width="250" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Bqn-Fh-vsk"/>
                                     <constraint firstAttribute="height" constant="130" id="CPt-u7-SLg"/>
@@ -38,7 +39,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xaY-mr-L9p" secondAttribute="trailing" constant="31" id="9U2-gx-qVT"/>
                             <constraint firstItem="FWM-Ll-dST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CKS-WG-hu3"/>
+                            <constraint firstItem="xaY-mr-L9p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="JPU-5w-c63"/>
                             <constraint firstItem="FWM-Ll-dST" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="n78-AX-XBg"/>
                             <constraint firstItem="xaY-mr-L9p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nbv-s8-Mi8"/>
                             <constraint firstItem="xaY-mr-L9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xq4-CO-nJb"/>

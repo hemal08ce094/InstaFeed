@@ -18,6 +18,11 @@ import SwiftWatchConnectivity
 
 class MyProfileInterfaceController: WKInterfaceController {
 
+    var userSummary: Friendship? {
+        didSet {
+            
+        }
+    }
     var myProfile: User? {
         didSet {
             profileImage.kf.setImage(with: myProfile?.thumbnail)
