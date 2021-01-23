@@ -75,7 +75,10 @@
                                                                             <action selector="likeButtonClicked" destination="mqk-u4-Aas" id="Bri-Dj-8Ss"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="Comment" id="ZXK-8f-pdv"/>
+                                                                    <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="Comment" id="ZXK-8f-pdv">
+                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="font" type="system" pointSize="8"/>
+                                                                    </button>
                                                                     <button width="25" height="25" alignment="right" verticalAlignment="center" backgroundImage="shareiCon" id="Mbw-Kx-tf6">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,10 +90,12 @@
                                                 </items>
                                             </group>
                                             <connections>
+                                                <outlet property="commentButton" destination="ZXK-8f-pdv" id="dg1-E3-mnu"/>
                                                 <outlet property="feedCaptionLabel" destination="b1V-Wq-rRL" id="0eA-aH-Sqn"/>
                                                 <outlet property="feedImage" destination="y8O-eA-5Gm" id="x6k-ut-ArY"/>
                                                 <outlet property="feedLikeButton" destination="k2W-Sl-AcO" id="lJP-B3-js9"/>
                                                 <outlet property="feedPostTime" destination="Jbs-3l-NhG" id="VVt-fU-Up5"/>
+                                                <outlet property="shareButton" destination="Mbw-Kx-tf6" id="BPn-7f-bqc"/>
                                                 <outlet property="titleLabel" destination="nod-wf-9B1" id="Ynq-6X-W7j"/>
                                                 <outlet property="userImage" destination="AMh-pH-cSg" id="U8K-Jf-hDk"/>
                                             </connections>

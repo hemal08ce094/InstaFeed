@@ -27,6 +27,9 @@ class MyFeedRowController: NSObject {
     @IBOutlet weak var feedCaptionLabel: WKInterfaceLabel!
     
     @IBOutlet weak var feedLikeButton: WKInterfaceButton!
+    @IBOutlet weak var commentButton: WKInterfaceButton!
+    @IBOutlet weak var shareButton: WKInterfaceButton!
+    
     var feedLikeButtonState = true
     
     public var model: AnyObject? {
@@ -63,6 +66,10 @@ class MyFeedRowController: NSObject {
                 
                 if let likeCount = (model as? [String : Any])?["like_count"] as? Int64 {
                     feedLikeButton.setTitle(String(likeCount))
+                }
+                
+                if let commentCount = (model as? [String : Any])?["comment_count"] as? Int64 {
+                    commentButton.setTitle(String(commentCount))
                 }
                 
             }
