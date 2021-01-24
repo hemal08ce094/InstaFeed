@@ -2,6 +2,15 @@
 Watch OS instagram 
 
 
+Features
+- OAuth Login in phone app
+- See your instagram feed
+- Check your followers
+- check likes on feed
+- Overview page for follower profiles
+- Fancy animations
+
+
 ![368x448bb-3](https://user-images.githubusercontent.com/21290914/105577812-3ffd3080-5d95-11eb-9db5-d61bb964e84c.png)
 ![368x448bb-2](https://user-images.githubusercontent.com/21290914/105577813-4095c700-5d95-11eb-8bfc-e38ad873ca4e.png)
 ![368x448bb-1](https://user-images.githubusercontent.com/21290914/105577682-928a1d00-5d94-11eb-9a7c-f3ea7874181e.png)
