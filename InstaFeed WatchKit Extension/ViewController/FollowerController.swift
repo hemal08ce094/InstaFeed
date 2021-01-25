@@ -42,16 +42,17 @@ class FollowerController: WKInterfaceController {
 extension FollowerController {
     func getDataFromApi() {
         var rowTypes = [""]
-        
-        for _ in 0..<followers!.count {
-            rowTypes.append("FollowRowController")
-        }
-        
-        self.currencyTable.setRowTypes(rowTypes)
+        if followers != nil {
+            for _ in 0..<followers!.count {
+                rowTypes.append("FollowRowController")
+            }
+            
+            self.currencyTable.setRowTypes(rowTypes)
 
-        for index in 0..<followers!.count {
-            guard let controller = self.currencyTable.rowController(at: index+1) as? FollowRowController else { continue }
-            controller.model = followers?[index]
+            for index in 0..<followers!.count {
+                guard let controller = self.currencyTable.rowController(at: index+1) as? FollowRowController else { continue }
+                controller.model = followers?[index]
+            }
         }
     }
     

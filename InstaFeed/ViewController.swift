@@ -58,8 +58,6 @@ class ViewController: UIViewController {
                 // Create JSON Decoder
                 let decoder = JSONDecoder()
                 let secret = try decoder.decode(Secret.self, from: data)
-                
-                syncButton.setTitle("Your data has been Synced with Watch Securely", for: .normal)
             } catch {
                 print("Unable to Decode Note (\(error))")
                 
@@ -98,7 +96,6 @@ class ViewController: UIViewController {
                 let decoder = JSONDecoder()
                 let secret = try decoder.decode(Secret.self, from: data)
                 SwiftWatchConnectivity.shared.sendMesssageData(data: data)
-                syncButton.setTitle("Your data has been Synced with Watch Securely", for: .normal)
             } catch {
                 print("Unable to Decode Note (\(error))")
                 askForLoginToken()
@@ -115,7 +112,10 @@ extension ViewController: SwiftWatchConnectivityDelegate {
     func connectivity(_ swiftWatchConnectivity: SwiftWatchConnectivity, updatedWithTask task: SwiftWatchConnectivity.Task) {
         switch task {
         case .sendMessage(let message):
-            break
+            if ((message["isSync"] as? Bool) == true) {
+                // Synced success
+                syncButton.setTitle("Your data has been Synced with Watch Securely", for: .normal)
+            }
         case .transferUserInfo(let userInfo):
             break
         case .updateApplicationContext(let context):

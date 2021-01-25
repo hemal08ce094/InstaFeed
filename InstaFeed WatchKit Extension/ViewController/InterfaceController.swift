@@ -43,8 +43,13 @@ class InterfaceController: WKInterfaceController {
         myFeedClicked()
     }
     
+    override func didAppear() {
+        
+    }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        
     }
     
     override func didDeactivate() {
@@ -94,7 +99,7 @@ class InterfaceController: WKInterfaceController {
         // Load the first 3 pages of the current user's followers.
         // In a real app you might want to fetch all of them.
         followers = []
-        myFeedDataArray = []
+        
         
         
         
@@ -105,51 +110,45 @@ class InterfaceController: WKInterfaceController {
 
                   },
                   onChange: { changes in
-                    print(changes)
                     do {
                         if !self.shouldReloadTable {
                             return
                         }
+                        
+                        
                         var jsonMainDict = try changes.get().jsonRepresentation()?.convertToDictionary()
                         var feedItems = jsonMainDict?["feed_items"] as! NSArray
                         
+                        self.myFeedDataArray = []
                         self.myFeedDataArray?.addObjects(from: feedItems as! [Any])
                         self.shouldReloadTable = false
 
-                        var rowTypes = [""]
-                        
-                        for index1 in 0..<self.myFeedDataArray!.count {
-                            rowTypes.append("MyFeedRowController")
-                        }
-                        
-                        self.feedTableview.setRowTypes(rowTypes)
-
-                        for index in 0..<self.myFeedDataArray!.count {
-                            guard let controller = self.feedTableview.rowController(at: index+1) as? MyFeedRowController else { continue }
+                        if self.myFeedDataArray != nil {
+                            var rowTypes = [""]
                             
-                            if let currentFeed = (self.myFeedDataArray?[index] as? [String : Any])?["media_or_ad"] {
-                                controller.model = currentFeed as AnyObject
+                            for index1 in 0..<self.myFeedDataArray!.count {
+                                rowTypes.append("MyFeedRowController")
                             }
+                            
+                            self.feedTableview.setRowTypes(rowTypes)
 
+                            for index in 0..<self.myFeedDataArray!.count {
+                                guard let controller = self.feedTableview.rowController(at: index+1) as? MyFeedRowController else { continue }
+                                
+                                if let currentFeed = (self.myFeedDataArray?[index] as? [String : Any])?["media_or_ad"] {
+                                    controller.model = currentFeed as AnyObject
+                                }
+                            }
                         }
+                        
+                        
+                        self.feedTableview.scrollToRow(at: 1)
                     } catch {
                         print("parsing fail")
                     }
             })
             .resume()
-        
-//        let task = Endpoint.Discover.explore()
-//            .unlocking(with: secret)
-//            .task(maxLength: 10,
-//                  onComplete: { result in
-//                    print(result)
-//                  },
-//                  onChange: { changes in
-//                    print(changes)
-//        changes.get().wrapped["items"].array()?.first
-//                    // Do something here.
-//            })
-//            .resume()
+    
     
         Endpoint.Friendship.following(secret.identifier)
             .unlocking(with: secret)
@@ -176,6 +175,8 @@ class InterfaceController: WKInterfaceController {
                 
                 shouldReloadTable = true
                 
+                self.feedTableview.setRowTypes(["Reload"])
+                
                 fetch(secret: secret)
                 
             } catch {
@@ -190,8 +191,10 @@ class InterfaceController: WKInterfaceController {
     
     
     func askForLoginToken() {
-        presentController(withName: "NoDataInterfaceController", context: nil)
-        // show empty controller saying authenticate again from iPhone.
+        let action = WKAlertAction(title: "Retry", style: WKAlertActionStyle.default) {
+            self.myFeedClicked()
+        }
+            presentAlert(withTitle: "Message", message: "Login From iPhone to continue.", preferredStyle: WKAlertControllerStyle.alert, actions:[action])
     }
     
     @IBAction func myProfileClicked() {
@@ -222,6 +225,7 @@ extension InterfaceController: SwiftWatchConnectivityDelegate {
         case .sendMessage(let message):
             break
         case .sendMessageData(let messageData):
+            SwiftWatchConnectivity.shared.sendMesssage(message: ["isSync" : true])
             
             let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed.watchkitapp")!
             
@@ -240,6 +244,7 @@ extension InterfaceController: SwiftWatchConnectivityDelegate {
                 userDefaults.set(data, forKey: "userId")
                 userDefaults.synchronize()
 
+                myFeedClicked()
             } catch {
                 print("Unable to Encode Note (\(error))")
             }

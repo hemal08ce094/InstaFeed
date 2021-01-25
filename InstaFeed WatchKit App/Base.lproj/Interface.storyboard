@@ -54,7 +54,7 @@
                                                                     </group>
                                                                 </items>
                                                             </group>
-                                                            <group alignment="left" id="OiN-Zc-J8b">
+                                                            <group alignment="left" radius="4" id="OiN-Zc-J8b">
                                                                 <items>
                                                                     <imageView alignment="center" id="y8O-eA-5Gm"/>
                                                                 </items>
@@ -99,6 +99,32 @@
                                                 <outlet property="titleLabel" destination="nod-wf-9B1" id="Ynq-6X-W7j"/>
                                                 <outlet property="userImage" destination="AMh-pH-cSg" id="U8K-Jf-hDk"/>
                                             </connections>
+                                        </tableRow>
+                                        <tableRow identifier="Reload" id="8z0-df-iSx">
+                                            <group key="rootItem" width="1" height="50" alignment="left" spacing="6" id="adN-EG-2OI">
+                                                <items>
+                                                    <group height="1" alignment="left" layout="vertical" spacing="0.0" id="4TZ-xq-G5X">
+                                                        <items>
+                                                            <group width="1" height="45" alignment="left" spacing="0.0" id="xoX-AY-0Hh">
+                                                                <items>
+                                                                    <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" id="fXv-nh-mxO">
+                                                                        <items>
+                                                                            <group width="1" alignment="center" verticalAlignment="bottom" id="u8i-vn-Gfd">
+                                                                                <items>
+                                                                                    <label alignment="center" verticalAlignment="bottom" text="Loading..." textAlignment="justified" minimumScaleFactor="0.59999999999999998" id="aCb-1Q-6w8"/>
+                                                                                    <separator height="1" heightAdjustment="-4" alignment="right" verticalAlignment="bottom" id="4y3-76-JiL">
+                                                                                        <color key="color" red="0.32183412" green="1" blue="0.34561161839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    </separator>
+                                                                                </items>
+                                                                            </group>
+                                                                        </items>
+                                                                    </group>
+                                                                </items>
+                                                            </group>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
                                         </tableRow>
                                     </items>
                                 </table>
