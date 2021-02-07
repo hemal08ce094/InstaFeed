@@ -12,8 +12,19 @@ import Swiftagram
 import SwiftagramCrypto
 import WatchConnectivity
 import SwiftWatchConnectivity
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate {
+    
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
 
 //    var completion: ((Secret) -> Void)?
 //    /// The web view.
@@ -36,6 +47,8 @@ class ViewController: UIViewController {
                     // Create JSON Decoder
                     let decoder = JSONDecoder()
                     let secret = try decoder.decode(Secret.self, from: data)
+                    SwiftWatchConnectivity.shared.sendMesssageData(data: data)
+                    self.syncButton.setTitle("Open WInsta App in your watch and click here", for: .normal)
                 } catch {
                     print("Unable to Decode Note (\(error))")
                     askForLoginToken()
@@ -43,6 +56,12 @@ class ViewController: UIViewController {
             } else {
                 askForLoginToken()
             }
+        } else {
+            let alertController = UIAlertController(title: "Message", message:
+                                                        "Couldnt communicate to your Apple watch, Please restart your phone or watch", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "okay", style: .default,handler: { action in
+                  
+             }))
         }
     }
     
@@ -58,13 +77,15 @@ class ViewController: UIViewController {
                 // Create JSON Decoder
                 let decoder = JSONDecoder()
                 let secret = try decoder.decode(Secret.self, from: data)
+                
+                syncButton.setTitle(" Click here to Sync with watch ", for: .normal)
             } catch {
                 print("Unable to Decode Note (\(error))")
                 
-                syncButton.setTitle(" Click here to Login and Sync with watch ", for: .normal)
+                syncButton.setTitle(" Click here to Login", for: .normal)
             }
         } else {
-            syncButton.setTitle(" Click here to Login and Sync with watch ", for: .normal)
+            syncButton.setTitle(" Click here to Login ", for: .normal)
         }
             
     }
@@ -77,7 +98,7 @@ class ViewController: UIViewController {
     func askForLoginToken() {
         DispatchQueue.main.async {
             self.present(AuthenticationViewController(nibName: "AuthenticationViewController", bundle: Bundle.main), animated: true) {
-                
+                self.syncButton.setTitle("Click here to Sync with watch ", for: .normal)
             }}
     }
     
@@ -87,6 +108,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func SyncClicked(_ sender: Any) {
+        
+        if WCSession.isSupported() {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+        
         let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
         
         // Read/Get Data
@@ -96,6 +124,8 @@ class ViewController: UIViewController {
                 let decoder = JSONDecoder()
                 let secret = try decoder.decode(Secret.self, from: data)
                 SwiftWatchConnectivity.shared.sendMesssageData(data: data)
+                
+                self.syncButton.setTitle("Open WInsta App in your watch and click here", for: .normal)
             } catch {
                 print("Unable to Decode Note (\(error))")
                 askForLoginToken()
