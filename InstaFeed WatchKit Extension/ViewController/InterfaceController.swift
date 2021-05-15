@@ -110,6 +110,10 @@ class InterfaceController: WKInterfaceController {
 
                   },
                   onChange: { changes in
+                    
+                    DispatchQueue.main.async {
+                        
+                    }
                     do {
                         if !self.shouldReloadTable {
                             return
@@ -140,9 +144,11 @@ class InterfaceController: WKInterfaceController {
                                 }
                             }
                         }
-                        
-                        
                         self.feedTableview.scrollToRow(at: 1)
+                        DispatchQueue.main.async {
+
+                        }
+                        
                     } catch {
                         print("parsing fail")
                     }

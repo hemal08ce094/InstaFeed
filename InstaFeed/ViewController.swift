@@ -48,7 +48,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                     let decoder = JSONDecoder()
                     let secret = try decoder.decode(Secret.self, from: data)
                     SwiftWatchConnectivity.shared.sendMesssageData(data: data)
-                    self.syncButton.setTitle("Open WInsta App in your watch and click here", for: .normal)
+                    self.syncButton.setTitle("Open InstaFeed App in your watch and click here", for: .normal)
                 } catch {
                     print("Unable to Decode Note (\(error))")
                     askForLoginToken()
@@ -125,7 +125,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                 let secret = try decoder.decode(Secret.self, from: data)
                 SwiftWatchConnectivity.shared.sendMesssageData(data: data)
                 
-                self.syncButton.setTitle("Open WInsta App in your watch and click here", for: .normal)
+                self.syncButton.setTitle("Open InstaFeed App in your watch and click here", for: .normal)
             } catch {
                 print("Unable to Decode Note (\(error))")
                 askForLoginToken()

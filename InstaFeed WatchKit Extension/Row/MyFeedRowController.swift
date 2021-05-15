@@ -22,6 +22,7 @@ class MyFeedRowController: NSObject {
     @IBOutlet var userImage: WKInterfaceImage!
     @IBOutlet weak var feedPostTime: WKInterfaceLabel!
     
+    @IBOutlet weak var moviePlayer: WKInterfaceMovie!
     
     @IBOutlet var feedImage: WKInterfaceImage!
     @IBOutlet weak var feedCaptionLabel: WKInterfaceLabel!
@@ -36,7 +37,64 @@ class MyFeedRowController: NSObject {
         didSet {
             guard let model = model else { return }
 
-            if let imageData = (model as? [String : Any])?["image_versions2"] as? [String : Any],
+            if let videoVersions = ((model as? [String : Any])?["video_versions"] as? [Any])?.first,
+                let imageData = (model as? [String : Any])?["image_versions2"] as? [String : Any],
+                  let candidates = imageData["candidates"] as? [Any],
+                  let videoURL = (videoVersions as? [String : Any])?["url"] as? String,
+                  let candidateURLString =  (candidates.first as? [String : Any])?["url"] as? String,
+                  let feedCaption = (model as? [String : Any])?["caption"] as? [String : Any],
+                  let createdAtTime = feedCaption["created_at_utc"] as? Int64,
+                  let captionText = feedCaption["text"] as? String,
+                  let userObject = (model as? [String : Any])?["user"],
+                  let userName = (userObject as? [String : Any])?["username"] as? String,
+                  let userProfileURLString = (userObject as? [String : Any])?["profile_pic_url"] as? String {
+                let localDate = NSDate(timeIntervalSince1970: TimeInterval(createdAtTime)).timeAgoDisplay()
+                
+                userImage.kf.setImage(with: URL(string: userProfileURLString))
+                feedImage.kf.setImage(with: URL(string: candidateURLString))
+                
+                
+                moviePlayer.setHidden(false)
+                
+                guard let videoPlayBackURL = URL(string: videoURL) else {
+                      return
+              }
+                
+                moviePlayer.setMovieURL(videoPlayBackURL)
+                
+                guard let aURL = URL(string: candidateURLString) else {
+                    return
+                }
+                
+                URLSession.shared.dataTask(with: aURL) { aData, reponse, error in
+                    DispatchQueue.main.async {
+                        self.moviePlayer.setPosterImage(WKImage(imageData: (aData ?? Data()) as Data))
+                    }
+                }.resume()
+                
+                feedCaptionLabel.setText(captionText)
+                feedPostTime.setText(localDate)
+                titleLabel.setText(userName)
+                
+                if let isLikedByUser = (model as? [String : Any])?["has_liked"] as? Bool, isLikedByUser {
+                    feedLikeButton.setBackgroundImageNamed("Liked.png")
+                    feedLikeButtonState = true
+                } else {
+                    feedLikeButton.setBackgroundImageNamed("Unlicked.png")
+                    feedLikeButtonState = false
+                }
+                
+                
+                if let likeCount = (model as? [String : Any])?["like_count"] as? Int64 {
+                    feedLikeButton.setTitle(String(likeCount))
+                }
+                
+                if let commentCount = (model as? [String : Any])?["comment_count"] as? Int64 {
+                    commentButton.setTitle(String(commentCount))
+                }
+                
+            }
+            else if let imageData = (model as? [String : Any])?["image_versions2"] as? [String : Any],
                let candidates = imageData["candidates"] as? [Any],
                let candidateURLString =  (candidates.first as? [String : Any])?["url"] as? String,
                let feedCaption = (model as? [String : Any])?["caption"] as? [String : Any],
@@ -54,6 +112,9 @@ class MyFeedRowController: NSObject {
                 feedCaptionLabel.setText(captionText)
                 feedPostTime.setText(localDate)
                 titleLabel.setText(userName)
+                
+                feedImage.setHidden(false)
+                moviePlayer.setHidden(true)
                 
                 if let isLikedByUser = (model as? [String : Any])?["has_liked"] as? Bool, isLikedByUser {
                     feedLikeButton.setBackgroundImageNamed("Liked.png")
@@ -99,6 +160,7 @@ class MyFeedRowController: NSObject {
             feedLikeButtonState = true
         }
     }
+
     
     override init() {
 
