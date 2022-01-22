@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
@@ -15,6 +15,32 @@
                     <items>
                         <group alignment="left" animationDuration="1" layout="vertical" id="mTn-3Z-DK8">
                             <items>
+                                <group width="1" height="96" alignment="left" id="ZOn-Dk-Byz" userLabel="Slider Buttons">
+                                    <items>
+                                        <button width="20" height="20" alignment="left" verticalAlignment="center" backgroundImage="shuffle" catalog="system" id="TRg-kV-hvb">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                            <connections>
+                                                <action selector="myFeedClicked" destination="AgC-eL-Hgc" id="Ywm-ru-aKy"/>
+                                            </connections>
+                                        </button>
+                                        <button width="20" height="20" alignment="center" verticalAlignment="center" backgroundImage="pencil" catalog="system" id="c8a-zq-z9V">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                            <connections>
+                                                <action selector="myProfileClicked" destination="AgC-eL-Hgc" id="A9k-N1-V24"/>
+                                            </connections>
+                                        </button>
+                                        <button width="20" height="20" alignment="right" verticalAlignment="center" backgroundImage="info.circle" catalog="system" id="0u7-M0-HZu">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                            <connections>
+                                                <action selector="followerClicked" destination="AgC-eL-Hgc" id="eo1-6f-gk3"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                                </group>
                                 <table alignment="left" id="9td-ig-my9">
                                     <items>
                                         <tableRow identifier="MyFeedRowController" id="mqk-u4-Aas" customClass="MyFeedRowController" customModule="InstaFeed_WatchKit_Extension">
@@ -58,7 +84,21 @@
                                                             <group alignment="left" radius="4" id="OiN-Zc-J8b">
                                                                 <items>
                                                                     <imageView alignment="center" id="y8O-eA-5Gm"/>
-                                                                    <movie width="1" alignment="left" id="N1O-YH-fR4"/>
+                                                                    <group width="1" alignment="left" layout="vertical" id="MgT-HF-t61">
+                                                                        <items>
+                                                                            <inlineMovie width="1" height="100" alignment="left" autoplays="NO" id="Og5-q9-wuA"/>
+                                                                            <button width="1" alignment="left" title="Play" id="Uh3-by-Fs7" userLabel="Play">
+                                                                                <connections>
+                                                                                    <action selector="playButtonClicked" destination="mqk-u4-Aas" id="nj1-1w-Jeq"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button width="1" alignment="left" title="Pause" id="NIg-Re-oBb" userLabel="Play">
+                                                                                <connections>
+                                                                                    <action selector="pauseButtonClicked" destination="mqk-u4-Aas" id="peS-ya-a4z"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </items>
+                                                                    </group>
                                                                 </items>
                                                             </group>
                                                             <group width="1" alignment="left" id="D4u-rJ-GGT">
@@ -92,12 +132,14 @@
                                                 </items>
                                             </group>
                                             <connections>
+                                                <outlet property="btnPlay" destination="Uh3-by-Fs7" id="grg-wk-hnO"/>
                                                 <outlet property="commentButton" destination="ZXK-8f-pdv" id="dg1-E3-mnu"/>
                                                 <outlet property="feedCaptionLabel" destination="b1V-Wq-rRL" id="0eA-aH-Sqn"/>
                                                 <outlet property="feedImage" destination="y8O-eA-5Gm" id="x6k-ut-ArY"/>
                                                 <outlet property="feedLikeButton" destination="k2W-Sl-AcO" id="lJP-B3-js9"/>
                                                 <outlet property="feedPostTime" destination="Jbs-3l-NhG" id="VVt-fU-Up5"/>
-                                                <outlet property="moviePlayer" destination="N1O-YH-fR4" id="cjM-9t-atm"/>
+                                                <outlet property="moviePlayer" destination="Og5-q9-wuA" id="5oI-uR-Bab"/>
+                                                <outlet property="playerGroup" destination="MgT-HF-t61" id="hDe-Af-7mB"/>
                                                 <outlet property="shareButton" destination="Mbw-Kx-tf6" id="BPn-7f-bqc"/>
                                                 <outlet property="titleLabel" destination="nod-wf-9B1" id="Ynq-6X-W7j"/>
                                                 <outlet property="userImage" destination="AMh-pH-cSg" id="U8K-Jf-hDk"/>
@@ -168,7 +210,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="52" y="85"/>
+            <point key="canvasLocation" x="52" y="108.5"/>
         </scene>
         <!--Follower-->
         <scene sceneID="Vc5-Pt-7oL">
@@ -341,7 +383,10 @@
     <resources>
         <image name="Comment" width="399" height="375"/>
         <image name="Liked" width="18" height="16"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil" catalog="system" width="128" height="116"/>
         <image name="shareiCon" width="480" height="480"/>
+        <image name="shuffle" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

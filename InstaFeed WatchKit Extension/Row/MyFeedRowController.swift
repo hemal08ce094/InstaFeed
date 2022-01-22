@@ -14,6 +14,7 @@ import WatchConnectivity
 import SwiftWatchConnectivity
 import Kingfisher
 
+
 class MyFeedRowController: NSObject {
     @IBOutlet var separator: WKInterfaceSeparator!
     
@@ -22,8 +23,11 @@ class MyFeedRowController: NSObject {
     @IBOutlet var userImage: WKInterfaceImage!
     @IBOutlet weak var feedPostTime: WKInterfaceLabel!
     
-    @IBOutlet weak var moviePlayer: WKInterfaceMovie!
-    
+    @IBOutlet weak var btnPlay: WKInterfaceButton!
+    //    @IBOutlet weak var moviePlayer: WKInterfaceMovie!
+    @IBOutlet weak var moviePlayer: WKInterfaceInlineMovie!
+    @IBOutlet weak var playerGroup: WKInterfaceGroup!
+
     @IBOutlet var feedImage: WKInterfaceImage!
     @IBOutlet weak var feedCaptionLabel: WKInterfaceLabel!
     
@@ -36,7 +40,8 @@ class MyFeedRowController: NSObject {
     public var model: AnyObject? {
         didSet {
             guard let model = model else { return }
-
+            playerGroup.setHidden(true)
+            
             if let videoVersions = ((model as? [String : Any])?["video_versions"] as? [Any])?.first,
                 let imageData = (model as? [String : Any])?["image_versions2"] as? [String : Any],
                   let candidates = imageData["candidates"] as? [Any],
@@ -53,14 +58,15 @@ class MyFeedRowController: NSObject {
                 userImage.kf.setImage(with: URL(string: userProfileURLString))
                 feedImage.kf.setImage(with: URL(string: candidateURLString))
                 
-                
-                moviePlayer.setHidden(false)
+                playerGroup.setHidden(false)
                 
                 guard let videoPlayBackURL = URL(string: videoURL) else {
                       return
               }
-                
+         
+                moviePlayer.setAutoplays(false)
                 moviePlayer.setMovieURL(videoPlayBackURL)
+                btnPlay.setTitle("Play")
                 
                 guard let aURL = URL(string: candidateURLString) else {
                     return
@@ -114,8 +120,7 @@ class MyFeedRowController: NSObject {
                 titleLabel.setText(userName)
                 
                 feedImage.setHidden(false)
-                moviePlayer.setHidden(true)
-                
+                playerGroup.setHidden(true)
                 if let isLikedByUser = (model as? [String : Any])?["has_liked"] as? Bool, isLikedByUser {
                     feedLikeButton.setBackgroundImageNamed("Liked.png")
                     feedLikeButtonState = true
@@ -161,6 +166,13 @@ class MyFeedRowController: NSObject {
         }
     }
 
+    @IBAction func playButtonClicked() {
+        moviePlayer.play()
+    }
+    
+    @IBAction func pauseButtonClicked() {
+        moviePlayer.pause()
+    }
     
     override init() {
 
