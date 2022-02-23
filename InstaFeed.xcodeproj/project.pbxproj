@@ -14,6 +14,29 @@
 		0710571F259C5E1B00EC2B6E /* Swiftagram in Frameworks */ = {isa = PBXBuildFile; productRef = 0710571E259C5E1B00EC2B6E /* Swiftagram */; };
 		07105721259C5E1B00EC2B6E /* SwiftagramCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = 07105720259C5E1B00EC2B6E /* SwiftagramCrypto */; };
 		0743720E25A4EC97008B4727 /* FollowRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743720D25A4EC97008B4727 /* FollowRowController.swift */; };
+		074FC6CA27B001EE001A98DE /* UIProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6C427B001EE001A98DE /* UIProperties.swift */; };
+		074FC6CB27B001EE001A98DE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6C527B001EE001A98DE /* Device.swift */; };
+		074FC6CC27B001EE001A98DE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6C627B001EE001A98DE /* Alert.swift */; };
+		074FC6CD27B001EE001A98DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6C727B001EE001A98DE /* Colors.swift */; };
+		074FC6CE27B001EE001A98DE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6C827B001EE001A98DE /* Helper.swift */; };
+		074FC6CF27B001EE001A98DE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6C927B001EE001A98DE /* Fonts.swift */; };
+		074FC6D627B001FA001A98DE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6D027B001FA001A98DE /* RoundButton.swift */; };
+		074FC6D727B001FA001A98DE /* MuteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6D127B001FA001A98DE /* MuteButton.swift */; };
+		074FC6D827B001FA001A98DE /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6D227B001FA001A98DE /* VideoView.swift */; };
+		074FC6D927B001FA001A98DE /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6D327B001FA001A98DE /* PlayPauseButton.swift */; };
+		074FC6DA27B001FA001A98DE /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6D427B001FA001A98DE /* SettingsCell.swift */; };
+		074FC6DB27B001FA001A98DE /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074FC6D527B001FA001A98DE /* SettingsCell.xib */; };
+		074FC6E427B00202001A98DE /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6DC27B00202001A98DE /* UserDefaultsManager.swift */; };
+		074FC6E527B00202001A98DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6DD27B00202001A98DE /* NetworkManager.swift */; };
+		074FC6E627B00202001A98DE /* RateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6DE27B00202001A98DE /* RateManager.swift */; };
+		074FC6E727B00202001A98DE /* SaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6DF27B00202001A98DE /* SaveService.swift */; };
+		074FC6E827B00202001A98DE /* InstaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6E027B00202001A98DE /* InstaService.swift */; };
+		074FC6E927B00202001A98DE /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6E127B00202001A98DE /* SettingModel.swift */; };
+		074FC6EA27B00202001A98DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6E227B00202001A98DE /* User.swift */; };
+		074FC6EB27B00202001A98DE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6E327B00202001A98DE /* Post.swift */; };
+		074FC6ED27B0020F001A98DE /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6EC27B0020F001A98DE /* PreviewVC.swift */; };
+		074FC6F027B002BA001A98DE /* Circe-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 074FC6EE27B002BA001A98DE /* Circe-Bold.ttf */; };
+		074FC6F127B002BA001A98DE /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 074FC6EF27B002BA001A98DE /* Billabong.ttf */; };
 		0759825825BB50AE0076639A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955012259BA2EE001CFAB9 /* Assets.xcassets */; };
 		0759826325BB50B00076639A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955012259BA2EE001CFAB9 /* Assets.xcassets */; };
 		07954FFA259BA2E7001CFAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */; };
@@ -34,6 +57,8 @@
 		0795503B259BA3F2001CFAB9 /* Swiftagram in Frameworks */ = {isa = PBXBuildFile; productRef = 0795503A259BA3F2001CFAB9 /* Swiftagram */; };
 		07B4F50F25BB5BEE00ACE721 /* NoDataInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B4F50E25BB5BEE00ACE721 /* NoDataInterfaceController.swift */; };
 		07B4F51525BC052300ACE721 /* MyProfileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B4F51425BC052300ACE721 /* MyProfileInterfaceController.swift */; };
+		07CD2C8827AE7F3900E7A369 /* PKIAPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD2C8727AE7F3900E7A369 /* PKIAPHandler.swift */; };
+		07CD2C8A27AE7F7E00E7A369 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CD2C8927AE7F7E00E7A369 /* StoreKit.framework */; };
 		19BDA801C4E8AEC381B6587E /* Pods_InstaFeed_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062F18C6F4BA3A9BE907A3B2 /* Pods_InstaFeed_WatchKit_App.framework */; };
 		76770F36F4B0AD25CB5C9814 /* Pods_InstaFeed_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */; };
 		7F405F7E2E36E0E42EF98081 /* Pods_InstaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33A7176F23C03397D4542D0 /* Pods_InstaFeed.framework */; };
@@ -89,6 +114,29 @@
 		07105717259C55C300EC2B6E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		07105718259C55C300EC2B6E /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
 		0743720D25A4EC97008B4727 /* FollowRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowRowController.swift; sourceTree = "<group>"; };
+		074FC6C427B001EE001A98DE /* UIProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIProperties.swift; sourceTree = "<group>"; };
+		074FC6C527B001EE001A98DE /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		074FC6C627B001EE001A98DE /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		074FC6C727B001EE001A98DE /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		074FC6C827B001EE001A98DE /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		074FC6C927B001EE001A98DE /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		074FC6D027B001FA001A98DE /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		074FC6D127B001FA001A98DE /* MuteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuteButton.swift; sourceTree = "<group>"; };
+		074FC6D227B001FA001A98DE /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		074FC6D327B001FA001A98DE /* PlayPauseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayPauseButton.swift; sourceTree = "<group>"; };
+		074FC6D427B001FA001A98DE /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		074FC6D527B001FA001A98DE /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		074FC6DC27B00202001A98DE /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		074FC6DD27B00202001A98DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		074FC6DE27B00202001A98DE /* RateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
+		074FC6DF27B00202001A98DE /* SaveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveService.swift; sourceTree = "<group>"; };
+		074FC6E027B00202001A98DE /* InstaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaService.swift; sourceTree = "<group>"; };
+		074FC6E127B00202001A98DE /* SettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		074FC6E227B00202001A98DE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		074FC6E327B00202001A98DE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		074FC6EC27B0020F001A98DE /* PreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
+		074FC6EE27B002BA001A98DE /* Circe-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-Bold.ttf"; sourceTree = "<group>"; };
+		074FC6EF27B002BA001A98DE /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
 		07954FF6259BA2E7001CFAB9 /* InstaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07954FF9259BA2E7001CFAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07954FFB259BA2E7001CFAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +159,8 @@
 		07955043259BAD8C001CFAB9 /* InstaFeed WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "InstaFeed WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		07B4F50E25BB5BEE00ACE721 /* NoDataInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataInterfaceController.swift; sourceTree = "<group>"; };
 		07B4F51425BC052300ACE721 /* MyProfileInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileInterfaceController.swift; sourceTree = "<group>"; };
+		07CD2C8727AE7F3900E7A369 /* PKIAPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKIAPHandler.swift; sourceTree = "<group>"; };
+		07CD2C8927AE7F7E00E7A369 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFeed_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9551EB2DD9998CBE6930EE4F /* Pods-InstaFeed WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-InstaFeed WatchKit App/Pods-InstaFeed WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		9A8D2EFF0FD4903347FB5216 /* Pods-InstaFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.debug.xcconfig"; path = "Target Support Files/Pods-InstaFeed/Pods-InstaFeed.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +178,7 @@
 				07955039259BA3F2001CFAB9 /* SwiftagramCrypto in Frameworks */,
 				0795503B259BA3F2001CFAB9 /* Swiftagram in Frameworks */,
 				7F405F7E2E36E0E42EF98081 /* Pods_InstaFeed.framework in Frameworks */,
+				07CD2C8A27AE7F7E00E7A369 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,9 +212,41 @@
 			path = Row;
 			sourceTree = "<group>";
 		};
+		074FC6C327B001D7001A98DE /* Insta Saver */ = {
+			isa = PBXGroup;
+			children = (
+				07CD2C8727AE7F3900E7A369 /* PKIAPHandler.swift */,
+				074FC6E027B00202001A98DE /* InstaService.swift */,
+				074FC6DD27B00202001A98DE /* NetworkManager.swift */,
+				074FC6E327B00202001A98DE /* Post.swift */,
+				074FC6DE27B00202001A98DE /* RateManager.swift */,
+				074FC6DF27B00202001A98DE /* SaveService.swift */,
+				074FC6E127B00202001A98DE /* SettingModel.swift */,
+				074FC6E227B00202001A98DE /* User.swift */,
+				074FC6DC27B00202001A98DE /* UserDefaultsManager.swift */,
+				074FC6C627B001EE001A98DE /* Alert.swift */,
+				074FC6C727B001EE001A98DE /* Colors.swift */,
+				074FC6C527B001EE001A98DE /* Device.swift */,
+				074FC6C927B001EE001A98DE /* Fonts.swift */,
+				074FC6C827B001EE001A98DE /* Helper.swift */,
+				074FC6C427B001EE001A98DE /* UIProperties.swift */,
+				074FC6D127B001FA001A98DE /* MuteButton.swift */,
+				074FC6D327B001FA001A98DE /* PlayPauseButton.swift */,
+				074FC6D027B001FA001A98DE /* RoundButton.swift */,
+				074FC6D427B001FA001A98DE /* SettingsCell.swift */,
+				074FC6D527B001FA001A98DE /* SettingsCell.xib */,
+				074FC6D227B001FA001A98DE /* VideoView.swift */,
+				074FC6EC27B0020F001A98DE /* PreviewVC.swift */,
+				074FC6EF27B002BA001A98DE /* Billabong.ttf */,
+				074FC6EE27B002BA001A98DE /* Circe-Bold.ttf */,
+			);
+			path = "Insta Saver";
+			sourceTree = "<group>";
+		};
 		07954FED259BA2E7001CFAB9 = {
 			isa = PBXGroup;
 			children = (
+				074FC6C327B001D7001A98DE /* Insta Saver */,
 				07954FF8259BA2E7001CFAB9 /* InstaFeed */,
 				0795500E259BA2EC001CFAB9 /* InstaFeed WatchKit App */,
 				0795501D259BA2EE001CFAB9 /* InstaFeed WatchKit Extension */,
@@ -251,6 +334,7 @@
 		77EE20FD76772E49ABD4EAFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07CD2C8927AE7F7E00E7A369 /* StoreKit.framework */,
 				B33A7176F23C03397D4542D0 /* Pods_InstaFeed.framework */,
 				062F18C6F4BA3A9BE907A3B2 /* Pods_InstaFeed_WatchKit_App.framework */,
 				4B13F9A3FC9FB6D33AC6BF14 /* Pods_InstaFeed_WatchKit_Extension.framework */,
@@ -376,7 +460,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074FC6DB27B001FA001A98DE /* SettingsCell.xib in Resources */,
 				0710571A259C55C300EC2B6E /* AuthenticationViewController.xib in Resources */,
+				074FC6F027B002BA001A98DE /* Circe-Bold.ttf in Resources */,
+				074FC6F127B002BA001A98DE /* Billabong.ttf in Resources */,
 				07955006259BA2EC001CFAB9 /* LaunchScreen.storyboard in Resources */,
 				07955003259BA2EC001CFAB9 /* Assets.xcassets in Resources */,
 				07955001259BA2E7001CFAB9 /* Main.storyboard in Resources */,
@@ -512,10 +599,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074FC6E927B00202001A98DE /* SettingModel.swift in Sources */,
+				074FC6E527B00202001A98DE /* NetworkManager.swift in Sources */,
+				074FC6D727B001FA001A98DE /* MuteButton.swift in Sources */,
+				074FC6EB27B00202001A98DE /* Post.swift in Sources */,
+				074FC6D627B001FA001A98DE /* RoundButton.swift in Sources */,
+				074FC6E427B00202001A98DE /* UserDefaultsManager.swift in Sources */,
+				07CD2C8827AE7F3900E7A369 /* PKIAPHandler.swift in Sources */,
+				074FC6CD27B001EE001A98DE /* Colors.swift in Sources */,
 				07105719259C55C300EC2B6E /* AuthenticationViewController.swift in Sources */,
 				07954FFE259BA2E7001CFAB9 /* ViewController.swift in Sources */,
 				07954FFA259BA2E7001CFAB9 /* AppDelegate.swift in Sources */,
+				074FC6CA27B001EE001A98DE /* UIProperties.swift in Sources */,
+				074FC6D827B001FA001A98DE /* VideoView.swift in Sources */,
+				074FC6E627B00202001A98DE /* RateManager.swift in Sources */,
+				074FC6E727B00202001A98DE /* SaveService.swift in Sources */,
+				074FC6CB27B001EE001A98DE /* Device.swift in Sources */,
+				074FC6CE27B001EE001A98DE /* Helper.swift in Sources */,
+				074FC6ED27B0020F001A98DE /* PreviewVC.swift in Sources */,
+				074FC6E827B00202001A98DE /* InstaService.swift in Sources */,
+				074FC6CF27B001EE001A98DE /* Fonts.swift in Sources */,
+				074FC6CC27B001EE001A98DE /* Alert.swift in Sources */,
+				074FC6D927B001FA001A98DE /* PlayPauseButton.swift in Sources */,
+				074FC6DA27B001FA001A98DE /* SettingsCell.swift in Sources */,
 				07954FFC259BA2E7001CFAB9 /* SceneDelegate.swift in Sources */,
+				074FC6EA27B00202001A98DE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,7 +811,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -729,7 +837,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -753,7 +861,7 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				IBSC_MODULE = InstaFeed_WatchKit_Extension;
 				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -776,7 +884,7 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				IBSC_MODULE = InstaFeed_WatchKit_Extension;
 				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -804,7 +912,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -829,7 +937,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

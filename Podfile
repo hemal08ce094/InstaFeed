@@ -7,6 +7,10 @@ target 'InstaFeed' do
   pod 'SwiftWatchConnectivity'
   pod 'Kingfisher'
 
+  
+  pod 'VYAlertController'
+  pod 'SVProgressHUD'
+  pod 'Alamofire'
   # Pods for InstaFeed
 
 end

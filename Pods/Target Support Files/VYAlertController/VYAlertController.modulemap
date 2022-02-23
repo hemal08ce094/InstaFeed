@@ -1,0 +1,6 @@
+framework module VYAlertController {
+  umbrella header "VYAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -54,8 +54,10 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/WatchInsta">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07955009259BA2EC001CFAB9"
@@ -63,7 +65,7 @@
             BlueprintName = "InstaFeed WatchKit App"
             ReferencedContainer = "container:InstaFeed.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -71,8 +73,10 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/WatchInsta">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07955009259BA2EC001CFAB9"
@@ -80,7 +84,16 @@
             BlueprintName = "InstaFeed WatchKit App"
             ReferencedContainer = "container:InstaFeed.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07955009259BA2EC001CFAB9"
+            BuildableName = "InstaFeed WatchKit App.app"
+            BlueprintName = "InstaFeed WatchKit App"
+            ReferencedContainer = "container:InstaFeed.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

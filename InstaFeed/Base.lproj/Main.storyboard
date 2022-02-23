@@ -17,25 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-mr-L9p">
-                                <rect key="frame" x="25" y="747" width="364" height="55"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="gia-j4-npk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
-                                <state key="normal" title=" Click here to Login and Sync with watch ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="SyncClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KXn-Ta-mHQ"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infinity.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FWM-Ll-dST">
                                 <rect key="frame" x="147" y="184.5" width="120" height="119"/>
                                 <constraints>
@@ -48,18 +29,86 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYS-u1-Mx9">
+                                <rect key="frame" x="16" y="588.5" width="382" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use this to download Reels/Pic/Video to Photos App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhX-Hr-vmZ">
+                                        <rect key="frame" x="38" y="0.0" width="306.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX4-94-KHU">
+                                        <rect key="frame" x="10" y="31.5" width="362" height="68.5"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                        <state key="normal" title="Click Here To Paste Link">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UX4-94-KHU" firstAttribute="leading" secondItem="EYS-u1-Mx9" secondAttribute="leading" constant="10" id="OHq-se-BWH"/>
+                                    <constraint firstAttribute="height" constant="100" id="UWc-l1-Xq9"/>
+                                    <constraint firstAttribute="trailing" secondItem="UX4-94-KHU" secondAttribute="trailing" constant="10" id="nli-Q2-wT1"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hiw-lh-ZJF">
+                                <rect key="frame" x="10" y="722" width="393" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use this to browse Instagram Account real time in your watch App " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVk-EE-J75">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="37"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-mr-L9p">
+                                        <rect key="frame" x="10" y="45" width="373" height="55"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="gia-j4-npk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                        <state key="normal" title=" Click here to Login and Sync with watch ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="SyncClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KXn-Ta-mHQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xaY-mr-L9p" firstAttribute="leading" secondItem="Hiw-lh-ZJF" secondAttribute="leading" constant="10" id="GV1-ZD-bW0"/>
+                                    <constraint firstAttribute="height" constant="100" id="Pao-wd-CXo"/>
+                                    <constraint firstAttribute="trailing" secondItem="xaY-mr-L9p" secondAttribute="trailing" constant="10" id="weU-8E-YqA"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="EYS-u1-Mx9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="46O-KY-LUM"/>
+                            <constraint firstItem="Hiw-lh-ZJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="B13-48-tT6"/>
                             <constraint firstItem="FWM-Ll-dST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CKS-WG-hu3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xaY-mr-L9p" secondAttribute="bottom" constant="60" id="Piy-Xe-ZKp"/>
-                            <constraint firstItem="xaY-mr-L9p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="dxe-W1-Ua3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hiw-lh-ZJF" secondAttribute="bottom" constant="40" id="Dn0-dS-uuL"/>
+                            <constraint firstItem="Hiw-lh-ZJF" firstAttribute="top" secondItem="EYS-u1-Mx9" secondAttribute="bottom" constant="33.5" id="gwK-Wg-qt6"/>
                             <constraint firstItem="FWM-Ll-dST" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="n78-AX-XBg"/>
-                            <constraint firstItem="xaY-mr-L9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xq4-CO-nJb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EYS-u1-Mx9" secondAttribute="trailing" constant="16" id="o1H-sx-889"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hiw-lh-ZJF" secondAttribute="trailing" constant="11" id="umz-bF-Y03"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pasteButton" destination="UX4-94-KHU" id="ty5-Ct-mWu"/>
                         <outlet property="syncButton" destination="xaY-mr-L9p" id="Hq2-BM-AAu"/>
                     </connections>
                 </viewController>
