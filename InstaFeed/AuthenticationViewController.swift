@@ -30,7 +30,7 @@ class AuthenticationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
+        let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed1")!
              
         
         // Authenticate.

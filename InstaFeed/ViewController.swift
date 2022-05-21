@@ -44,7 +44,7 @@ class ViewController: UIViewController, WCSessionDelegate {
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if activationState == .activated {
-            let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
+            let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed1")!
             
             // Read/Get Data
             if let data = userDefaults.data(forKey: "userId") {
@@ -76,7 +76,7 @@ class ViewController: UIViewController, WCSessionDelegate {
         Client.default = .current ?? .iPhone11ProMax
         pasteButton.addTarget(self, action: #selector(pasteButtonTapped), for: .touchUpInside)
         
-        let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
+        let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed1")!
         
         // Read/Get Data
         if let data = userDefaults.data(forKey: "userId") {
@@ -143,7 +143,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                 session.activate()
             }
             
-            let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
+            let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed1")!
             
             // Read/Get Data
             if let data = userDefaults.data(forKey: "userId") {

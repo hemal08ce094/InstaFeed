@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.hemalM.InstaFeed</string>
+	<string>com.hemalM.InstaFeed1</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
