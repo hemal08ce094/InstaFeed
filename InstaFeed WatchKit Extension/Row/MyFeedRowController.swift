@@ -41,6 +41,9 @@ class MyFeedRowController: NSObject {
         didSet {
             guard let model = model else { return }
             playerGroup.setHidden(true)
+            btnPlay.setHidden(true)
+            feedImage.setHidden(false)
+            
             
             if let videoVersions = ((model as? [String : Any])?["video_versions"] as? [Any])?.first,
                 let imageData = (model as? [String : Any])?["image_versions2"] as? [String : Any],
@@ -59,6 +62,8 @@ class MyFeedRowController: NSObject {
                 feedImage.kf.setImage(with: URL(string: candidateURLString))
                 
                 playerGroup.setHidden(false)
+                btnPlay.setHidden(false)
+                feedImage.setHidden(true)
                 
                 guard let videoPlayBackURL = URL(string: videoURL) else {
                       return
@@ -66,7 +71,8 @@ class MyFeedRowController: NSObject {
          
                 moviePlayer.setAutoplays(false)
                 moviePlayer.setMovieURL(videoPlayBackURL)
-                btnPlay.setTitle("Play")
+                
+                btnPlay.setBackgroundImage(UIImage(named: "play"))
                 
                 guard let aURL = URL(string: candidateURLString) else {
                     return
@@ -83,10 +89,10 @@ class MyFeedRowController: NSObject {
                 titleLabel.setText(userName)
                 
                 if let isLikedByUser = (model as? [String : Any])?["has_liked"] as? Bool, isLikedByUser {
-                    feedLikeButton.setBackgroundImageNamed("Liked.png")
+                    feedLikeButton.setBackgroundImageNamed("heartL.png")
                     feedLikeButtonState = true
                 } else {
-                    feedLikeButton.setBackgroundImageNamed("Unlicked.png")
+                    feedLikeButton.setBackgroundImageNamed("heart.png")
                     feedLikeButtonState = false
                 }
                 
@@ -121,11 +127,13 @@ class MyFeedRowController: NSObject {
                 
                 feedImage.setHidden(false)
                 playerGroup.setHidden(true)
+                btnPlay.setHidden(true)
+                
                 if let isLikedByUser = (model as? [String : Any])?["has_liked"] as? Bool, isLikedByUser {
-                    feedLikeButton.setBackgroundImageNamed("Liked.png")
+                    feedLikeButton.setBackgroundImageNamed("heartL.png")
                     feedLikeButtonState = true
                 } else {
-                    feedLikeButton.setBackgroundImageNamed("Unlicked.png")
+                    feedLikeButton.setBackgroundImageNamed("heart.png")
                     feedLikeButtonState = false
                 }
                 
@@ -158,20 +166,31 @@ class MyFeedRowController: NSObject {
 
     @IBAction func likeButtonClicked() {
         if feedLikeButtonState {
-            feedLikeButton.setBackgroundImageNamed("Unlicked.png")
+            feedLikeButton.setBackgroundImageNamed("heart.png")
             feedLikeButtonState = false
         } else {
-            feedLikeButton.setBackgroundImageNamed("Liked.png")
+            feedLikeButton.setBackgroundImageNamed("heartL.png")
             feedLikeButtonState = true
         }
     }
 
+    var isPlaying: Bool = false
+    
     @IBAction func playButtonClicked() {
-        moviePlayer.play()
+        if isPlaying {
+            moviePlayer.pause()
+            btnPlay.setBackgroundImage(UIImage(named: "play"))
+            isPlaying = false
+        } else {
+            moviePlayer.play()
+            btnPlay.setBackgroundImage(UIImage(named: "pause"))
+            isPlaying = true
+        }
     }
     
     @IBAction func pauseButtonClicked() {
         moviePlayer.pause()
+        btnPlay.setBackgroundImage(UIImage(named: "play"))
     }
     
     override init() {

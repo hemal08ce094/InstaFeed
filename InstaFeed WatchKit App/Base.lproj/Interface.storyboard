@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
@@ -17,21 +17,21 @@
                             <items>
                                 <group width="1" height="96" alignment="left" id="ZOn-Dk-Byz" userLabel="Slider Buttons">
                                     <items>
-                                        <button width="20" height="20" alignment="left" verticalAlignment="center" backgroundImage="shuffle" catalog="system" id="TRg-kV-hvb">
+                                        <button width="20" height="20" alignment="center" verticalAlignment="center" backgroundImage="refresh-30W" id="TRg-kV-hvb">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="system" pointSize="12"/>
                                             <connections>
                                                 <action selector="myFeedClicked" destination="AgC-eL-Hgc" id="Ywm-ru-aKy"/>
                                             </connections>
                                         </button>
-                                        <button width="20" height="20" alignment="center" verticalAlignment="center" backgroundImage="pencil" catalog="system" id="c8a-zq-z9V">
+                                        <button width="20" height="20" alignment="left" verticalAlignment="center" backgroundImage="profile-W" id="c8a-zq-z9V">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="system" pointSize="12"/>
                                             <connections>
                                                 <action selector="myProfileClicked" destination="AgC-eL-Hgc" id="A9k-N1-V24"/>
                                             </connections>
                                         </button>
-                                        <button width="20" height="20" alignment="right" verticalAlignment="center" backgroundImage="info.circle" catalog="system" id="0u7-M0-HZu">
+                                        <button width="20" height="20" alignment="right" verticalAlignment="center" backgroundImage="icons8-menu-50" id="0u7-M0-HZu">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="system" pointSize="12"/>
                                             <connections>
@@ -87,12 +87,8 @@
                                                                     <group width="1" alignment="left" layout="vertical" id="MgT-HF-t61">
                                                                         <items>
                                                                             <inlineMovie width="1" height="100" alignment="left" autoplays="NO" id="Og5-q9-wuA"/>
-                                                                            <button width="1" alignment="left" title="Play" id="Uh3-by-Fs7" userLabel="Play">
-                                                                                <connections>
-                                                                                    <action selector="playButtonClicked" destination="mqk-u4-Aas" id="nj1-1w-Jeq"/>
-                                                                                </connections>
-                                                                            </button>
-                                                                            <button width="1" alignment="left" title="Pause" id="NIg-Re-oBb" userLabel="Play">
+                                                                            <button width="1" height="2" alignment="left" title="Pause" id="NIg-Re-oBb" userLabel="Play">
+                                                                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <connections>
                                                                                     <action selector="pauseButtonClicked" destination="mqk-u4-Aas" id="peS-ya-a4z"/>
                                                                                 </connections>
@@ -110,20 +106,25 @@
                                                             </group>
                                                             <group width="1" alignment="left" spacing="10" id="D6U-hx-Q6m">
                                                                 <items>
-                                                                    <button width="25" height="25" alignment="left" verticalAlignment="center" backgroundImage="Liked" id="k2W-Sl-AcO">
-                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <button alignment="left" verticalAlignment="center" backgroundImage="heart" id="k2W-Sl-AcO">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="font" type="system" pointSize="8"/>
                                                                         <connections>
                                                                             <action selector="likeButtonClicked" destination="mqk-u4-Aas" id="Bri-Dj-8Ss"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="Comment" id="ZXK-8f-pdv">
-                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <button alignment="center" verticalAlignment="center" backgroundImage="comment" id="ZXK-8f-pdv">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="font" type="system" pointSize="8"/>
                                                                     </button>
-                                                                    <button width="25" height="25" alignment="right" verticalAlignment="center" backgroundImage="shareiCon" id="Mbw-Kx-tf6">
+                                                                    <button alignment="right" verticalAlignment="center" backgroundImage="share" id="Mbw-Kx-tf6">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </button>
+                                                                    <button alignment="right" verticalAlignment="center" backgroundImage="play" id="Uh3-by-Fs7" userLabel="Play">
+                                                                        <connections>
+                                                                            <action selector="playButtonClicked" destination="mqk-u4-Aas" id="nj1-1w-Jeq"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </items>
                                                             </group>
@@ -381,12 +382,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Comment" width="399" height="375"/>
-        <image name="Liked" width="18" height="16"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="pencil" catalog="system" width="128" height="116"/>
-        <image name="shareiCon" width="480" height="480"/>
-        <image name="shuffle" catalog="system" width="128" height="93"/>
+        <image name="comment" width="25" height="25"/>
+        <image name="heart" width="25" height="25"/>
+        <image name="icons8-menu-50" width="25" height="25"/>
+        <image name="play" width="25" height="25"/>
+        <image name="profile-W" width="32" height="32"/>
+        <image name="refresh-30W" width="15" height="15"/>
+        <image name="share" width="25" height="25"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
