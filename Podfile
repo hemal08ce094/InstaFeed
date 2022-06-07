@@ -11,6 +11,7 @@ target 'InstaFeed' do
   pod 'VYAlertController'
   pod 'SVProgressHUD'
   pod 'Alamofire'
+
   # Pods for InstaFeed
 
 end

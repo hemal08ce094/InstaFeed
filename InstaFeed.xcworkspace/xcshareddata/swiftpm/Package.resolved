@@ -1,43 +1,41 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "ComposableRequest",
-        "repositoryURL": "https://github.com/sbertix/ComposableRequest",
-        "state": {
-          "branch": null,
-          "revision": "94d352389a9f9e5c82f882747c81b72873702c02",
-          "version": "4.3.2"
-        }
-      },
-      {
-        "package": "SwCrypt",
-        "repositoryURL": "https://github.com/sbertix/SwCrypt",
-        "state": {
-          "branch": null,
-          "revision": "e850285c2dadd4343be9465adc67cd717a64792f",
-          "version": "5.1.4"
-        }
-      },
-      {
-        "package": "Swiftagram",
-        "repositoryURL": "https://github.com/sbertix/Swiftagram.git",
-        "state": {
-          "branch": null,
-          "revision": "212e1413f7b117885b703d0e6cb1a7a134aa5d5f",
-          "version": "4.2.10"
-        }
-      },
-      {
-        "package": "Swiftchain",
-        "repositoryURL": "https://github.com/sbertix/Swiftchain.git",
-        "state": {
-          "branch": null,
-          "revision": "dff136ab54df5768c1b8a234bc7c6fd212b280f7",
-          "version": "1.0.4"
-        }
+  "pins" : [
+    {
+      "identity" : "composablerequest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sbertix/ComposableRequest",
+      "state" : {
+        "revision" : "94d352389a9f9e5c82f882747c81b72873702c02",
+        "version" : "4.3.2"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swcrypt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sbertix/SwCrypt",
+      "state" : {
+        "revision" : "e850285c2dadd4343be9465adc67cd717a64792f",
+        "version" : "5.1.4"
+      }
+    },
+    {
+      "identity" : "swiftagram",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sbertix/Swiftagram.git",
+      "state" : {
+        "revision" : "212e1413f7b117885b703d0e6cb1a7a134aa5d5f",
+        "version" : "4.2.10"
+      }
+    },
+    {
+      "identity" : "swiftchain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sbertix/Swiftchain.git",
+      "state" : {
+        "revision" : "dff136ab54df5768c1b8a234bc7c6fd212b280f7",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 2
 }

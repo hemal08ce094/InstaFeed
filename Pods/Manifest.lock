@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.5.0)
+  - IAPurchaseManager (0.2.0)
   - Kingfisher (5.14.1):
     - Kingfisher/Core (= 5.14.1)
   - Kingfisher/Core (5.14.1)
@@ -9,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - IAPurchaseManager
   - Kingfisher
   - SVProgressHUD
   - SwiftWatchConnectivity
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - IAPurchaseManager
     - Kingfisher
     - SVProgressHUD
     - SwiftWatchConnectivity
@@ -24,11 +27,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  IAPurchaseManager: 2e4678d9dc157627e1f2c4c6e13fd9559f27f3c0
   Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftWatchConnectivity: 336eb865da6bcf104c82a1fd6406635bbf2c4bcb
   VYAlertController: b9368a46f3b024be74fc0182c65780e37847fefa
 
-PODFILE CHECKSUM: f0ff7e11b66f2c46c827bf0a8e021d1e3f30f948
+PODFILE CHECKSUM: 3210e82e3e58775c23fdb826a1eb7e76bba71720
 
 COCOAPODS: 1.11.2

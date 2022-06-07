@@ -63,7 +63,7 @@ class MyProfileInterfaceController: WKInterfaceController {
         let dict = context as! Dictionary<String, Any>
         myProfile = dict["user"] as? User
         
-        let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed1.watchkitapp")!
+        let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed.watchkitapp")!
         
         var secret : Secret
         

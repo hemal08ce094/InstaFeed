@@ -10,7 +10,6 @@ import WebKit
 import ComposableRequestCrypto
 import Swiftagram
 import SwiftagramCrypto
-import WatchConnectivity
 
 
 class AuthenticationViewController: UIViewController {
@@ -30,7 +29,7 @@ class AuthenticationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed1")!
+        let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
              
         
         // Authenticate.
