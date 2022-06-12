@@ -29,7 +29,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYS-u1-Mx9">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYS-u1-Mx9">
                                 <rect key="frame" x="16" y="588.5" width="382" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use this to download Reels/Pic/Video to Photos App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhX-Hr-vmZ">
@@ -97,7 +97,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="ZjR-Oe-m1A">
+                                    <navigationItem id="ZjR-Oe-m1A">
                                         <barButtonItem key="rightBarButtonItem" title="Restore" id="Cpx-zv-PFd">
                                             <connections>
                                                 <action selector="restoreButtonClicked:" destination="BYZ-38-t0r" id="aSR-if-Pb6"/>
