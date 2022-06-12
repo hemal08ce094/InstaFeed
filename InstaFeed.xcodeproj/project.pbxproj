@@ -815,8 +815,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 1.0.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -841,8 +841,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 1.0.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -865,8 +865,8 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				IBSC_MODULE = InstaFeed_WatchKit_Extension;
 				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp;
+				MARKETING_VERSION = 1.0.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -888,8 +888,8 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				IBSC_MODULE = InstaFeed_WatchKit_Extension;
 				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed.watchkitapp;
+				MARKETING_VERSION = 1.0.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -916,8 +916,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed;
+				MARKETING_VERSION = 1.0.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -941,8 +941,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed;
+				MARKETING_VERSION = 1.0.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;

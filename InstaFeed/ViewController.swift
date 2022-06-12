@@ -15,10 +15,10 @@ import StoreKit
 
 class ViewController: UIViewController, WCSessionDelegate {
    
-    let productID = "wi_19.9_30d"
+    let productID = "mo_29.9_30d"
     var isInAppPurchased = false
     
-    let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed")!
+    let userDefaults = UserDefaults(suiteName: "group.com.hemalM.InstaFeed1")!
     
     override func viewDidLoad() {
         super.viewDidLoad()

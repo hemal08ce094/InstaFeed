@@ -57,7 +57,7 @@ class InterfaceController: WKInterfaceController {
     
     func getToken() {
     
-        let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed.watchkitapp")!
+        let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed1.watchkitapp")!
         
         // Read/Get Data
         if let data = userDefaults.data(forKey: "userId") {
@@ -167,7 +167,7 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func myFeedClicked() {
         
-        let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed.watchkitapp")!
+        let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed1.watchkitapp")!
         
         // Read/Get Data
         if let data = userDefaults.data(forKey: "userId") {
@@ -232,7 +232,7 @@ extension InterfaceController: SwiftWatchConnectivityDelegate {
         case .sendMessageData(let messageData):
             SwiftWatchConnectivity.shared.sendMesssage(message: ["isSync" : true])
             
-            let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed.watchkitapp")!
+            let userDefaults = UserDefaults(suiteName: "com.hemalM.InstaFeed1.watchkitapp")!
             
             do {
 

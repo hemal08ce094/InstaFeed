@@ -57,7 +57,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/WatchInsta">
+         RemotePath = "/Instagram Feed">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07955009259BA2EC001CFAB9"
@@ -76,7 +76,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/WatchInsta">
+         RemotePath = "/Instagram Feed">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07955009259BA2EC001CFAB9"
