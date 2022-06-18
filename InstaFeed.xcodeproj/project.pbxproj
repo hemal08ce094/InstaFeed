@@ -46,7 +46,7 @@
 		07955001259BA2E7001CFAB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07954FFF259BA2E7001CFAB9 /* Main.storyboard */; };
 		07955003259BA2EC001CFAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955002259BA2EC001CFAB9 /* Assets.xcassets */; };
 		07955006259BA2EC001CFAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07955004259BA2EC001CFAB9 /* LaunchScreen.storyboard */; };
-		0795500B259BA2EC001CFAB9 /* InstaFeed WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0795500A259BA2EC001CFAB9 /* InstaFeed WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0795500B259BA2EC001CFAB9 /* InstaFeed WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0795500A259BA2EC001CFAB9 /* InstaFeed WatchKit App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		07955011259BA2EC001CFAB9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0795500F259BA2EC001CFAB9 /* Interface.storyboard */; };
 		07955013259BA2EE001CFAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07955012259BA2EE001CFAB9 /* Assets.xcassets */; };
 		0795501A259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07955019259BA2EE001CFAB9 /* InstaFeed WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -651,6 +651,7 @@
 /* Begin PBXTargetDependency section */
 		0795500D259BA2EC001CFAB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 07955009259BA2EC001CFAB9 /* InstaFeed WatchKit App */;
 			targetProxy = 0795500C259BA2EC001CFAB9 /* PBXContainerItemProxy */;
 		};
@@ -815,8 +816,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.SaveReel.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -841,8 +842,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.SaveReel.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -865,8 +866,8 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				IBSC_MODULE = InstaFeed_WatchKit_Extension;
 				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.SaveReel.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -888,8 +889,8 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				IBSC_MODULE = InstaFeed_WatchKit_Extension;
 				INFOPLIST_FILE = "InstaFeed WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1.watchkitapp;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.SaveReel.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -916,10 +917,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.SaveReel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -941,10 +943,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.InstaFeed1;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.SaveReel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

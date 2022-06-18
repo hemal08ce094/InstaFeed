@@ -35,7 +35,7 @@ class PKIAPHandler: NSObject {
     //MARK:- Properties
     //MARK:- Private
     fileprivate var productIds = [String]()
-    fileprivate var productID = "com.hemalM.InstaFeed1.wi_19.9_30d"
+    fileprivate var productID = "com.hemalM.SaveReel.wi_19.9_30d"
     fileprivate var productsRequest = SKProductsRequest()
     fileprivate var fetchProductComplition: (([SKProduct])->Void)?
     
