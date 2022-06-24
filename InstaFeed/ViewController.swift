@@ -185,8 +185,14 @@ extension ViewController: SwiftWatchConnectivityDelegate {
 
 extension ViewController {
     @objc private func pasteButtonTapped() {
+      
+        if isInAppPurchased {
+            buttonclicked()
+        } else {
+            inAppPurchaseFlow()
+        }
         
-        buttonclicked()
+        
       
         func buttonclicked() {
             if let link = UIPasteboard.general.string {
