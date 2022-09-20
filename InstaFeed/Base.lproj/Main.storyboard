@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dashboard Bg" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-AU-guX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="302"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TB2-AU-guX" secondAttribute="height" multiplier="207:151" id="7DL-ch-0aa"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infinity.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FWM-Ll-dST">
                                 <rect key="frame" x="147" y="184.5" width="120" height="119"/>
                                 <constraints>
@@ -93,20 +99,17 @@
                                     <constraint firstAttribute="trailing" secondItem="xaY-mr-L9p" secondAttribute="trailing" constant="10" id="weU-8E-YqA"/>
                                 </constraints>
                             </stackView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8P-Un-Idu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="ZjR-Oe-m1A">
-                                        <barButtonItem key="rightBarButtonItem" title="Restore" id="Cpx-zv-PFd">
-                                            <connections>
-                                                <action selector="restoreButtonClicked:" destination="BYZ-38-t0r" id="aSR-if-Pb6"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                                <navigationBarAppearance key="standardAppearance"/>
-                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xud-iN-j6F">
+                                <rect key="frame" x="294" y="44" width="100" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jh4-xG-0aE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Restore"/>
+                                <connections>
+                                    <action selector="restoreButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qq8-i5-bar"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,10 +118,15 @@
                             <constraint firstItem="Hiw-lh-ZJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="B13-48-tT6"/>
                             <constraint firstItem="FWM-Ll-dST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CKS-WG-hu3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hiw-lh-ZJF" secondAttribute="bottom" constant="40" id="Dn0-dS-uuL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xud-iN-j6F" secondAttribute="trailing" constant="20" id="KZ7-fk-dgV"/>
+                            <constraint firstItem="TB2-AU-guX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UED-7B-82r"/>
+                            <constraint firstItem="TB2-AU-guX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ylw-e2-5c6"/>
+                            <constraint firstItem="xud-iN-j6F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bBP-tu-pB9"/>
                             <constraint firstItem="Hiw-lh-ZJF" firstAttribute="top" secondItem="EYS-u1-Mx9" secondAttribute="bottom" constant="33.5" id="gwK-Wg-qt6"/>
                             <constraint firstItem="FWM-Ll-dST" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="n78-AX-XBg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EYS-u1-Mx9" secondAttribute="trailing" constant="16" id="o1H-sx-889"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hiw-lh-ZJF" secondAttribute="trailing" constant="11" id="umz-bF-Y03"/>
+                            <constraint firstItem="TB2-AU-guX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uxc-q3-mFY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -128,10 +136,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="48"/>
+            <point key="canvasLocation" x="111.59420289855073" y="47.544642857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Dashboard Bg" width="375" height="307"/>
         <image name="infinity.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
