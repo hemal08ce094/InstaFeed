@@ -1,0 +1,87 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Capture App Store screenshots on all devices"
+  lane :screenshots do
+    capture_screenshots(
+      project: "InstaFeed.xcodeproj",
+      scheme: "InstaFeed",
+      output_directory: "./fastlane/screenshots",
+      clear_previous_screenshots: true,
+      override_status_bar: true,
+      concurrent_simulators: true,
+      stop_after_first_error: true,
+      erase_simulator: false,
+      number_of_retries: 0,
+      headless: true,
+      skip_open_summary: true
+    )
+  end
+
+  desc "Capture screenshots on a single iPhone (fast)"
+  lane :quick_screenshots do
+    capture_screenshots(
+      project: "InstaFeed.xcodeproj",
+      scheme: "InstaFeed",
+      devices: ["iPhone 16 Pro Max"],
+      output_directory: "./fastlane/screenshots",
+      clear_previous_screenshots: true,
+      override_status_bar: true,
+      stop_after_first_error: true,
+      erase_simulator: false,
+      number_of_retries: 0,
+      headless: true,
+      skip_open_summary: true
+    )
+  end
+
+  desc "Upload screenshots to App Store Connect"
+  lane :upload_screenshots do
+    api_key = app_store_connect_api_key(
+      key_id: "G56MPFTQUG",
+      issuer_id: "911dc1d3-fd9f-459e-8b56-71c2b865f33e",
+      key_filepath: "/Users/hemal/Downloads/AuthKey_G56MPFTQUG.p8"
+    )
+    deliver(
+      api_key: api_key,
+      skip_binary_upload: true,
+      skip_metadata: true,
+      overwrite_screenshots: true,
+      screenshots_path: "./fastlane/screenshots",
+      force: true,
+      run_precheck_before_submit: false,
+      precheck_include_in_app_purchases: false
+    )
+  end
+
+  desc "Take screenshots and upload them to App Store Connect"
+  lane :screenshots_and_upload do
+    screenshots
+    upload_screenshots
+  end
+
+  desc "Submit for App Store review"
+  lane :submit_review do
+    api_key = app_store_connect_api_key(
+      key_id: "G56MPFTQUG",
+      issuer_id: "911dc1d3-fd9f-459e-8b56-71c2b865f33e",
+      key_filepath: "/Users/hemal/Downloads/AuthKey_G56MPFTQUG.p8"
+    )
+    deliver(
+      api_key: api_key,
+      submit_for_review: true,
+      force: true,
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      skip_metadata: false,
+      metadata_path: "./fastlane/metadata",
+      run_precheck_before_submit: false,
+      precheck_include_in_app_purchases: false,
+      submission_information: {
+        add_id_info_uses_idfa: false
+      }
+    )
+  end
+
+end

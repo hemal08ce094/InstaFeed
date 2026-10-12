@@ -1,0 +1,23 @@
+# Snapfile — Device and language configuration for fastlane snapshot
+
+devices([
+  "iPhone 16 Pro Max",
+  "iPhone 16 Pro",
+  "iPhone SE (3rd generation)",
+  "iPad Pro 13-inch (M4)"
+])
+
+languages([
+  "en-US"
+])
+
+scheme("InstaFeed")
+output_directory("./fastlane/screenshots")
+clear_previous_screenshots(true)
+stop_after_first_error(true)
+concurrent_simulators(true)
+erase_simulator(false)
+dark_mode(false)
+override_status_bar(true)
+number_of_retries(0)
+headless(true)
